@@ -5,8 +5,8 @@
 
 ### Powered by
 * Minecraft Forge 13.20.0.2279
-* [102 Mods](#mods)
-* [21 Dependency/Core Mods](#dependencycore-mods)
+* [101 Mods](#mods)
+* [20 Dependency/Core Mods](#dependencycore-mods)
 
 ## Mods
 | Mod | Version | Authors | Description |
@@ -96,7 +96,6 @@
 | [Streams](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2346379-streams-real-flowing-rivers) | 0.3 | delvr | This mod introduces real flowing rivers, with a true current, to your Minecraft worlds. Compatible with many terrain generators. |
 | [Super Crafting Frame](http://minecraft.curseforge.com/projects/super-crafting-frame/) | 1.2.1.89 | EdgarAllen | An item frame that can craft items when punched. |
 | [TechReborn](https://github.com/TechReborn/TechReborn) | 2.1.11.103 | modmuss50<br/>Gigabit101<br/>tntrololol<br/>joflashstudios<br/>Prospector | TechReborn, The Gregtech revival you dream about on a cool mid summer's eve. |
-| [Teslafied](http://minecraft.curseforge.com/projects/teslafied/) | 1.1 | p455w0rd aka TheRealp455w0rd | Allows RF capable Tile Entities to also support Tesla |
 | [Thut Essentials](http://minecraft.curseforge.com/projects/thut-essentials/) | 1.6.8 | Thutmose | Essentials mod for Forge |
 | [Thut's Elevators](http://minecraft.curseforge.com/projects/thuts-elevators/) | 5.0.0 | patnevis | Adds elevators to minecraft |
 | [Tool Belt](https://github.com/gigaherz/ToolBelt) | 1.4.0 | gigaherz | Adds a (baubles-aware) belt that you can use to hold multiple tools at once. |
@@ -133,7 +132,6 @@
 | [ShadowMC](http://github.com/shadowfacts/ShadowMC) | 1.11.2-3.7.5 | Shadowfacts | A library mod required for all my other mods. |
 | [ShetiPhian-Core](http://tomkinsbros.blogspot.ca/p/core.html) | 1.11.0-3.4.4 | ShetiPhian | Core set of files needed by ShetiPhians mods |
 | [Stellar API](http://minecraft.curseforge.com/projects/stellar-api/) | 0.6.4.1.3 | Abastro | API for mods related with sky and celestial sphere. |
-| [TESLA](http://minecraft.curseforge.com/projects/tesla/) | 1.11-1.3.0.51 | Darkhax | A modern power API |
 | [Thut Permissions](http://minecraft.curseforge.com/projects/thutperms/) | 1.0.0 | Thutmose | Permissions mod for Forge |
 | [ThutCore](http://minecraft.curseforge.com/projects/thutcore/) | 4.3.2 | patnevis | API used by Thut's Mods |
 | [Waila](http://minecraft.curseforge.com/projects/hwyla/) | 1.8.9 | ProfMobius | Hwyla (Here's What You're Looking At) is a UI improvement mod aimed at providing block information directly in-game. It is al... |
