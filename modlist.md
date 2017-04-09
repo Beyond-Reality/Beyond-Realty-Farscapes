@@ -5,7 +5,7 @@
 
 ### Powered by
 * Minecraft Forge 13.20.0.2279
-* [102 Mods](#mods)
+* [103 Mods](#mods)
 * [20 Dependency/Core Mods](#dependencycore-mods)
 
 ## Mods
@@ -30,6 +30,7 @@
 | [Chisels & Bits](http://minecraft.curseforge.com/projects/chisels-bits) | 13.10 | AlgorithmX2 | a mod about Sculpting, Decorating and Aesthetics |
 | [Clipboard](https://rtfm.shadowfacts.net/clipboard/) | 1.11-1.2.1 | Shadowfacts | A simple clipboard for keeping track of your todo list. |
 | [Custom Main Menu](http://minecraft.curseforge.com/projects/custom-main-menu/) | 2.0.5 | lumien | Allows you to edit the mainmenu using json |
+| [Custom Ore Generation](http://www.minecraftforum.net/topic/1935710-162forge-custom-ore-generation-first-revival/) | 1.2.26-81-g6580ec2 | JRoush<br/>noogenesis | Allows the player to customize how ore is generated. |
 | [Default Options](http://blay09.net) | 8.2.2 | BlayTheNinth | A way for modpacks to ship a default (key) configuration without having to include an options.txt file. |
 | [Default World Generator](http://minecraft.curseforge.com/projects/default-world-generator-port) | 1.11-0.5 | EzTerry<br/>FireBall1725 | A small mod to automatically select the default world generator for both single player and servers |
 | [DiscordChat](http://www.curseforge.com/projects/discordchat/) | 1.11.2-2.0.4 | shadowfactsmc | Forge (server-side only) mod to relay MC chat to Discord and vice versa. |
