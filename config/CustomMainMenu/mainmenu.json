@@ -1,0 +1,180 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "menu:textures/logo.png",
+            "posX" : -227,
+            "posY" : 16,
+            "width" : 454,
+            "height" : 68,
+            "alignment" : "top_center"
+        },
+        "black":
+        {
+            "image" : "menu:textures/bar.png",
+            "posX" : -20,
+            "posY" : -50,
+            "width" : 205,
+            "height" : 128,
+            "alignment" : "bottom_left"
+        }
+    },
+
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -87,
+            "posY" : -24,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -87,
+            "posY" : 0,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "posX" : -87,
+            "posY" : 24,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+
+        "language":
+        {
+            "text" : "",
+            "posX" : -87,
+            "posY" : 48,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -62,
+            "posY" : 48,
+            "width" : 85,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 27,
+            "posY" : 48,
+            "width" : 60,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "quit"
+            }
+        },
+
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -12,
+            "posY" : -25,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "bottom_center",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" :
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+
+    "labels":
+    {
+        "mojang":
+        {
+            "text" : "© Mojang AB. Do not distribute!",
+            "posX" : -170,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+        "BR":
+        {
+            "text" : "1.0.0-r1",
+            "posX" : 90,
+            "posY" : 80,
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -46,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 160,
+            "posY" : 100,
+            "color" : 16746496,
+            "width" : 1,
+            "alignment" : "top_center",
+            "texts" : "file:minecraft:texts/splashes.txt"
+        },
+
+        "panorama":
+        {
+          "images" : "menu:textures/panorama%c.png",
+          "animate" : true,
+          "animationSpeed" : 1,
+          "blur" : false,
+          "gradient" : false
+        }
+    }
+}
