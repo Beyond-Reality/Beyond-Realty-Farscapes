@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="512" width="512" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 512.00001 512">
+	<defs>
+		<filter id="b" style="color-interpolation-filters:sRGB" height="1.1" width="1.1" y="-.050000001" x="-.050000001">
+			<feGaussianBlur stdDeviation="5" result="result1"/>
+			<feComposite operator="xor" result="result4" in2="result1" in="result1"/>
+			<feGaussianBlur stdDeviation="8" result="result6"/>
+			<feComposite operator="atop" result="result8" in2="SourceGraphic" in="result6"/>
+			<feComposite operator="in" result="fbSourceGraphic" in2="result8" in="result6"/>
+			<feColorMatrix values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 2 0 " result="fbSourceGraphicAlpha" in="fbSourceGraphic"/>
+			<feGaussianBlur stdDeviation="2" result="result0" in="fbSourceGraphicAlpha"/>
+			<feSpecularLighting lighting-color="#ffffff" specularConstant="2" result="result1" specularExponent="25" in="result0" surfaceScale="-5">
+				<fePointLight y="-10000" x="-5000" z="20000"/>
+			</feSpecularLighting>
+			<feComposite operator="in" result="result2" in2="fbSourceGraphicAlpha" in="result1"/>
+			<feComposite in="fbSourceGraphic" in2="result2" k3="2" k2="1" k1="0" result="result4" k4="0" operator="arithmetic"/>
+			<feComposite operator="in" result="result9" in2="result4" in="result4"/>
+			<feBlend mode="multiply" in2="result4" in="result9"/>
+		</filter>
+		<filter id="a" style="color-interpolation-filters:sRGB">
+			<feGaussianBlur stdDeviation="0.5" result="result0" in="SourceGraphic"/>
+			<feTurbulence baseFrequency="0.095" seed="488" result="result1" numOctaves="1" type="turbulence"/>
+			<feComposite operator="in" result="result2" in2="result1" in="result0"/>
+			<feComposite in2="result2" k3="1" k2="0" k1="3" result="result91" k4="0" operator="arithmetic"/>
+			<feBlend mode="multiply" in2="result91" result="fbSourceGraphic"/>
+			<feColorMatrix values="0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 5 0" result="fbSourceGraphicAlpha" in="fbSourceGraphic"/>
+			<feGaussianBlur stdDeviation="3" result="result0" in="fbSourceGraphicAlpha"/>
+			<feOffset dy="2" result="result3" dx="2" in="result0"/>
+			<feSpecularLighting lighting-color="#6fecfd" specularConstant="1.10000002" result="result1" specularExponent="30" in="result0" surfaceScale="2">
+				<fePointLight y="-10000" x="-5000" z="20000"/>
+			</feSpecularLighting>
+			<feComposite operator="in" result="result2" in2="fbSourceGraphicAlpha" in="result1"/>
+			<feComposite in="fbSourceGraphic" in2="result2" k3="1" k2="3" k1="0" result="result4" k4="0" operator="arithmetic"/>
+			<feBlend mode="multiply" in2="result4"/>
+		</filter>
+		<filter id="c" style="color-interpolation-filters:sRGB" height="1.1" width="1.1" y="-.050000001" x="-.050000001">
+			<feGaussianBlur stdDeviation="5" result="result1"/>
+			<feComposite operator="xor" result="result4" in2="result1" in="result1"/>
+			<feGaussianBlur stdDeviation="8" result="result6"/>
+			<feComposite operator="atop" result="result8" in2="SourceGraphic" in="result6"/>
+			<feComposite operator="in" result="fbSourceGraphic" in2="result8" in="result6"/>
+			<feColorMatrix values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 2 0 " result="fbSourceGraphicAlpha" in="fbSourceGraphic"/>
+			<feGaussianBlur stdDeviation="2" result="result0" in="fbSourceGraphicAlpha"/>
+			<feSpecularLighting lighting-color="#ffffff" specularConstant="2" result="result1" specularExponent="25" in="result0" surfaceScale="-5">
+				<fePointLight y="-10000" x="-5000" z="20000"/>
+			</feSpecularLighting>
+			<feComposite operator="in" result="result2" in2="fbSourceGraphicAlpha" in="result1"/>
+			<feComposite in="fbSourceGraphic" in2="result2" k3="2" k2="1" k1="0" result="result4" k4="0" operator="arithmetic"/>
+			<feComposite operator="in" result="result9" in2="result4" in="result4"/>
+			<feBlend mode="multiply" in2="result4" in="result9"/>
+		</filter>
+	</defs>
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(0,-540.36219)">
+		<g transform="translate(167.52566,-104.28002)">
+			<g transform="matrix(.25 0 0 .25 -151.90236 658.94948)" filter="url(#c)" fill="#d2d6ff">
+				<path d="m173.02578 124.13779q19.56572 8.50286 38.94858 24.68572 20.93714 17.46285 20.93714 29.07428 0 8.59429-13.07429 11.79429h-93.62285v-84.29715h28.06857v65.55429h28.06857q8.77714 0 15.26857-1.92 10.05714-2.83429 10.05714-9.50857 0-12.61714-34.65143-35.38286zm46.08 19.10857-15.72571-11.24571q7.31429-11.61143 7.31429-19.10857 0-16.82286-28.34286-16.82286h-84.205716l28.068576-18.742857h93.62285q18.56 4.297143 18.56 23.039997 0 20.75429-19.29143 42.88z"/>
+				<path d="m249.70828 96.06922 28.06858-18.742857h112.36571l-37.48571 18.742857h-102.94858zm93.62286 93.62286h-65.55428v-84.29715h28.06857v18.74286h46.81143l-28.06858 18.74286h-18.74285v28.06857h74.88l-37.39429 18.74286z"/>
+				<path d="m464.8865 128.80065v42.14857l-18.74286 37.48571-18.74286-18.74285v-60.89143q-22.94857-23.13143-45.07428-29.53143-10.42286-3.017142-20.48-3.2l46.81143-18.742857 37.48571 43.062857 37.39429-43.062857h28.16l-46.81143 51.474287z"/>
+				<path d="m558.289 77.326363q56.22857 0 56.22857 56.228567 0 56.13715-56.22857 56.13715-56.13714 0-56.13714-56.13715 0-56.228567 56.13714-56.228567zm0 18.742857q-16.45714 0-22.94857 11.06286-5.12 8.68571-5.12 26.42285 0 17.73715 5.12 26.33143 6.58285 11.06286 22.94857 11.06286 16.45714 0 23.04-10.97143 5.12-8.59428 5.12-26.42286 0-17.92-5.12-26.51428-6.49143-10.97143-23.04-10.97143z"/>
+				<path d="m646.21436 106.21779h28.06857v83.47429h-28.06857v-83.47429zm46.81142 27.33714q-7.40571-14.81142-9.87428-19.01714-4.84572-8.22857-9.05143-11.33714-9.69143-7.13143-21.48571-7.13143h-34.46858l28.06858-18.742857h43.06285l32 72.685717q5.30286 11.97714 6.76572 11.97714 2.46857 0 2.46857-13.07429v-71.588567h28.06857v112.36572l-28.06857 18.74285-37.48572-74.88z"/>
+				<path d="m827.56418 189.69208h-28.06857v-84.29715h28.06857v65.55429q27.24571-13.80571 40.04571-36.66286 5.85143-10.42285 5.85143-19.10857 0-15.451427-17.82857-19.10857h-84.20572l28.06858-18.742857h93.62285q12.52572 2.925715 12.52572 18.742857 0 13.16571-8.59429 30.99429-16.18286 33.46285-42.78857 52.38857-14.44571 10.24-26.69714 10.24z"/>
+			</g>
+			<g transform="matrix(.25 0 0 .25 -151.90236 658.94948)" filter="url(#b)" fill="#1414ff">
+				<path d="m1010.2204 189.69208h-28.06854v-84.29715h28.06854v84.29715zm18.7429-28.06857q22.1257-14.35429 30.1714-29.71429 3.7486-7.13143 3.7486-13.53143 0-17.46286-24.5943-22.30857h-84.20572l28.06858-18.742857h93.62284q21.9429 5.028572 21.9429 30.537147 0 15.81714-8.5029 31.17714-9.0514 16.36571-22.7657 22.58286l37.3943 28.06857h-46.8114l-28.0686-28.06857z"/>
+				<path d="m1108.4583 96.06922 28.0686-18.742857h112.3657l-37.4857 18.742857h-102.9486zm93.6228 93.62286h-65.5542v-84.29715h28.0685v18.74286h46.8115l-28.0686 18.74286h-18.7429v28.06857h74.88l-37.3943 18.74286z"/>
+				<path d="m1332.9622 77.326363 37.4857 112.36572h-28.16q-10.24-28.43429-15.7257-41.6-12.0686-29.16572-20.7543-38.67429-7.1314-7.86286-17.5543-10.605712-4.1142-1.097143-20.8457-2.742858l37.4857-18.742857h28.0686zm-56.1371 84.297147-9.4172 28.06857h-28.0685l28.0685-83.93143h28.0686l-12.3429 37.12h31.0858l9.4171 18.74286h-46.8114z"/>
+				<path d="m1384.6519 96.06922h-28.0686l28.0686-18.742857h28.0685v93.622857h74.88l-37.3943 18.74286h-65.5542v-93.62286z"/>
+				<path d="m1530.2626 170.94922-18.7429 37.48571-18.7428-18.74285v-112.36572h37.4857v93.622857z"/>
+				<path d="m1539.0833 96.06922 28.0686-18.742857h112.3657l-9.4172 18.742857h-93.6228l-13.0743 9.32571h-14.9943l-9.3257-9.32571zm93.6228 74.88-18.7428 37.48571-18.7429-18.74285v-84.29715h37.4857v65.55429z"/>
+				<path d="m1775.0427 128.80065v42.14857l-18.7428 37.48571-18.7429-18.74285v-60.89143q-22.9485-23.13143-45.0743-29.53143-10.4228-3.017142-20.48-3.2l46.8115-18.742857 37.4857 43.062857 37.3943-43.062857h28.16l-46.8115 51.474287z"/>
+			</g>
+			<g transform="matrix(.25 0 0 .25 -151.90236 658.94948)" filter="url(#a)" fill="#fe8000">
+				<path d="m712.90489 280.57208v23.40571h-14.03428v-42.14857h14.03428v9.37143h23.40572l-14.03429 9.37143h-9.37143zm-28.06857-23.40572 14.03429-9.37143h56.18285l-18.74285 9.37143h-51.47429z"/>
+				<path d="m778.49453 247.79493 18.74286 56.18286h-14.08q-5.12-14.21714-7.86286-20.8-6.03428-14.58286-10.37714-19.33714-3.56571-3.93143-8.77714-5.30286-2.05714-0.54857-10.42286-1.37143l18.74286-9.37143h14.03428zm-28.06857 42.14858-4.70857 14.03428h-14.03428l14.03428-41.96571h14.03429l-6.17143 18.56h15.54286l4.70857 9.37143h-23.40572z"/>
+				<path d="m818.37364 303.97779h-14.03428v-42.14857h14.03428v42.14857zm9.37143-14.03428q11.06286-7.17715 15.08571-14.85715 1.87429-3.56571 1.87429-6.76571 0-8.73143-12.29714-11.15429h-42.10286l14.03429-9.37143h46.81142q10.97143 2.51429 10.97143 15.26858 0 7.90857-4.25143 15.58857-4.52571 8.18285-11.38285 11.29143l18.69714 14.03428h-23.40571l-14.03429-14.03428z"/>
+				<path d="m885.76909 288.98351q1.92 5.62285 9.14285 5.62285h17.92q5.80572 0 5.80572-2.69714 0-4.20571-16.41143-16.18286-6.62857-4.61714-19.84-13.89714h14.03429q16.82285 9.73714 28.38857 19.61143 12.34285 10.56 12.34285 16.82286 0 4.06857-5.62285 5.71428h-63.17715l17.41715-14.99428zm57.46285-41.18858-9.37142 14.03429-8.22858-4.66286h-43.24571q0-4.34285 2.51429-6.85714 2.51428-2.51429 6.85714-2.51429h51.47428z"/>
+				<path d="m944.18311 257.16636 14.03428-9.37143h42.14861l-9.37147 14.03429-9.37142-4.66286h-37.44zm0 14.03429v-9.37143h14.03428v9.37143q0 11.15428 4.06857 17.87428 4.98286 8.27429 15.40572 8.27429 5.89714 0 13.30285-2.74286-12.29714 9.46286-22.58285 9.46286-7.63429 0-13.44-5.12-5.16572-4.52571-8-12.20571-2.78857-7.68-2.78857-15.54286z"/>
+				<path d="m1039.5102 247.79493 18.7428 56.18286h-14.08q-5.12-14.21714-7.8628-20.8-6.0343-14.58286-10.3772-19.33714-3.5657-3.93143-8.7771-5.30286-2.0572-0.54857-10.4229-1.37143l18.7429-9.37143h14.0343zm-28.0686 42.14858-4.7086 14.03428h-14.03427l14.03427-41.96571h14.0343l-6.1714 18.56h15.5428l4.7086 9.37143h-23.4057z"/>
+				<path d="m1079.4674 303.97779h-14.0343v-42.14857h14.0343v42.14857zm28.1143-14.03428h-18.7429q11.0629-7.17715 15.0857-14.85715 1.8743-3.56571 1.8743-6.76571 0-8.73143-12.2971-11.15429h-42.1029l14.0343-9.37143h46.8114q10.9715 2.51429 10.9715 15.26858 0 7.90857-4.2515 15.58857-4.5257 8.18285-11.3828 11.29143z"/>
+				<path d="m1126.0082 257.16636 14.0343-9.37143h56.1828l-18.7428 9.37143h-51.4743zm46.8114 46.81143h-32.7771v-42.14857h14.0343v9.37143h23.4057l-14.0343 9.37143h-9.3714v14.03428h37.44l-18.6972 9.37143z"/>
+				<path d="m1200.8472 288.98351q1.92 5.62285 9.1429 5.62285h17.92q5.8057 0 5.8057-2.69714 0-4.20571-16.4114-16.18286-6.6286-4.61714-19.84-13.89714h14.0342q16.8229 9.73714 28.3886 19.61143 12.3429 10.56 12.3429 16.82286 0 4.06857-5.6229 5.71428h-63.1771l17.4171-14.99428zm57.4629-41.18858-9.3715 14.03429-8.2285-4.66286h-43.2457q0-4.34285 2.5142-6.85714 2.5143-2.51429 6.8572-2.51429h51.4743z"/>
+			</g>
+		</g>
+	</g>
+</svg>
