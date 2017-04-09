@@ -20,7 +20,7 @@
 | [Baubles](http://www.minecraftforum.net/topic/2535073-baubles) | 1.4.3 | Azanor | Adding a touch of bling to Minecraft |
 | [Better Achievements](https://github.com/way2muchnoise/BetterAchievements) | 0.4.3 | way2muchnoise | An improvement to the Achievementscreen |
 | [Better Builder's Wands](http://minecraft.curseforge.com/projects/better-builders-wands/) | 0.11.1 | Portablejim | Wands that allow placing of multiple blocks at a time |
-| [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage) | 2.1.3 | octarine-noise | Better Foliage is a Forge mod that will make your Minecraft worlds more impressive, mainly by improving how vegetation looks. It is fully compatible with other visual enhancement mods (Optifine, Shaders Mod, Colored Lights Core). |
+| [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage) | 2.1.4 | octarine-noise | Better Foliage is a Forge mod that will make your Minecraft worlds more impressive, mainly by improving how vegetation looks. It is fully compatible with other visual enhancement mods (Optifine, Shaders Mod, Colored Lights Core). |
 | [Better Fonts](http://mods.curse.com/mc-mods/minecraft/243639-truetype-font-replacement) | 1.11.2-1.7.3 | CubeX2 | OpenType font support for Minecraft |
 | [BiomeTweaker](http://minecraft.curseforge.com/mc-mods/228895-biometweaker) | 2.2 | superckl | Used to tweak various characteristics of biomes. |
 | [Bloodmoon](http://minecraft.curseforge.com/projects/bloodmoon/) | 1.5.1 | lumien | Adds the bloodmoon from terraria to minecraft |
