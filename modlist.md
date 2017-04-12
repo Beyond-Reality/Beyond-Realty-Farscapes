@@ -53,7 +53,7 @@
 | [JEI Bees](http://bdew.net/) | 0.9.0.5 | bdew | Adds JEI recipes that show breeding and products from Forestry bees, trees and butterflies. |
 | [JourneyMap](http://journeymap.info/) | 1.11.2-5.4.6 | techbrew<br/>mysticdrew | JourneyMap Unlimited Edition: Real-time map in-game or in a web browser as you explore. |
 | [Just Enough Items](https://github.com/mezz/JustEnoughItems) | 4.3.1.260 | mezz | Simple recipe and item helper. |
-| [Just Enough Resources](http://minecraft.curseforge.com/projects/just-enough-resources-jer/) | 0.6.3.4 | way2muchnoise | Adds Resources and Mob Drops to JEI |
+| [Just Enough Resources](http://minecraft.curseforge.com/projects/just-enough-resources-jer/) | 0.6.3.5 | way2muchnoise | Adds Resources and Mob Drops to JEI |
 | [Literal Ascension](https://minecraft.curseforge.com/projects/literal-ascension) | 1.11.2-1.0.1.1 | JamiesWhiteShirt | Adds intuitive solutions for vertical mobility. |
 | [Login Shield](http://minecraft.curseforge.com/projects/login-shield/) | 1.11-3-g0422a90 | Glasspelican | protects users from taking damage between when they login and they can start interacting with the world |
 | [LootTweaker](http://www.curseforge.com/projects/loottweaker/) | 1.11.2-0.0.5.1 | Leviathan143 | An addon for CraftTweaker that allows modification of loot tables |
