@@ -101,7 +101,7 @@
 | [Tell Me](http://minecraft.curseforge.com/projects/tellme) | 0.5.2 | masa | Can provide information about blocks, items, entities, biomes etc. |
 | [Thut Essentials](http://minecraft.curseforge.com/projects/thut-essentials/) | 1.6.8 | Thutmose | Essentials mod for Forge |
 | [Thut's Elevators](http://minecraft.curseforge.com/projects/thuts-elevators/) | 5.0.0 | patnevis | Adds elevators to minecraft |
-| [Tool Belt](https://github.com/gigaherz/ToolBelt) | 1.4.0 | gigaherz | Adds a (baubles-aware) belt that you can use to hold multiple tools at once. |
+| [Tool Belt](https://github.com/gigaherz/ToolBelt) | 1.5.0 | gigaherz | Adds a (baubles-aware) belt that you can use to hold multiple tools at once. |
 | [TorchMaster](http://minecraft.curseforge.com/projects/torchmaster/) | 1.2.1.24 | xalcon | Adds a special torch which prevents mobs from spawning in a configurable range |
 | [TrashSlot](http://minecraft.curseforge.com/projects/trashslot/) | 7.4.1 | BlayTheNinth | Adds a trash slot to the inventory screen that allows deletion of unwanted items. |
 | [Tree Chopper](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2731148-tree-chopper) | 1.1 | DuchLord | Simple mod for chop down whole tree and much more..   Recommended forge version: 1.11 - 13.19.0.2141 |
