@@ -90,7 +90,7 @@
 | [Resource Loader](http://minecraft.curseforge.com/projects/resource-loader/) | 1.5.1 | lumien | Allows mod pack creators / users to add their own custom textures to minecrafts resources without making a resource pack. |
 | [Roguelike Dungeons](https://github.com/Greymerk/minecraft-roguelike) | 1.11.2-1.6.6 | Greymerk | Adds randomized dungeons to the world |
 | [Shulkerbox](http://minecraft.curseforge.com/projects/advanced-shulkerboxes/) | 1.1.1 | Max Henkel | Shulkerbox |
-| [Sophisticated Wolves](http://sophisticated-wolves.nightkosh.com/) | 3.6.4 | NightKosh<br/>Metroidfood | Improves wolves through gameplay tweaks, AI improvements, and new features. |
+| [Sophisticated Wolves](http://sophisticated-wolves.nightkosh.com/) | 3.6.5 | NightKosh<br/>Metroidfood | Improves wolves through gameplay tweaks, AI improvements, and new features. |
 | [Sound Filters](http://minecraft.curseforge.com/projects/sound-filters/) | 0.9_for_1.11 | Tmtravlr | Adds reveb to caves, as well as muted sounds underwater/in lava, and behind walls. |
 | [Spartan Shields](https://minecraft.curseforge.com/projects/spartan-shields) | 1.3 | ObliviousSpartan | Spartan Shields adds a variety of new shields to Minecraft. |
 | [Stellar Sky](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1444983-wip-stellarium-real-constellations-sun-moon) | 0.6.5.1.4 | Abastro | Constellations & Planets in Minecraft! You can see Real Sky with this mod. |
