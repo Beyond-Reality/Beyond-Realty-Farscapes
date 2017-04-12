@@ -5,7 +5,7 @@
 
 ### Powered by
 * Minecraft Forge 13.20.0.2279
-* [103 Mods](#mods)
+* [104 Mods](#mods)
 * [20 Dependency/Core Mods](#dependencycore-mods)
 
 ## Mods
@@ -98,6 +98,7 @@
 | [Streams](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2346379-streams-real-flowing-rivers) | 0.3 | delvr | This mod introduces real flowing rivers, with a true current, to your Minecraft worlds. Compatible with many terrain generators. |
 | [Super Crafting Frame](http://minecraft.curseforge.com/projects/super-crafting-frame/) | 1.2.1.89 | EdgarAllen | An item frame that can craft items when punched. |
 | [TechReborn](https://github.com/TechReborn/TechReborn) | 2.1.11.103 | modmuss50<br/>Gigabit101<br/>tntrololol<br/>joflashstudios<br/>Prospector | TechReborn, The Gregtech revival you dream about on a cool mid summer's eve. |
+| [Tell Me](http://minecraft.curseforge.com/projects/tellme) | 0.5.2 | masa | Can provide information about blocks, items, entities, biomes etc. |
 | [Thut Essentials](http://minecraft.curseforge.com/projects/thut-essentials/) | 1.6.8 | Thutmose | Essentials mod for Forge |
 | [Thut's Elevators](http://minecraft.curseforge.com/projects/thuts-elevators/) | 5.0.0 | patnevis | Adds elevators to minecraft |
 | [Tool Belt](https://github.com/gigaherz/ToolBelt) | 1.4.0 | gigaherz | Adds a (baubles-aware) belt that you can use to hold multiple tools at once. |
