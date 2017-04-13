@@ -120,7 +120,7 @@
 |-----|:-------:|:--------|:------------|
 | [AutoRegLib](http://www.vazkii.us) | 1.1-4 | Vazkii | Automatically item, block, and model registration for mods. |
 | [BD Lib](http://bdew.net/mods/) | 1.13.2.7 | bdew | A library of generic code for my other mods |
-| [BeyondRealityCore](http://mcbeyondreality.com) | 1.11.2-2.0.0-BETA | Dyonovan<br/>Dominance<br/>PaulJoda | Added features for the Beyond Reality ModPacks |
+| [BeyondRealityCore](https://github.com/Beyond-Reality/BeyondRealityCore) | 1.11.2-2.0.0-BETA | Dyonovan<br/>Dominance<br/>PaulJoda | Added features for the Beyond Reality ModPacks |
 | [Bookshelf](http://minecraft.curseforge.com/projects/bookshelf-api-library/) | 5.0.0-B96 | Dyonovan<br/>pauljoda | Library of useful functions used by TeamBR |
 | [CommonCapabilities](https://github.com/CyclopsMC/CommonCapabilities) | 1.11.2-1.3.1 | rubensworks (aka kroeserr) | Forge Capabilities that can be shared by multiple mods |
 | [compatlayer](http://minecraft.curseforge.com/projects/compatlayer/) | 1.11.2-0.2.5 | McJty | Compatibility layer to make migrating between different vanilla/forge versions easier |
