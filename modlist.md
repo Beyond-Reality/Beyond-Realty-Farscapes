@@ -4,7 +4,7 @@
 ## A Mod-pack for Minecraft: 1.11.2
 
 ### Powered by
-* Minecraft Forge 13.20.0.2279
+* Minecraft Forge 13.20.0.2282
 * [104 Mods](#mods)
 * [21 Dependency/Core Mods](#dependencycore-mods)
 
