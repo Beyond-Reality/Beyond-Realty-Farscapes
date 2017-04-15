@@ -1,0 +1,226 @@
+<!-- Find Errors CustomOreGen.Config.ParserException -->
+
+<IfModInstalled name='techreborn'>
+<ConfigSection>
+
+	<!-- Sparse presets -->
+
+	<StandardGenPreset name='SparseStone'>
+		<Setting name='Size' avg='2' range='5' />
+		<ReplacesOre block='blockLimestone' />
+		<ReplacesOre block='blockMarble' />
+		<ReplacesOre block='marble' />
+		<ReplacesOre block='stone' />
+		<ReplacesOre block='stoneBasalt' />
+		<ReplacesOre block='stoneMarble' />
+	</StandardGenPreset>
+
+	<StandardGenPreset name='SparseNetherrack'>
+			 <Setting name='Size' avg='3' range='5' />
+			 <Replaces block='minecraft:netherrack' />
+	</StandardGenPreset>
+
+	<StandardGenPreset name='SparseEndstone'>
+		<Setting name='Size' avg='3' range='5' />
+		<ReplacesOre block='stoneEndstone' />
+	</StandardGenPreset>
+
+  <!-- ~~~~~~~~~~~~~~~~~~ Choices Start ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<ConfigSection>
+	<OptionDisplayGroup name='groupCustomOres' displayName='FarScape Ores' displayState='shown'>
+			<Description>
+					Distribution options for ores.
+			</Description>
+	</OptionDisplayGroup>
+	<ConfigSection>
+		<OptionChoice name='FarScapeDist' default='FarScapeVeins' displayGroup='groupCustomOres' displayState='shown'>
+				<Description> Controls if ore is generated as Farscape or Vanilla type generatation </Description>
+				<DisplayName> Ore Generation </DisplayName>
+					<Choice value='FarScapeVeins' displayValue='Default Farscape Veins'>
+							<Description>Farscape type generation.</Description>
+					</Choice>
+					<Choice value='vanillaStdGen' displayValue='Default Vanilla Clusters'>
+							<Description>vanilla type generation.</Description>
+					</Choice>
+		</OptionChoice>
+	</ConfigSection>
+
+</ConfigSection>
+	<!-- ~~~~~~~~~~~~~~~~~~ Choices End ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!--**********   Ore Generation Cleared   *************-->
+	<IfCondition condition=':= ?COGActive'>
+		<Substitute name='StandardOreSubstitute' block='minecraft:stone'>
+				<Description>
+						Replace vanilla-generated ore clusters with stone.
+				</Description>
+				<Replaces block='minecraft:coal_ore'/>
+				<Replaces block='minecraft:iron_ore'/>
+				<Replaces block='minecraft:gold_ore'/>
+				<Replaces block='minecraft:redstone_ore'/>
+				<Replaces block='minecraft:diamond_ore'/>
+				<Replaces block='minecraft:lapis_ore'/>
+				<Replaces block='minecraft:emerald_ore'/>
+		</Substitute>
+
+	<ConfigSection>
+
+		<!-- *************************************************** Standard Dist ********************************************************* -->
+
+		<IfCondition condition=':= FarScapeDist = "vanillaStdGen"'>
+				<!-- iron -->
+				<StandardGen name='IronStandard' block='minecraft:iron_ore' inherits='PresetStandardGen'>
+						<Description> Equivalent to vanilla minecraft iron distribution </Description>
+						<DrawWireframe>:=drawWireframes</DrawWireframe>
+						<WireframeColor>0x40221100</WireframeColor>
+						<Setting name='Size' avg='5'range='2'/>
+						<Setting name='Frequency' avg='15'/>
+						<Setting name='Height' avg='45' range='10' scaleTo='sealevel'/>
+				</StandardGen>
+				<!-- gold -->
+				<StandardGen name='GoldStandard' block='minecraft:gold_ore' inherits='PresetStandardGen'>
+						<Description> Equivalent to vanilla minecraft iron distribution </Description>
+						<DrawWireframe>:=drawWireframes</DrawWireframe>
+						<WireframeColor>0x40221100</WireframeColor>
+						<Setting name='Size' avg='5' range='2'/>
+						<Setting name='Frequency' avg='15'/>
+						<Setting name='Height' avg='28' range='5' scaleTo='sealevel'/>
+						</StandardGen>
+		</IfCondition>
+
+		<!-- *************************************************** Custom Dist ********************************************************* -->
+
+		<IfCondition condition=':= FarScapeDist = "FarScapeVeins"'>
+
+			<!-- ***************************************************** IRON ********************************************************** -->
+
+			<!-- Normal Freq -->
+			<Veins name='IronVeins' inherits='PresetHugeVeins'>
+					<OreBlock block='minecraft:iron_ore' weight='0.40'/>
+					<OreBlock block='beyondreality:sparseiron' weight='0.55'/>
+					<OreBlock block='denseores:minecraft_iron_ore_0' weight='0.05'/>
+					<DrawWireframe>:=drawWireframes</DrawWireframe>
+					<WireframeColor>0x60EBD6E9</WireframeColor>
+					<Setting name='MotherlodeSize' avg='7' range='2' type='normal'/>
+					<Setting name='MotherlodeFrequency' avg='0.0023' /><!--How offten it generates-->
+					<Setting name='MotherlodeHeight' avg='45' range='3'/><!--Y Level spawn -->
+					<Setting name='BranchLength' avg='600' range='200' type='normal'/>
+					<Setting name='BranchHeightLimit' avg='5'/>
+					<Setting name='BranchInclination' avg='0.0' range='0.03' />
+					<Setting name='SegmentAngle' avg='0.30' range='0.30'/>
+					<Setting name='SegmentLength' avg='30' range='6' />
+					<Setting name='SegmentForkFrequency' avg='0.01' />
+					<Setting name='SegmentRadius' avg='0.83' range='0.02'/>
+			</Veins>
+			<!-- Increased Chances -->
+			<Veins name='IronPrefVeins' inherits='PresetHugeVeins'>
+					<OreBlock block='minecraft:iron_ore' weight='0.50'/>
+					<OreBlock block='beyondreality:sparseiron' weight='0.40'/>
+					<OreBlock block='denseores:minecraft_iron_ore_0' weight='0.10'/>
+					<Description>
+							Spawns 2 more times in preferred biomes.
+					</Description>
+					<DrawWireframe>:=drawWireframes</DrawWireframe>
+					<WireframeColor>0x60EBD6E9</WireframeColor>
+					<Setting name='MotherlodeFrequency' avg='0.0042' /><!--How offten it generates-->
+					<Setting name='MotherlodeHeight' avg='45' range='3'/><!--Y Level spawn -->
+					<Setting name='MotherlodeSize' avg='9' range='2' type='normal'/>
+					<Setting name='BranchLength' avg='600' range='200' type='normal'/>
+					<Setting name='BranchHeightLimit' avg='5'/>
+					<Setting name='BranchInclination' avg='0.0' range='0.03' />
+					<Setting name='SegmentAngle' avg='0.30' range='0.30'/>
+					<Setting name='SegmentLength' avg='30' range='6' />
+					<Setting name='SegmentForkFrequency' avg='0.01' />
+					<Setting name='SegmentRadius' avg='0.90' range='0.02'/>
+					<!-- Increased chances to spawn in -->
+					<BiomeType name='Plains'/>
+			</Veins>
+			<!-- Sparse ores -->
+			<StandardGen name='Sparse Iron 1' inherits='SparseStone'>
+				<OreBlock block='beyondreality:sparseiron' />
+				<Setting name='Frequency' avg='28' range='6' scaleTo='biome' />
+				<Setting name='Height' avg='45' range='30' scaleTo='biome' />
+			</StandardGen>
+			<StandardGen name='Sparse Iron 2' inherits='SparseStone'>
+				<OreBlock block='beyondreality:sparseiron' />
+				<Setting name='Frequency' avg='18' range='6' scaleTo='biome' />
+				<Setting name='Height' avg='35' range='30' scaleTo='biome' />
+			</StandardGen>
+			<StandardGen name='Sparse Iron 3' inherits='SparseStone'>
+				<OreBlock block='beyondreality:sparseiron' />
+				<Setting name='Frequency' avg='22' range='3' scaleTo='biome' />
+				<Setting name='Height' avg='45' range='5' scaleTo='biome' />
+			</StandardGen>
+			<!-- End Iron -->
+
+
+		<!-- ***************************************************** GOLD ********************************************************** -->
+
+		<!-- Normal Freq -->
+		<Veins name='GoldVeins' inherits='PresetHugeVeins'>
+				<OreBlock block='minecraft:gold_ore' weight='0.40'/>
+				<OreBlock block='beyondreality:sparsegold' weight='0.55'/>
+				<OreBlock block='denseores:minecraft_gold_ore_0' weight='0.05'/>
+				<DrawWireframe>:=drawWireframes</DrawWireframe>
+				<WireframeColor>0x60EBD6E9</WireframeColor>
+				<Setting name='MotherlodeSize' avg='7' range='2' type='normal'/>
+				<Setting name='MotherlodeFrequency' avg='0.0023' /><!--How offten it generates-->
+				<Setting name='MotherlodeHeight' avg='25' range='3'/><!--Y Level spawn -->
+				<Setting name='BranchLength' avg='600' range='200' type='normal'/>
+				<Setting name='BranchHeightLimit' avg='5'/>
+				<Setting name='BranchInclination' avg='0.0' range='0.03' />
+				<Setting name='SegmentAngle' avg='0.30' range='0.30'/>
+				<Setting name='SegmentLength' avg='30' range='6' />
+				<Setting name='SegmentForkFrequency' avg='0.01' />
+				<Setting name='SegmentRadius' avg='0.83' range='0.02'/>
+		</Veins>
+		<!-- Increased Chances -->
+		<Veins name='GoldPrefVeins' inherits='PresetHugeVeins'>
+				<OreBlock block='minecraft:gold_ore' weight='0.50'/>
+				<OreBlock block='beyondreality:sparsegold' weight='0.40'/>
+				<OreBlock block='denseores:minecraft_gold_ore_0' weight='0.10'/>
+				<Description>
+						Spawns 2 more times in preferred biomes.
+				</Description>
+				<DrawWireframe>:=drawWireframes</DrawWireframe>
+				<WireframeColor>0x60EBD6E9</WireframeColor>
+				<Setting name='MotherlodeFrequency' avg='0.0046' /><!--How offten it generates-->
+				<Setting name='MotherlodeHeight' avg='25' range='3'/><!--Y Level spawn -->
+				<Setting name='MotherlodeSize' avg='9' range='2' type='normal'/>
+				<Setting name='BranchLength' avg='600' range='200' type='normal'/>
+				<Setting name='BranchHeightLimit' avg='5'/>
+				<Setting name='BranchInclination' avg='0.0' range='0.03' />
+				<Setting name='SegmentAngle' avg='0.30' range='0.30'/>
+				<Setting name='SegmentLength' avg='30' range='6' />
+				<Setting name='SegmentForkFrequency' avg='0.01' />
+				<Setting name='SegmentRadius' avg='0.90' range='0.02'/>
+				<!-- Increased chances to spawn in -->
+				<BiomeType name='Desert'/>
+		</Veins>
+		<!-- Sparse ores -->
+		<StandardGen name='Sparse Gold 1' inherits='SparseStone'>
+			<OreBlock block='beyondreality:sparsegold' />
+			<Setting name='Frequency' avg='22' range='6' scaleTo='biome' />
+			<Setting name='Height' avg='25' range='5' scaleTo='biome' />
+		</StandardGen>
+		<StandardGen name='Sparse Gold 2' inherits='SparseStone'>
+			<OreBlock block='beyondreality:sparsegold' />
+			<Setting name='Frequency' avg='27' range='6' scaleTo='biome' />
+			<Setting name='Height' avg='20' range='10' scaleTo='biome' />
+		</StandardGen>
+		<StandardGen name='Sparse Gold 3' inherits='SparseStone'>
+			<OreBlock block='beyondreality:sparsegold' />
+			<Setting name='Frequency' avg='22' range='3' scaleTo='biome' />
+			<Setting name='Height' avg='30' range='5' scaleTo='biome' />
+		</StandardGen>
+
+		</IfCondition>
+	</ConfigSection>
+
+
+
+
+</IfCondition>
+</ConfigSection>
+</IfModInstalled>
