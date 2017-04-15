@@ -69,7 +69,7 @@
 | [MrCrayfish's Furniture Mod](https://mrcrayfish.com/mods?id=cfm) | 4.1.2 | MrCrayfish | Adds over 50 unique pieces of furniture to the game! |
 | [Natural Pledge](https://minecraft.curseforge.com/projects/natural-pledge) | 2.0 | WireSegal | The successor to Botanical Addons from 1.7. |
 | [NBTEdit](http://minecraft.curseforge.com/projects/nbtedit/) | 0.4 | malte0811 | In-game NBT editing for Entities and TileEntities |
-| [NeoTech](https://minecraft.curseforge.com/projects/neotech) | 1.11.2-5.0.0-B168 | Dyonovan<br/>pauljoda | Ore Processing |
+| [NeoTech](https://minecraft.curseforge.com/projects/neotech) | 1.11.2-5.0.0 | Dyonovan<br/>pauljoda | Ore Processing |
 | [NetherPortalFix](http://minecraft.curseforge.com/projects/netherportalfix/) | 1.11-4.3.1 | BlayTheNinth | Ensures correct destinations when travelling back and forth through Nether Portals in Multiplayer. |
 | [Not Enough Wands](http://minecraft.curseforge.com/projects/not-enough-wands/) | 1.1x-1.5.4 | romelo333<br/>McJty | Wands, wands, and more wands |
 | [NuclearCraft](https://minecraft.curseforge.com/projects/nuclearcraft-mod) | 2.0a | turbodiesel4598 (call me Tom) | Nuclear Physics, Minecraft Style (WIP) |
