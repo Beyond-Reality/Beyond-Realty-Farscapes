@@ -127,7 +127,7 @@
 | [Cyclops Core](http://minecraft.curseforge.com/mc-mods/232758-cyclops-core) | 1.11.2-0.10.0 | rubensworks (aka kroeserr)<br/>immortaleeb (aka _EeB_) | Coremod for EvilCraft, Integrated Dynamics and others. |
 | [EXCore](http://minecraft.curseforge.com/projects/excore/) | 2.0.0-beta1-1.11.2 | Elix_x | Elix'x Core |
 | [Farseek](https://minecraft.curseforge.com/projects/farseek) | 2.1 | delvr | A Scala API for Minecraft mods. |
-| [LibrarianLib](http://www.curseforge.com/projects/librarianlib/) | 2.0 | thecodewarrior<br/>wiresegal<br/>LordSaad44<br/>Elucent<br/>Eladkay<br/>murapix<br/>werty1124<br/>Leviathan143 | A library for the Team Wizardry mods |
+| [LibrarianLib](http://www.curseforge.com/projects/librarianlib/) | 3.0.1 | thecodewarrior<br/>wiresegal<br/>LordSaad44<br/>Elucent<br/>Eladkay<br/>murapix<br/>werty1124<br/>Leviathan143 | A library for the Team Wizardry mods |
 | [LLibrary](https://github.com/iLexiconn/LLibrary) | 1.7.4-1.11.2 | iLexiconn | The lightweight Minecraft modding library |
 | [MalisisCore](http://github.com/Ordinastie/MalisisCore) | 1.11.2-5.1.1 | Ordinastie<br/>PaleoCrafter | MalisisCore is a framework dedicated to simplify many processes required during a mod development. |
 | [MattDahEpic Core](http://minecraft.curseforge.com/projects/mattdahepic-core-mdecore/) | 1.11-1.0 | MattDahEpic | Base Mod for all MattDahEpic mods. |
