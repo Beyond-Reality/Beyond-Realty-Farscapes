@@ -1,5 +1,4 @@
-# Graphics and Logo for Beyond Reality Farscapes
-# ![FarscapesLogo.svg](https://cdn.rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/fd33e01f/assets/BeyondReality-Farscapes.svg)
+<h1 align="center">Graphics and Logo for <img src="https://cdn.rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/fd33e01f/assets/BeyondReality-Farscapes.svg" alt="Beyond Reality Farscapes" title="Beyond Reality Farscapes"></h1>
 
 ## Required:
 
