@@ -37,7 +37,7 @@
 | [Dynamic Surroundings](https://github.com/OreCruncher/DynamicSurroundings/wiki) | 1.11.2-3.3.5.0 | OreCruncher<br/>Abastro | Improving Minecraft's sight and sound experience |
 | [Embers](http://minecraft.curseforge.com/projects/embers/) | 0.206 | Elucent<br/>AlexisMachina<br/>ShadowGamerXY<br/>werty1124 | Dwarven-style Magitech Mod |
 | [Extra Bit Manipulation](http://minecraft.curseforge.com/projects/extra-bit-manipulation/) | 1.11.2-3.0.6 | MolecularPhylo | Adds extra in-world bit manipulation to the Chisels & Bits mod. |
-| [Extra Utilities](http://minecraft.curseforge.com/projects/extra-utilities/) | 1.3.3 | RWTema | Just a bunch of useful things |
+| [Extra Utilities](http://minecraft.curseforge.com/projects/extra-utilities/) | 1.4 | RWTema | Just a bunch of useful things |
 | [Fast Leave Decay](http://minecraft.curseforge.com/projects/fast-leaf-decay/) | 1.2.3 | lumien | Makes leave decay faster |
 | [Foamfix](http://asie.pl/foamfix/) | 0.5.4-beta2-anarchy | asiekierka | FoamFix is a mod which makes Minecraft go fast - by which I mean use less memory. |
 | [Forestry](http://forestry.sengir.net/) | 5.3.3.91 | SirSengir<br/>mezz | Trees, bees and more. |
