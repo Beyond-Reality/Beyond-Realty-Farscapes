@@ -21,8 +21,8 @@
 	</StandardGenPreset>
 
 	<StandardGenPreset name='SparseEndstone'>
-		<Setting name='Size' avg='3' range='5' />
-		<ReplacesOre block='stoneEndstone' />
+			<Setting name='Size' avg='3' range='5' />
+			<ReplacesOre block='stoneEndstone' />
 	</StandardGenPreset>
 
   <!-- ~~~~~~~~~~~~~~~~~~ Choices Start ~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -74,7 +74,7 @@
 						<Description> Equivalent to vanilla minecraft iron distribution </Description>
 						<DrawWireframe>:=drawWireframes</DrawWireframe>
 						<WireframeColor>0x40221100</WireframeColor>
-						<Setting name='Size' avg='5'range='2'/>
+						<Setting name='Size' avg='8' range='2'/>
 						<Setting name='Frequency' avg='15'/>
 						<Setting name='Height' avg='45' range='10' scaleTo='sealevel'/>
 				</StandardGen>
@@ -83,7 +83,7 @@
 						<Description> Equivalent to vanilla minecraft iron distribution </Description>
 						<DrawWireframe>:=drawWireframes</DrawWireframe>
 						<WireframeColor>0x40221100</WireframeColor>
-						<Setting name='Size' avg='5' range='2'/>
+						<Setting name='Size' avg='8' range='2'/>
 						<Setting name='Frequency' avg='15'/>
 						<Setting name='Height' avg='28' range='5' scaleTo='sealevel'/>
 						</StandardGen>
