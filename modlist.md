@@ -5,7 +5,7 @@
 
 ### Powered by
 * Minecraft Forge 13.20.0.2282
-* [105 Mods](#mods)
+* [106 Mods](#mods)
 * [22 Dependency/Core Mods](#dependencycore-mods)
 
 ## Mods
@@ -75,6 +75,7 @@
 | [Not Enough Wands](http://minecraft.curseforge.com/projects/not-enough-wands/) | 1.1x-1.5.4 | romelo333<br/>McJty | Wands, wands, and more wands |
 | [NuclearCraft](https://minecraft.curseforge.com/projects/nuclearcraft-mod) | 2.0a | turbodiesel4598 (call me Tom) | Nuclear Physics, Minecraft Style (WIP) |
 | [OpenComputers](http://oc.cil.li/) | 1.7.0.6 | Sangar<br/>Vexatos<br/>payonel<br/>magik6k<br/>Lord Joda<br/>Github Contributors | This mod adds modular computers and robots that can be programmed in Lua. |
+| [Ore Flowers](http://www.curseforge.com/projects/ore-flowers/) | 4.0.1 | Draco18s | Adds ore indicator plants, allowing for easier prospecting of COG ore veins. |
 | [Packing Tape](https://github.com/gigaherz/PackingTape) | 1.11.0-0.6.1 | gigaherz | Adds a simple means to carry thigns with you |
 | [Pam's HarvestCraft](http://minecraft.curseforge.com/members/MatrexsVigil/projects) | 1.11.2g | Pamela Collins | Expanding minecraft's food system. |
 | [Pipes](https://crafterkina.github.io/Pipes/) | 1.11-1.1.0.12 | CrafterKina | Pipes |
