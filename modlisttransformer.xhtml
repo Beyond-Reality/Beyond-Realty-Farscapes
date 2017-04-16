@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    
+    <title>Mod List Transformer</title>
+  
+    <meta name="description" content="Transform ATL version.xml into a modlist.md"/>
+    <meta name="author" content="Léa Gris"/>
+    <meta name="keywords" content="xslt, xml, markdown, conversion tool"/>
+
+  </head>
+  <body onload="displayResult()">
+    <code><pre id="modlist"></pre></code>
+    <script type="application/javascript"><![CDATA[
+function loadXMLDoc(filename)
+{
+if (window.ActiveXObject)
+  {
+  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  }
+else 
+  {
+  xhttp = new XMLHttpRequest();
+  }
+xhttp.open("GET", filename, false);
+try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+xhttp.send("");
+return xhttp.responseXML;
+}
+
+function displayResult()
+{
+// xml = loadXMLDoc("http://download.nodecdn.net/containers/atl/packs/BeyondRealityFarscapes/versions/devBuild1.11/Configs.xml");
+xml = loadXMLDoc("https://rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/master/version.xml");
+xsl = loadXMLDoc("https://rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/master/modlist.xsl");
+// code for IE
+if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+  {
+  ex = xml.transformNode(xsl);
+  document.getElementById("example").innerHTML = ex;
+  }
+// code for Chrome, Firefox, Opera, etc.
+else if (document.implementation && document.implementation.createDocument)
+  {
+  xsltProcessor = new XSLTProcessor();
+  xsltProcessor.importStylesheet(xsl);
+  resultDocument = xsltProcessor.transformToFragment(xml, document);
+  document.getElementById("modlist").appendChild(resultDocument);
+  }
+}
+    ]]></script>
+  </body>
+</html>
