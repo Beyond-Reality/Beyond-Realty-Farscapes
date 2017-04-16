@@ -104,7 +104,7 @@
             </Substitute>
             <ConfigSection>
                 <!-- *************************************************** Standard Dist ********************************************************* -->
-                <IfCondition condition=":= FarScapeDist = &quot;vanillaStdGen&quot;">
+                <IfCondition condition=':= FarScapeDist = "vanillaStdGen"'>
                     <!-- iron -->
                     <StandardGen name="IronStandard" block="minecraft:iron_ore" inherits="PresetStandardGen">
                         <Description> Equivalent to vanilla minecraft iron distribution </Description>
@@ -134,7 +134,7 @@
                     </StandardGen>
                 </IfCondition>
                 <!-- *************************************************** Custom Dist ********************************************************* -->
-                <IfCondition condition=":= FarScapeDist = &quot;FarScapeVeins&quot;">
+                <IfCondition condition=':= FarScapeDist = "FarScapeVeins"'>
                     <!-- ***************************************************** IRON ********************************************************** -->
                     <!-- Normal Freq -->
                     <Veins name="IronVeins" inherits="PresetHugeVeins">
