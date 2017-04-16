@@ -306,7 +306,7 @@
                         <OreBlock block="minecraft:coal_ore" weight="0.70" />
                         <OreBlock block="denseores:minecraft_coal_ore_0" weight="0.30" />
                         <Setting name="Size" avg="8" range="2" />
-                        <Setting name="Frequency" avg="25" />
+                        <Setting name="Frequency" avg="16" />
                         <Setting name="Height" avg="45" range="40" scaleTo="biome" />
                     </StandardGen>
                     <!-- Sparse ores -->
@@ -326,8 +326,8 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:redstone_ore" weight="0.65" />
                         <OreBlock block="beyondreality:oreruby" weight="0.25" />
-                        <OreBlock block="beyondreality:sparseredstone" weight="0.7" />
-                        <OreBlock block="beyondreality:sparseruby" weight="0.3" />
+                        <OreBlock block="beyondreality:sparseredstone" weight="0.07" />
+                        <OreBlock block="beyondreality:sparseruby" weight="0.03" />
                         <Setting name="MotherlodeFrequency" avg="0.015" />
                         <Setting name="MotherlodeSize" avg="2.5" range="1" />
                         <Setting name="MotherlodeHeight" avg="17" range="3" type="normal" />
@@ -338,10 +338,10 @@
                     <Veins name="RedstoneRubyPrefVeins" inherits="PresetLayeredVeins">
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40336699</WireframeColor>
-                        <OreBlock block="minecraft:redstone_ore" weight="0.60" />
-                        <OreBlock block="beyondreality:oreruby" weight="0.30" />
-                        <OreBlock block="beyondreality:sparseredstone" weight="0.7" />
-                        <OreBlock block="beyondreality:sparseruby" weight="0.3" />
+                        <OreBlock block="minecraft:redstone_ore" weight="0.57" />
+                        <OreBlock block="beyondreality:oreruby" weight="0.33" />
+                        <OreBlock block="beyondreality:sparseredstone" weight="0.07" />
+                        <OreBlock block="beyondreality:sparseruby" weight="0.03" />
                         <Setting name="MotherlodeFrequency" avg="0.029" />
                         <Setting name="MotherlodeSize" avg="2.5" range="1" />
                         <Setting name="MotherlodeHeight" avg="17" range="3" type="normal" />
