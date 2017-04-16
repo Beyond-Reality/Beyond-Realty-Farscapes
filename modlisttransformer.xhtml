@@ -32,8 +32,10 @@ return xhttp.responseXML;
 
 function displayResult()
 {
-// xml = loadXMLDoc("http://download.nodecdn.net/containers/atl/packs/BeyondRealityFarscapes/versions/devBuild1.11/Configs.xml");
-xml = loadXMLDoc("https://rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/master/version.xml");
+// https://github.com/ATLauncher/Website-Issues/issues/101#issuecomment-294363498
+// Thank to @Cherry for the implementation
+xml = loadXMLDoc("http://download.nodecdn.net/containers/atl/packs/BeyondRealityFarscapes/versions/devBuild1.11/Configs.xml");
+//xml = loadXMLDoc("https://rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/master/version.xml");
 xsl = loadXMLDoc("https://rawgit.com/Beyond-Reality/Beyond-Realty-Farscapes/master/modlist.xsl");
 // code for IE
 if (window.ActiveXObject || xhttp.responseType == "msxml-document")
