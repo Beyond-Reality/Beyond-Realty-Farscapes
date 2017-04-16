@@ -5,7 +5,7 @@
 
 ### Powered by
 * Minecraft Forge 13.20.0.2282
-* [104 Mods](#mods)
+* [105 Mods](#mods)
 * [21 Dependency/Core Mods](#dependencycore-mods)
 
 ## Mods
@@ -33,6 +33,7 @@
 | [Custom Ore Generation](http://www.minecraftforum.net/topic/1935710-162forge-custom-ore-generation-first-revival/) | 1.2.26-81-g6580ec2 | JRoush<br/>noogenesis | Allows the player to customize how ore is generated. |
 | [Default Options](http://blay09.net) | 8.2.2 | BlayTheNinth | A way for modpacks to ship a default (key) configuration without having to include an options.txt file. |
 | [Default World Generator](http://minecraft.curseforge.com/projects/default-world-generator-port) | 1.11-0.5 | EzTerry<br/>FireBall1725 | A small mod to automatically select the default world generator for both single player and servers |
+| [Dense Ores](http://www.curseforge.com/projects/dense-ores/) | 1.0.1 | RWTema | Adds Dense variants of ores (includes support for numerous mods) |
 | [DiscordChat](http://www.curseforge.com/projects/discordchat/) | 1.11.2-2.0.4 | shadowfactsmc | Forge (server-side only) mod to relay MC chat to Discord and vice versa. |
 | [Dynamic Surroundings](https://github.com/OreCruncher/DynamicSurroundings/wiki) | 1.11.2-3.3.5.2 | OreCruncher<br/>Abastro | Improving Minecraft's sight and sound experience |
 | [Embers](http://minecraft.curseforge.com/projects/embers/) | 0.206 | Elucent<br/>AlexisMachina<br/>ShadowGamerXY<br/>werty1124 | Dwarven-style Magitech Mod |
