@@ -153,7 +153,7 @@ function displayVersion(packname, packversion)
     var depmods = getModsByType(data.mods, 'dependency').keySort('name');
     modlist.appendChild(createElement("h1", {"id":"packtitle"}, packname));
     modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + data["version"])]));
-    modlist.appendChild(createElement("h2", {"id":"mcversion"}, 'An AT-Launcher Mod-pack for Minecraft: ' + data["minecraft"]));
+    modlist.appendChild(createElement("h2", {"id":"mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + data["minecraft"]));
     modlist.appendChild(createElement("h3", {}, 'Powered by'));
     modlist.appendChild(createElement("ul", {}, [
       createElement("li", {}, forge.name + ' ' + forge.version),
