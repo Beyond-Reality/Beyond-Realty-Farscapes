@@ -48,6 +48,24 @@
             <Biome name="Mega Taiga" />
             <Biome name="Ice Mountains" />
         </BiomeSet>
+        <BiomeSet name="TinBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="CopperBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="NickelBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="LeadBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="SilverBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="PlatinumBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
         <!-- Sparse presets -->
         <StandardGenPreset name="SparseStone">
             <Setting name="Size" avg="2" range="5" />
@@ -146,7 +164,7 @@
                         <Setting name="MotherlodeSize" avg="7" range="2" type="normal" />
                         <Setting name="MotherlodeFrequency" avg="0.0020" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="45" range="3" />
+                        <Setting name="MotherlodeHeight" avg="42" range="3" />
                         <!--Y Level spawn -->
                         <Setting name="BranchLength" avg="600" range="200" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
@@ -165,7 +183,7 @@
                         <WireframeColor>0x60EBD6E9</WireframeColor>
                         <Setting name="MotherlodeFrequency" avg="0.0039" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="45" range="3" />
+                        <Setting name="MotherlodeHeight" avg="42" range="3" />
                         <!--Y Level spawn -->
                         <Setting name="MotherlodeSize" avg="9" range="2" type="normal" />
                         <Setting name="BranchLength" avg="600" range="200" type="normal" />
@@ -203,11 +221,11 @@
                         <OreBlock block="denseores:minecraft_gold_ore_0" weight="0.05" />
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x60EBD6E9</WireframeColor>
-                        <Setting name="MotherlodeSize" avg="5" range="2" type="normal" />
-                        <Setting name="MotherlodeFrequency" avg="0.0018" />
+                        <Setting name="MotherlodeSize" avg="4" range="2" type="normal" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="25" range="3" />
+                        <Setting name="MotherlodeFrequency" avg="0.0018" />
                         <!--Y Level spawn -->
+                        <Setting name="MotherlodeHeight" avg="25" range="3" />
                         <Setting name="BranchLength" avg="400" range="100" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
                         <Setting name="BranchInclination" avg="0.0" range="0.03" />
@@ -223,11 +241,11 @@
                         <OreBlock block="denseores:minecraft_gold_ore_0" weight="0.10" />
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x60EBD6E9</WireframeColor>
-                        <Setting name="MotherlodeFrequency" avg="0.0038" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="25" range="3" />
+                        <Setting name="MotherlodeFrequency" avg="0.0038" />
                         <!--Y Level spawn -->
-                        <Setting name="MotherlodeSize" avg="6" range="2" type="normal" />
+                        <Setting name="MotherlodeHeight" avg="25" range="3" />
+                        <Setting name="MotherlodeSize" avg="5" range="2" type="normal" />
                         <Setting name="BranchLength" avg="450" range="125" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
                         <Setting name="BranchInclination" avg="0.0" range="0.03" />
@@ -260,7 +278,9 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:diamond_ore" weight="0.85" />
                         <OreBlock block="denseores:minecraft_diamond_ore_0" weight="0.15" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0045" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="13" range="1" />
                         <Setting name="MotherlodeSize" avg="5" range="1" />
                         <Setting name="SegmentRadius" avg="1.2" range="0.5" />
@@ -272,7 +292,9 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:diamond_ore" weight="0.70" />
                         <OreBlock block="denseores:minecraft_diamond_ore_0" weight="0.30" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0086" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="13" range="1" />
                         <Setting name="MotherlodeSize" avg="6" range="1" />
                         <Setting name="SegmentRadius" avg="1.6" range="0.5" />
@@ -297,8 +319,10 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:coal_ore" weight="0.90" />
                         <OreBlock block="denseores:minecraft_coal_ore_0" weight="0.10" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0065" />
                         <Setting name="MotherlodeSize" avg="2.3" range="0.5" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="40" range="40" scaleTo="biome" />
                         <Setting name="OreDensity" avg="0.6" />
                     </Veins>
@@ -306,6 +330,7 @@
                         <OreBlock block="minecraft:coal_ore" weight="0.70" />
                         <OreBlock block="denseores:minecraft_coal_ore_0" weight="0.30" />
                         <Setting name="Size" avg="8" range="2" />
+                        <!--How offten it generates-->
                         <Setting name="Frequency" avg="16" />
                         <Setting name="Height" avg="45" range="40" scaleTo="biome" />
                     </StandardGen>
@@ -328,13 +353,16 @@
                         <OreBlock block="beyondreality:oreruby" weight="0.25" />
                         <OreBlock block="beyondreality:sparseredstone" weight="0.07" />
                         <OreBlock block="beyondreality:sparseruby" weight="0.03" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.015" />
                         <Setting name="MotherlodeSize" avg="2.5" range="1" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="17" range="3" type="normal" />
                         <Setting name="SegmentRadius" avg="0.8" range="0.3" />
                         <Setting name="OreDensity" avg="1" range="0" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                     </Veins>
+                    <!-- Increased Chances -->
                     <Veins name="RedstoneRubyPrefVeins" inherits="PresetLayeredVeins">
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40336699</WireframeColor>
@@ -342,8 +370,10 @@
                         <OreBlock block="beyondreality:oreruby" weight="0.33" />
                         <OreBlock block="beyondreality:sparseredstone" weight="0.07" />
                         <OreBlock block="beyondreality:sparseruby" weight="0.03" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.029" />
                         <Setting name="MotherlodeSize" avg="2.5" range="1" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="17" range="3" type="normal" />
                         <Setting name="SegmentRadius" avg="0.8" range="0.3" />
                         <Setting name="OreDensity" avg="1" range="0" />
@@ -351,12 +381,16 @@
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="RedstoneRubyBiomes" />
                     </Veins>
-                    <!-- Sparse ores -->
-                    <StandardGen name="Sparse redstone 1" inherits="SparseStone">
-                        <OreBlock block="beyondreality:sparseredstone" />
-                        <Setting name="Frequency" avg="25" range="3" />
-                        <Setting name="Height" avg="17" range="4" scaleTo="biome" />
+                    <StandardGen name="RedStoneStandard" inherits="PresetStandardGen">
+                        <OreBlock block="minecraft:redstone_ore" weight="0.75" />
+                        <OreBlock block="beyondreality:sparseredstone" weight="0.25" />
+                        <Setting name="Size" avg="5" range="2" />
+                        <!--How offten it generates-->
+                        <Setting name="Frequency" avg="12" />
+                        <!--Y Level spawn -->
+                        <Setting name="Height" avg="17" range="2" scaleTo="biome" />
                     </StandardGen>
+                    <!-- Sparse ores -->
                     <StandardGen name="Sparse redstone 2" inherits="SparseStone">
                         <OreBlock block="beyondreality:sparseredstone" />
                         <Setting name="Frequency" avg="20" range="3" />
@@ -383,17 +417,20 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:lapis_ore" weight="0.90" />
                         <OreBlock block="beyondreality:sparselapis" weight="0.10" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0045" />
                         <Setting name="MotherlodeSize" avg="0.1" range="0" />
                         <Setting name="SegmentRadius" avg="0.40" range="0.1" />
                         <Setting name="OreDensity" avg="1" range="0" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                     </Veins>
+                    <!-- Increased Chances -->
                     <Veins name="LapisPrefVeins" inherits="PresetVerticalVeins">
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:lapis_ore" weight="0.95" />
                         <OreBlock block="beyondreality:sparselapis" weight="0.05" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0096" />
                         <Setting name="MotherlodeSize" avg="0.3" range="0" />
                         <Setting name="SegmentRadius" avg="0.50" range="0.1" />
@@ -424,20 +461,25 @@
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:emerald_ore" weight="0.95" />
                         <OreBlock block="beyondreality:sparseemerald" weight="0.05" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0045" />
                         <Setting name="MotherlodeSize" avg="1.7" range="0.5" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="50" range="40" scaleto="biome" />
                         <Setting name="SegmentRadius" avg="1.9" range="0.2" />
                         <Setting name="OreDensity" avg="0.05" range="0.2" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                     </Veins>
-                    <Veins name="EmeraldVeins" inherits="PresetPipeVeins">
+                    <!-- Increased Chances -->
+                    <Veins name="EmeraldPrefVeins" inherits="PresetPipeVeins">
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40336699</WireframeColor>
                         <OreBlock block="minecraft:emerald_ore" weight="0.95" />
                         <OreBlock block="beyondreality:sparseemerald" weight="0.05" />
+                        <!--How offten it generates-->
                         <Setting name="MotherlodeFrequency" avg="0.0078" />
                         <Setting name="MotherlodeSize" avg="1.7" range="0.5" />
+                        <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="50" range="40" scaleto="biome" />
                         <Setting name="SegmentRadius" avg="1.9" range="0.2" />
                         <Setting name="OreDensity" avg="0.05" range="0.2" />
@@ -450,19 +492,322 @@
                         <OreBlock block="beyondreality:sparseemerald" />
                         <Setting name="Frequency" avg="14" range="3" />
                         <Setting name="Height" avg="50" range="40" scaleTo="biome" />
+                        <BiomeSet inherits="EmeraldBiomes" />
                     </StandardGen>
                     <StandardGen name="Sparse emerald 2" inherits="SparseStone">
                         <OreBlock block="beyondreality:sparseemerald" />
                         <Setting name="Frequency" avg="16" range="3" />
                         <Setting name="Height" avg="60" range="50" scaleTo="biome" />
-                    </StandardGen>
-                    <StandardGen name="Sparse emerald 2" inherits="SparseStone">
-                        <OreBlock block="beyondreality:sparseemerald" />
-                        <Setting name="Frequency" avg="36" range="3" />
-                        <Setting name="Height" avg="60" range="50" scaleTo="biome" />
                         <BiomeSet inherits="EmeraldBiomes" />
                     </StandardGen>
-                    <!-- ***************************************************** Name that ore ********************************************************** -->
+                    <StandardGen name="Sparse emerald 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparseemerald" />
+                        <Setting name="Frequency" avg="25" range="3" />
+                        <Setting name="Height" avg="40" range="20" scaleTo="biome" />
+                        <BiomeSet inherits="EmeraldBiomes" />
+                    </StandardGen>
+                    <!-- ***************************************************** TIN ********************************************************** -->
+                    <Veins name="TinVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oretin" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsetin" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='52' range='2' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="TinPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oretin" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsetin" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.032'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='52' range='2' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="TinBiomes" />
+                    </Veins>
+                    <!-- Sparse ores -->
+                    <StandardGen name="Sparse tin 1" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsetin" />
+                        <Setting name="Frequency" avg="25" range="3" />
+                        <Setting name="Height" avg="50" range="10" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse tin 2" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsetin" />
+                        <Setting name="Frequency" avg="30" range="3" />
+                        <Setting name="Height" avg="45" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse tin 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsetin" />
+                        <Setting name="Frequency" avg="28" range="3" />
+                        <Setting name="Height" avg="55" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <!-- ***************************************************** Copper ********************************************************** -->
+                    <Veins name="CopperVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orecopper" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsecopper" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='48' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="CopperPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orecopper" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsecopper" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='48' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="CopperBiomes" />
+                    </Veins>
+                    <!-- Sparse ores -->
+                    <StandardGen name="Sparse copper 1" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsecopper" />
+                        <Setting name="Frequency" avg="25" range="3" />
+                        <Setting name="Height" avg="40" range="10" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse copper 2" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsecopper" />
+                        <Setting name="Frequency" avg="30" range="3" />
+                        <Setting name="Height" avg="45" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse copper 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsecopper" />
+                        <Setting name="Frequency" avg="28" range="3" />
+                        <Setting name="Height" avg="43" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <!-- ***************************************************** Nickel ********************************************************** -->
+                    <Veins name="NickelVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orenickel" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsenickel" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='37' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="NickelPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orenickel" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsenickel" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.033'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='37' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="NickelBiomes" />
+                    </Veins>
+                  <!-- Sparse ores -->
+                  <StandardGen name="Sparse nickel 1" inherits="SparseStone">
+                      <OreBlock block="beyondreality:sparsenickel" />
+                      <Setting name="Frequency" avg="25" range="3" />
+                      <Setting name="Height" avg="37" range="10" scaleTo="biome" />
+                  </StandardGen>
+                  <StandardGen name="Sparse nickel 2" inherits="SparseStone">
+                      <OreBlock block="beyondreality:sparsenickel" />
+                      <Setting name="Frequency" avg="20" range="3" />
+                      <Setting name="Height" avg="34" range="5" scaleTo="biome" />
+                  </StandardGen>
+                  <StandardGen name="Sparse nickel 3" inherits="SparseStone">
+                      <OreBlock block="beyondreality:sparsenickel" />
+                      <Setting name="Frequency" avg="28" range="3" />
+                      <Setting name="Height" avg="31" range="5" scaleTo="biome" />
+                  </StandardGen>
+                    <!-- ***************************************************** Lead ********************************************************** -->
+                    <Veins name="LeadVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orelead" weight="0.60" />
+                        <OreBlock block="beyondreality:sparselead" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='28' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="LeadPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:orelead" weight="0.60" />
+                        <OreBlock block="beyondreality:sparselead" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.033'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='28' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="LeadBiomes" />
+                    </Veins>
+                    <!-- Sparse ores -->
+                    <StandardGen name="Sparse lead 1" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparselead" />
+                        <Setting name="Frequency" avg="20" range="3" />
+                        <Setting name="Height" avg="17" range="10" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse lead 2" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparselead" />
+                        <Setting name="Frequency" avg="22" range="3" />
+                        <Setting name="Height" avg="19" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse lead 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparselead" />
+                        <Setting name="Frequency" avg="24" range="3" />
+                        <Setting name="Height" avg="21" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <!-- ***************************************************** Silver ********************************************************** -->
+                    <Veins name="SilverVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oresilver" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsesilver" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.025'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='36' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="SilverPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oresilver" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsesilver" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.033'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='36' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="SilverBiomes" />
+                    </Veins>
+                    <!-- Sparse ores -->
+                    <StandardGen name="Sparse silver 1" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsesilver" />
+                        <Setting name="Frequency" avg="18" range="3" />
+                        <Setting name="Height" avg="36" range="10" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse silver 2" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsesilver" />
+                        <Setting name="Frequency" avg="20" range="3" />
+                        <Setting name="Height" avg="33" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse silver 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparsesilver" />
+                        <Setting name="Frequency" avg="22" range="3" />
+                        <Setting name="Height" avg="39" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <!-- ***************************************************** Platinum ********************************************************** -->
+                    <Veins name="PlatinumVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oresilver" weight="0.60" />
+                        <OreBlock block="beyondreality:sparsesilver" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.020'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='18' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                    </Veins>
+                    <!-- Increased Chances -->
+                    <Veins name="PlatinumPrefVeins" inherits="PresetLayeredVeins">
+                        <OreBlock block="beyondreality:oreplatinum" weight="0.60" />
+                        <OreBlock block="beyondreality:sparseplatinum" weight="0.40" />
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x60EBD6E9</WireframeColor>
+                        <!--How offten it generates-->
+                        <Setting name='MotherlodeFrequency' avg='0.030'/>
+                        <Setting name='MotherlodeSize' avg='2.5' range='1'/>
+                        <!--Y Level spawn -->
+                        <Setting name='MotherlodeHeight' avg='18' range='5' scaleto='biome'/>
+                        <Setting name='BranchFrequency' avg='3' range='2'/>
+                        <Setting name='BranchInclination' avg='0' range='0.55'/>
+                        <Setting name='BranchLength' avg='220' range='60'/>
+                        <Setting name='SegmentRadius' avg='0.8' range='0.3'/>
+                        <!-- Increased chances to spawn in -->
+                        <BiomeSet inherits="PlatinumBiomes" />
+                    </Veins>
+                    <!-- Sparse ores -->
+                    <StandardGen name="Sparse platinum 1" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparseplatinum" />
+                        <Setting name="Frequency" avg="18" range="3" />
+                        <Setting name="Height" avg="19" range="10" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse platinum 2" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparseplatinum" />
+                        <Setting name="Frequency" avg="20" range="3" />
+                        <Setting name="Height" avg="15" range="5" scaleTo="biome" />
+                    </StandardGen>
+                    <StandardGen name="Sparse platinum 3" inherits="SparseStone">
+                        <OreBlock block="beyondreality:sparseplatinum" />
+                        <Setting name="Frequency" avg="22" range="3" />
+                        <Setting name="Height" avg="17" range="5" scaleTo="biome" />
+                    </StandardGen>
+
+
                 </IfCondition>
             </ConfigSection>
         </IfCondition>
