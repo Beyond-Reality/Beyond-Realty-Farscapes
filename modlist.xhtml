@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mod List</title>
+    <meta name="description" content="Display pack mod list from ATLauncher Node CDN"/>
+    <meta name="author" content="Léa Gris"/>
+    <meta name="keywords" content="modpack, tool"/>
+    <style><![CDATA[
+body {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
+td, th {
+color: rgb(36, 41, 46);
+overflow-wrap: break-word;
+}
+table {
+border-collapse: collapse;
+}
+td, th {
+border-spacing: 0px 0px;
+border-color: rgb(198, 203, 209);
+border-style: solid;
+border-width: 1px;
+padding: 6px 13px 6px 13px
+}
+tr:nth-child(even) {background: rgb(246, 248, 250)}
+tr:nth-child(odd) {background: rgb(255, 255, 255)}
+    ]]></style>
+  </head>
+  <body onload="displayVersion('Beyond Reality: Farscapes', 'devBuild1.11')">
+    <article id="modlist"></article>
+    <script type="application/javascript"><![CDATA[
+function ajax_get(url, callback) {
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      console.log("responseText:\n" + xmlhttp.responseText);
+      try {
+        var data = JSON.parse(xmlhttp.responseText);
+      }
+      catch(err) {
+        console.log(err.message + " in " + xmlhttp.responseText);
+        return;
+      }
+      callback(data);
+    }
+  };
+
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
+}
+
+function createElement(element, attribute, inner) {
+  if (typeof(element) === "undefined") {
+    return false;
+  }
+  if (typeof(inner) === "undefined") {
+    inner = "";
+  }
+  var el = document.createElement(element);
+  if (typeof(attribute) === 'object') {
+    for (var key in attribute) {
+      el.setAttribute(key, attribute[key]);
+    }
+  }
+  if (!Array.isArray(inner)) {
+    inner = [inner];
+  }
+  for (var k = 0; k < inner.length; k++) {
+    if (inner[k].tagName) {
+      el.appendChild(inner[k]);
+    }
+    else {
+      el.appendChild(document.createTextNode(inner[k]));
+    }
+  }
+  return el;
+}
+
+function getModsByType(mods, type) {
+  var typemods = [];
+  for (var mod in mods) {
+    if (mods[mod].type == type) {
+      typemods.push(mods[mod]);
+    }
+  }
+  return typemods;
+}
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,    
+  function(m, key, value) {
+    vars[key] = decodeURIComponent(value);
+  });
+  return vars;
+}
+
+function modTR(mods) {
+  var modsrows = [];
+  mods.forEach(function(mod) {
+    var authors = [];
+    switch (mod.authors === undefined ? 0 : mod.authors.length) {
+      case 0:
+        authors.push(createElement("i",{} ,"Unknown"));
+      break;
+      case 1:
+        authors.push(mod.authors[0]);
+      break;
+      default:
+        for (k = 0; k < mod.authors.length - 1; k++) {
+          authors.push(mod.authors[k]);
+          authors.push(createElement("br", {}));
+          console.log(mod.authors[k]);
+        }
+          authors.push(mod.authors[k]);
+    }
+    modsrows.push(createElement("tr", {}, [
+      createElement("td", {"align":"left"},
+        createElement("a", {"href":mod.website}, mod.name)
+      ),
+      createElement("td", {"align":"center"}, mod.version),
+      createElement("td", {"align":"left"}, authors),
+      createElement("td", {"align":"left"}, mod.description),
+    ]));
+  });
+  return modsrows;
+}
+
+Array.prototype.keySort = function(key, desc){
+  this.sort(function(a, b) {
+    var result = desc ? (a[key] < b[key]) : (a[key] > b[key]);
+    return result ? 1 : -1;
+  });
+  return this;
+}
+
+function displayVersion(packname, packversion)
+{
+  var urlvars = getUrlVars();
+  console.log(urlvars);
+  packname = urlvars["p"] ? urlvars["p"] : packname;
+  packversion = urlvars["v"] ? urlvars["v"] : packversion;
+  var packurl = 'https://download.nodecdn.net/containers/atl/packs/'
+    + packname.replace(/(?:\s|\:)+/g,'')
+    + '/versions/'
+    + packversion
+    + '/Configs.json';
+  ajax_get(packurl, function(data) {
+    var modlist = document.createDocumentFragment();
+    var forge = getModsByType(data.mods, 'forge')[0];
+    var stdmods = getModsByType(data.mods, 'mods').keySort('name');
+    var depmods = getModsByType(data.mods, 'dependency').keySort('name');
+    modlist.appendChild(createElement("h1", {"id":"packtitle"}, packname));
+    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + data["version"])]));
+    modlist.appendChild(createElement("h2", {"id":"mcversion"}, 'An AT-Launcher Mod-pack for Minecraft: ' + data["minecraft"]));
+    modlist.appendChild(createElement("h3", {}, 'Powered by'));
+    modlist.appendChild(createElement("ul", {}, [
+      createElement("li", {}, forge.name + ' ' + forge.version),
+      createElement("li", {}, createElement("a", {"href":"#mods"},
+        stdmods.length + ' Mods')),
+      createElement("li", {}, createElement("a", {"href":"#depend"},
+        depmods.length + ' Dependency/Core Mods'))
+    ]));
+
+    modlist.appendChild(createElement("h2", {"id":"mods"}, 'Mods'));
+    modlist.appendChild(createElement("table", {}, [
+      createElement("thead", {}, [
+        createElement("tr", {}, [
+          createElement("th", {"align":"left"}, 'Mod'),
+          createElement("th", {"align":"center"}, 'Version'),
+          createElement("th", {"align":"left"}, 'Authors'),
+          createElement("th", {"align":"left"}, 'Description')
+        ])
+      ]),
+      createElement("tbody", {}, modTR(stdmods))
+    ]));
+
+    modlist.appendChild(createElement("h2", {"id":"depend"}, 'Dependency/Core Mods'));
+    modlist.appendChild(createElement("table", {}, [
+      createElement("thead", {}, [
+        createElement("tr", {}, [
+          createElement("th", {"align":"left"}, 'Mod'),
+          createElement("th", {"align":"center"}, 'Version'),
+          createElement("th", {"align":"left"}, 'Authors'),
+          createElement("th", {"align":"left"}, 'Description')
+        ])
+      ]),
+      createElement("tbody", {}, modTR(depmods))
+    ]));    document.getElementById("modlist").appendChild(modlist);
+  });
+}
+    ]]></script>
+  </body>
+</html>
