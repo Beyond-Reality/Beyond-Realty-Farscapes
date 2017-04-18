@@ -125,7 +125,6 @@
                 <IfCondition condition=':= FarScapeDist = "vanillaStdGen"'>
                     <!-- iron -->
                     <StandardGen name="IronStandard" block="minecraft:iron_ore" inherits="PresetStandardGen">
-                        <Description> Equivalent to vanilla minecraft iron distribution </Description>
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40221100</WireframeColor>
                         <Setting name="Size" avg="8" range="2" />
@@ -134,7 +133,6 @@
                     </StandardGen>
                     <!-- gold -->
                     <StandardGen name="GoldStandard" block="minecraft:gold_ore" inherits="PresetStandardGen">
-                        <Description> Equivalent to vanilla minecraft iron distribution </Description>
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40221100</WireframeColor>
                         <Setting name="Size" avg="8" range="2" />
@@ -143,12 +141,92 @@
                     </StandardGen>
                     <!-- diamond -->
                     <StandardGen name="DiamondStandard" block="minecraft:diamond_ore" inherits="PresetStandardGen">
-                        <Description> Equivalent to vanilla minecraft iron distribution </Description>
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40221100</WireframeColor>
                         <Setting name="Size" avg="6" range="2" />
                         <Setting name="Frequency" avg="10" />
                         <Setting name="Height" avg="9" range="5" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- coal -->
+                    <StandardGen name="CoalStandard" block="minecraft:coal_ore" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="9" range="2" />
+                        <Setting name="Frequency" avg="25" />
+                        <Setting name="Height" avg="40" range="40" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- redstone -->
+                    <StandardGen name="RedstoneStandard" block="minecraft:redstone_ore" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="9" range="2" />
+                        <Setting name="Frequency" avg="19" />
+                        <Setting name="Height" avg="19" range="9" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- ruby -->
+                    <StandardGen name="RubyStandard" block="beyondreality:oreruby" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="6" range="2" />
+                        <Setting name="Frequency" avg="14" />
+                        <Setting name="Height" avg="19" range="5" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- lapis -->
+                    <StandardGen name="LapisStandard" block="minecraft:lapis_ore" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="9" range="2" />
+                        <Setting name="Frequency" avg="17" />
+                        <Setting name="Height" avg="20" range="10" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- emerald -->
+                    <StandardGen name="EmeraldStandard" block="minecraft:emerald_ore" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="4" range="2" />
+                        <Setting name="Frequency" avg="18" />
+                        <Setting name="Height" avg="40" range="40" scaleTo="sealevel" />
+                        <BiomeSet inherits="EmeraldBiomes" />
+                    </StandardGen>
+                    <!-- tin -->
+                    <StandardGen name="TinStandard" block="beyondreality:oretin" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="7" range="4" />
+                        <Setting name="Frequency" avg="25" />
+                        <Setting name="Height" avg="45" range="15" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- copper -->
+                    <StandardGen name="CopperStandard" block="beyondreality:orecopper" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="8" range="2" />
+                        <Setting name="Frequency" avg="30" />
+                        <Setting name="Height" avg="50" range="20" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- nickel -->
+                    <StandardGen name="NickelStandard" block="beyondreality:orenickel" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="7" range="3" />
+                        <Setting name="Frequency" avg="20" />
+                        <Setting name="Height" avg="35" range="10" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- silver -->
+                    <StandardGen name="SilverStandard" block="beyondreality:oresilver" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="6" range="2" />
+                        <Setting name="Frequency" avg="18" />
+                        <Setting name="Height" avg="25" range="15" scaleTo="sealevel" />
+                    </StandardGen>
+                    <!-- platinum -->
+                    <StandardGen name="PlatinumStandard" block="beyondreality:oreplatinum" inherits="PresetStandardGen">
+                        <DrawWireframe>:=drawWireframes</DrawWireframe>
+                        <WireframeColor>0x40221100</WireframeColor>
+                        <Setting name="Size" avg="5" range="2" />
+                        <Setting name="Frequency" avg="14" />
+                        <Setting name="Height" avg="20" range="5" scaleTo="sealevel" />
                     </StandardGen>
                 </IfCondition>
                 <!-- *************************************************** Custom Dist ********************************************************* -->
