@@ -1103,7 +1103,7 @@
                           <Setting name="Height" avg="40" range="10" scaleTo="sealevel" />
                       </StandardGen>
                       <StandardGen name="Sparse lithium 1" inherits="SparseStone">
-                              <OreBlock block="beyondreality:sparslithium" />
+                              <OreBlock block="beyondreality:sparselithium" />
                               <Setting name="Frequency" avg="14" range="3" />
                               <Setting name="Height" avg="40" range="10" scaleTo="biome" />
                       </StandardGen>
