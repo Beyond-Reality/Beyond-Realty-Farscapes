@@ -66,6 +66,12 @@
         <BiomeSet name="PlatinumBiomes">
             <Biome name="Plains" />
         </BiomeSet>
+        <BiomeSet name="UraniumBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
+        <BiomeSet name="ThoriumBiomes">
+            <Biome name="Plains" />
+        </BiomeSet>
         <!-- Sparse presets -->
         <StandardGenPreset name="SparseStone">
             <Setting name="Size" avg="2" range="5" />
