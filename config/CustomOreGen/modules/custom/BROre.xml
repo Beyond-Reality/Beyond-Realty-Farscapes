@@ -79,6 +79,7 @@
             <ReplacesOre block="stone" />
             <ReplacesOre block="stoneBasalt" />
             <ReplacesOre block="stoneMarble" />
+            <ReplacesOre block='stoneLimestone'/>
         </StandardGenPreset>
         <StandardGenPreset name="SparseNetherrack">
             <Setting name="Size" avg="3" range="5" />
@@ -243,10 +244,10 @@
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x60EBD6E9</WireframeColor>
                         <Setting name="MotherlodeSize" avg="7" range="2" type="normal" />
-                        <Setting name="MotherlodeFrequency" avg="0.0045" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="42" range="3" />
+                        <Setting name="MotherlodeFrequency" avg="0.0045" />
                         <!--Y Level spawn -->
+                        <Setting name="MotherlodeHeight" avg="42" range="3" />
                         <Setting name="BranchLength" avg="600" range="200" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
                         <Setting name="BranchInclination" avg="0.0" range="0.03" />
@@ -254,6 +255,10 @@
                         <Setting name="SegmentLength" avg="30" range="6" />
                         <Setting name="SegmentForkFrequency" avg="0.01" />
                         <Setting name="SegmentRadius" avg="0.83" range="0.02" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="IronPrefVeins" inherits="PresetHugeVeins">
@@ -262,10 +267,10 @@
                         <OreBlock block="beyondreality:sporadiciron" weight="0.40" />
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x60EBD6E9</WireframeColor>
-                        <Setting name="MotherlodeFrequency" avg="0.0086" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="42" range="3" />
+                        <Setting name="MotherlodeFrequency" avg="0.0086" />
                         <!--Y Level spawn -->
+                        <Setting name="MotherlodeHeight" avg="42" range="3" />
                         <Setting name="MotherlodeSize" avg="9" range="2" type="normal" />
                         <Setting name="BranchLength" avg="600" range="200" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
@@ -276,6 +281,10 @@
                         <Setting name="SegmentRadius" avg="0.90" range="0.02" />
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="IronBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse Iron 1" inherits="SparseStone">
@@ -312,6 +321,10 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="GoldPrefVeins" inherits="PresetLayeredVeins">
@@ -331,6 +344,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="GoldBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse Gold 1" inherits="SparseStone">
@@ -363,6 +380,10 @@
                         <Setting name="MotherlodeSize" avg="5" range="1" />
                         <Setting name="SegmentRadius" avg="1.2" range="0.5" />
                         <Setting name="OreDensity" avg="0.8" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="DiamondPrefVeins" inherits="PresetPipeVeins">
@@ -380,6 +401,10 @@
                         <Setting name="OreDensity" avg="1.0" />
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="DiamondBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse Diamond 1" inherits="SparseStone">
@@ -405,6 +430,10 @@
                         <!--Y Level spawn -->
                         <Setting name="MotherlodeHeight" avg="40" range="40" scaleTo="biome" />
                         <Setting name="OreDensity" avg="0.6" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <StandardGen name="CoalStandard" inherits="PresetStandardGen">
                         <OreBlock block="minecraft:coal_ore" weight="0.70" />
@@ -413,6 +442,9 @@
                         <!--How offten it generates-->
                         <Setting name="Frequency" avg="16" />
                         <Setting name="Height" avg="45" range="40" scaleTo="biome" />
+                        <ReplacesOre block='stone'/>
+                        <ReplacesOre block='stoneLimestone'/>
+                        <ReplacesOre block='stoneMarble'/>
                     </StandardGen>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse Coal 1" inherits="SparseStone">
@@ -443,6 +475,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3" />
                         <Setting name="OreDensity" avg="1" range="0" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="RedstoneRubyPrefVeins" inherits="PresetLayeredVeins">
@@ -464,6 +500,10 @@
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="RedstoneRubyBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <StandardGen name="RedStoneStandard" inherits="PresetStandardGen">
                         <OreBlock block="minecraft:redstone_ore" weight="0.55" />
@@ -474,6 +514,10 @@
                         <Setting name="Frequency" avg="12" />
                         <!--Y Level spawn -->
                         <Setting name="Height" avg="17" range="2" scaleTo="biome" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </StandardGen>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse redstone 2" inherits="SparseStone">
@@ -511,6 +555,10 @@
                         <Setting name="SegmentRadius" avg="0.40" range="0.1" />
                         <Setting name="OreDensity" avg="1" range="0" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="LapisPrefVeins" inherits="PresetVerticalVeins">
@@ -527,6 +575,10 @@
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="LapisBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse lapis 1" inherits="SparseStone">
@@ -555,6 +607,10 @@
                         <Setting name="Size" avg="7" range="3" />
                         <Setting name="Frequency" avg="8" />
                         <Setting name="Height" avg="20" range="10" scaleTo="sealevel" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </StandardGen>
                     <StandardGen name="Sparse sapphire 1" inherits="SparseStone">
                         <OreBlock block="beyondreality:sporadicsapphire" />
@@ -581,6 +637,10 @@
                         <Setting name="SegmentRadius" avg="1.9" range="0.2" />
                         <Setting name="OreDensity" avg="0.05" range="0.2" />
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="EmeraldPrefVeins" inherits="PresetPipeVeins">
@@ -599,6 +659,10 @@
                         <Setting name="OreRadiusMult" avg="1.0" range="0.1" />
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="EmeraldBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse emerald 1" inherits="SparseStone">
@@ -628,7 +692,7 @@
                         <Setting name="MotherlodeFrequency" avg="0.0045"/>
                         <Setting name="MotherlodeSize" avg="3.5" range="1.3"/>
                         <!--Y Level spawn -->
-                        <Setting name="MotherlodeHeight" avg="52" range="2" scaleto="biome"/>
+                        <Setting name="MotherlodeHeight" avg="52" range="20" scaleto="biome"/>
                         <Setting name="BranchFrequency" avg="3" range="2"/>
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="320" range="60"/>
@@ -645,13 +709,17 @@
                         <Setting name="MotherlodeFrequency" avg="0.0086"/>
                         <Setting name="MotherlodeSize" avg="3.7" range="1.5"/>
                         <!--Y Level spawn -->
-                        <Setting name="MotherlodeHeight" avg="52" range="2" scaleto="biome"/>
+                        <Setting name="MotherlodeHeight" avg="52" range="20" scaleto="biome"/>
                         <Setting name="BranchFrequency" avg="3" range="2"/>
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="320" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="TinBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse tin 1" inherits="SparseStone">
@@ -683,7 +751,7 @@
                         <Setting name="MotherlodeSize" avg="7" range="2" type="normal" />
                         <Setting name="MotherlodeFrequency" avg="0.0045" />
                         <!--How offten it generates-->
-                        <Setting name="MotherlodeHeight" avg="45" range="7" />
+                        <Setting name="MotherlodeHeight" avg="45" range="15" />
                         <!--Y Level spawn -->
                         <Setting name="BranchLength" avg="500" range="170" type="normal" />
                         <Setting name="BranchHeightLimit" avg="5" />
@@ -692,6 +760,10 @@
                         <Setting name="SegmentLength" avg="30" range="6" />
                         <Setting name="SegmentForkFrequency" avg="0.01" />
                         <Setting name="SegmentRadius" avg="0.83" range="0.02" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="CopperPrefVeins" inherits="PresetHugeVeins">
@@ -706,7 +778,7 @@
                       <Setting name="MotherlodeSize" avg="7" range="2" type="normal" />
                       <Setting name="MotherlodeFrequency" avg="0.0086" />
                       <!--How offten it generates-->
-                      <Setting name="MotherlodeHeight" avg="45" range="7" />
+                      <Setting name="MotherlodeHeight" avg="45" range="20" />
                       <!--Y Level spawn -->
                       <Setting name="BranchLength" avg="500" range="170" type="normal" />
                       <Setting name="BranchHeightLimit" avg="5" />
@@ -715,8 +787,12 @@
                       <Setting name="SegmentLength" avg="30" range="6" />
                       <Setting name="SegmentForkFrequency" avg="0.01" />
                       <Setting name="SegmentRadius" avg="0.83" range="0.02" />
-                        <!-- Increased chances to spawn in -->
-                        <BiomeSet inherits="CopperBiomes" />
+                      <!-- Increased chances to spawn in -->
+                      <BiomeSet inherits="CopperBiomes" />
+                      <ReplacesOre block="stone" />
+                      <ReplacesOre block="stoneBasalt" />
+                      <ReplacesOre block="stoneMarble" />
+                      <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse copper 1" inherits="SparseStone">
@@ -751,6 +827,10 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="NickelPrefVeins" inherits="PresetLayeredVeins">
@@ -770,6 +850,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="NickelBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                   <!-- Sparse ores -->
                   <StandardGen name="Sparse nickel 1" inherits="SparseStone">
@@ -804,6 +888,10 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="LeadPrefVeins" inherits="PresetLayeredVeins">
@@ -823,6 +911,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="LeadBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse lead 1" inherits="SparseStone">
@@ -857,6 +949,10 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="SilverPrefVeins" inherits="PresetLayeredVeins">
@@ -876,6 +972,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="SilverBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse silver 1" inherits="SparseStone">
@@ -910,6 +1010,11 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
+                        <ReplacesOre block='hardenedClay'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="BauxitePrefVeins" inherits="PresetLayeredVeins">
@@ -929,6 +1034,11 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="BauxiteBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
+                        <ReplacesOre block='hardenedClay'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse Bauxite 1" inherits="SparseStone">
@@ -963,6 +1073,10 @@
                         <Setting name="BranchInclination" avg="0" range="0.55"/>
                         <Setting name="BranchLength" avg="220" range="60"/>
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Increased Chances -->
                     <Veins name="PlatinumPrefVeins" inherits="PresetLayeredVeins">
@@ -982,6 +1096,10 @@
                         <Setting name="SegmentRadius" avg="0.8" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="PlatinumBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                     </Veins>
                     <!-- Sparse ores -->
                     <StandardGen name="Sparse platinum 1" inherits="SparseStone">
@@ -1023,6 +1141,10 @@
                           <Setting name="SegmentLength" avg="30" range="6" />
                           <Setting name="SegmentForkFrequency" avg="0.01" />
                           <Setting name="SegmentRadius" avg="0.83" range="0.02" />
+                          <ReplacesOre block="stone" />
+                          <ReplacesOre block="stoneBasalt" />
+                          <ReplacesOre block="stoneMarble" />
+                          <ReplacesOre block='stoneLimestone'/>
                       </Veins>
                       <!-- Increased Chances -->
                       <Veins name="UraniumPrefVeins" inherits="PresetHugeVeins">
@@ -1048,6 +1170,10 @@
                           <Setting name="SegmentRadius" avg="0.83" range="0.02" />
                           <!-- Increased chances to spawn in -->
                           <BiomeSet inherits="UraniumBiomes" />
+                          <ReplacesOre block="stone" />
+                          <ReplacesOre block="stoneBasalt" />
+                          <ReplacesOre block="stoneMarble" />
+                          <ReplacesOre block='stoneLimestone'/>
                       </Veins>
                       <!-- Sparse ores -->
                       <StandardGen name="Sparse uranium 1" inherits="SparseStone">
@@ -1098,6 +1224,10 @@
                           <Setting name="BranchInclination" avg="0" range="0.55"/>
                           <Setting name="BranchLength" avg="190" range="80"/>
                           <Setting name="SegmentRadius" avg="0.9" range="0.3"/>
+                          <ReplacesOre block="stone" />
+                          <ReplacesOre block="stoneBasalt" />
+                          <ReplacesOre block="stoneMarble" />
+                          <ReplacesOre block='stoneLimestone'/>
                       </Veins>
                       <!-- Increased Chances -->
                       <Veins name="ThoriumPrefVeins" inherits="PresetLayeredVeins">
@@ -1120,6 +1250,10 @@
                         <Setting name="SegmentRadius" avg="0.9" range="0.3"/>
                         <!-- Increased chances to spawn in -->
                         <BiomeSet inherits="ThoriumBiomes" />
+                        <ReplacesOre block="stone" />
+                        <ReplacesOre block="stoneBasalt" />
+                        <ReplacesOre block="stoneMarble" />
+                        <ReplacesOre block='stoneLimestone'/>
                       </Veins>
                       <!-- Sparse ores -->
                       <StandardGen name="Sparse thorium 1" inherits="SparseStone">
@@ -1165,6 +1299,10 @@
                           <Setting name="Size" avg="7" range="3" />
                           <Setting name="Frequency" avg="9" />
                           <Setting name="Height" avg="40" range="10" scaleTo="sealevel" />
+                          <ReplacesOre block="stone" />
+                          <ReplacesOre block="stoneBasalt" />
+                          <ReplacesOre block="stoneMarble" />
+                          <ReplacesOre block='stoneLimestone'/>
                       </StandardGen>
                       <StandardGen name="Sparse lithium 1" inherits="SparseStone">
                               <OreBlock block="beyondreality:sparselithium" />
