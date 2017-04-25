@@ -115,7 +115,7 @@ function modTR(mods) {
         }
           authors.push(mod.authors[k]);
     }
-    modsrows.push(createElement("tr", {"id":encodeURIComponent(mod.name)}, [
+    modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name)}, [
       createElement("td", {"align":"left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
@@ -151,19 +151,19 @@ function displayVersion(packname, packversion)
     var forge = getModsByType(data.mods, 'forge')[0];
     var stdmods = getModsByType(data.mods, 'mods').keySort('name');
     var depmods = getModsByType(data.mods, 'dependency').keySort('name');
-    modlist.appendChild(createElement("h1", {"id":"packtitle"}, packname));
+    modlist.appendChild(createElement("h1", {"id":"modlist_packtitle"}, packname));
     modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + data["version"])]));
-    modlist.appendChild(createElement("h2", {"id":"mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + data["minecraft"]));
+    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + data["minecraft"]));
     modlist.appendChild(createElement("h3", {}, 'Powered by'));
     modlist.appendChild(createElement("ul", {}, [
       createElement("li", {}, forge.name + ' ' + forge.version),
-      createElement("li", {}, createElement("a", {"href":"#mods"},
+      createElement("li", {}, createElement("a", {"href":"#modlist_mods"},
         stdmods.length + ' Mods')),
-      createElement("li", {}, createElement("a", {"href":"#depend"},
+      createElement("li", {}, createElement("a", {"href":"#modlist_depend"},
         depmods.length + ' Dependency/Core Mods'))
     ]));
 
-    modlist.appendChild(createElement("h2", {"id":"mods"}, 'Mods'));
+    modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
     modlist.appendChild(createElement("table", {}, [
       createElement("thead", {}, [
         createElement("tr", {}, [
@@ -176,7 +176,7 @@ function displayVersion(packname, packversion)
       createElement("tbody", {}, modTR(stdmods))
     ]));
 
-    modlist.appendChild(createElement("h2", {"id":"depend"}, 'Dependency/Core Mods'));
+    modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
     modlist.appendChild(createElement("table", {}, [
       createElement("thead", {}, [
         createElement("tr", {}, [
