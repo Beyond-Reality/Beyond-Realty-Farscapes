@@ -115,7 +115,7 @@ function modTR(mods) {
         }
           authors.push(mod.authors[k]);
     }
-    modsrows.push(createElement("tr", {}, [
+    modsrows.push(createElement("tr", {"id":encodeURIComponent(mod.name)}, [
       createElement("td", {"align":"left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
