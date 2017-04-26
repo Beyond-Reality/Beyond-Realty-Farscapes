@@ -146,13 +146,12 @@
         </VeinsPreset>
         <!-- Cloud presets -->
         <CloudPreset name='StrategicCloud' inherits='PresetStrategicCloud'>
-            <Setting name='DistributionFrequency' avg=':= 0.001 * oreFreq'/>
-            <Setting name='CloudRadius' avg='25' range='15'/>
-            <Setting name='CloudThickness' avg='15' range='6'/>
-            <Setting name='CloudSizeNoise' avg='0.2'/>
+            <Setting name='CloudRadius' avg='15' range='8'/>
+            <Setting name='CloudThickness' avg='10' range='6'/>
+            <Setting name='CloudSizeNoise' avg='0.4'/>
             <Setting name='CloudInclination' avg='0.25' range='0.45'/>
             <Setting name='OreRadiusMult' avg='1' range='0.1'/>
-            <Setting name='OreDensity' avg='0.5'/>
+            <Setting name='OreDensity' avg='0.3'/>
             <Setting name='OreVolumeNoiseCutoff' avg='0.3'/>
             <ReplacesOre block="stone" />
             <ReplacesOre block="stoneBasalt" />
@@ -1403,7 +1402,7 @@
                         <!-- How Often it generates -->
                         <Setting name='DistributionFrequency' avg="0.003"/>
                         <!--Y Level spawn -->
-                        <Setting name="CloudHeight" avg="85" range="20" type="normal" scaleTo="world"/>
+                        <Setting name="CloudHeight" avg="85" range="20" type="normal" scaleTo="biome"/>
                       </Cloud>
                       <!-- Nickel Hills/Mountains -->
                       <Cloud name="NickelCloud" inherits="StrategicCloud">
@@ -1414,6 +1413,7 @@
                         <Setting name='DistributionFrequency' avg="0.002"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="85" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Coal Hills/Mountains -->
                       <Cloud name="CoalCloud" inherits="StrategicCloud">
@@ -1423,6 +1423,7 @@
                         <Setting name='DistributionFrequency' avg="0.003"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Bauxite Hills/Mountains -->
                       <Cloud name="BauxiteCloud" inherits="StrategicCloud">
@@ -1433,6 +1434,7 @@
                         <Setting name='DistributionFrequency' avg="0.001"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="75" range="11" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Ruby Hills/Mountains -->
                       <Cloud name="RubyCloud" inherits="StrategicCloud">
@@ -1443,6 +1445,7 @@
                         <Setting name='DistributionFrequency' avg="0.002"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Emerald Hills/Mountains -->
                       <Cloud name="EmeraldCloud" inherits="StrategicCloud">
@@ -1453,6 +1456,7 @@
                         <Setting name='DistributionFrequency' avg="0.001"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="90" range="25" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Sapphire Hills/Mountains -->
                       <Cloud name="SapphireCloud" inherits="StrategicCloud">
@@ -1463,6 +1467,7 @@
                         <Setting name='DistributionFrequency' avg="0.002"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- RedStone Hills/Mountains -->
                       <Cloud name="RedstoneCloud" inherits="StrategicCloud">
@@ -1473,6 +1478,7 @@
                         <Setting name='DistributionFrequency' avg="0.003"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                       <!-- Lapis Hills/Mountains -->
                       <Cloud name="LapisCloud" inherits="StrategicCloud">
@@ -1483,6 +1489,7 @@
                         <Setting name='DistributionFrequency' avg="0.002"/>
                         <!--Y Level spawn -->
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
                     </IfModInstalled>
 

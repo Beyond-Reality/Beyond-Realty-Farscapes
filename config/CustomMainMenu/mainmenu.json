@@ -273,8 +273,8 @@
             "slideshow":
             {
                 "images" : ["menu:textures/background0.png","menu:textures/background1.png","menu:textures/background2.png","menu:textures/background3.png"],
-                "displayDuration" : 30,
-                "fadeDuration" : 10
+                "displayDuration" : 100,
+                "fadeDuration" : 40
             }
         }
     }
