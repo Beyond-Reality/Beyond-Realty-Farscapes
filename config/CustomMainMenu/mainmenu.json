@@ -5,7 +5,7 @@
         {
             "image" : "menu:textures/logo.png",
             "posX" : -227,
-            "posY" : 16,
+            "posY" : 60,
             "width" : 454,
             "height" : 68,
             "alignment" : "top_center"
@@ -13,11 +13,22 @@
         "black":
         {
             "image" : "menu:textures/bar.png",
-            "posX" : -20,
-            "posY" : -50,
-            "width" : 205,
-            "height" : 128,
-            "alignment" : "bottom_left"
+            "posX" : -176,
+            "posY" : -131,
+            "width" : 200,
+            "height" : 136,
+            "alignment" : "bottom_right"
+        },
+        "black1":
+        {
+            "image" : "menu:textures/paper-dialog.png",
+            "posX" : 2,
+            "posY" : 192,
+            "width" : 155,
+            "height" : 132,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left"
         }
     },
 
@@ -26,11 +37,17 @@
         "singleplayer":
         {
             "text" : "menu.singleplayer",
-            "posX" : -87,
-            "posY" : -24,
-            "width" : 175,
-            "height" : 20,
-            "alignment" : "center",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : 5,
+            "posY" : 195,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left",
             "action" :
             {
                 "type" : "openGui",
@@ -41,11 +58,17 @@
         "multiplayer":
         {
             "text" : "menu.multiplayer",
-            "posX" : -87,
-            "posY" : 0,
-            "width" : 175,
-            "height" : 20,
-            "alignment" : "center",
+            "normalTextColor": 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : 5,
+            "posY" : 220,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left",
             "action" :
             {
                 "type" : "openGui",
@@ -56,11 +79,17 @@
         "mods":
         {
             "text" : "fml.menu.mods",
-            "posX" : -87,
-            "posY" : 24,
-            "width" : 175,
-            "height" : 20,
-            "alignment" : "center",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : 5,
+            "posY" : 245,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left",
             "action" :
             {
                 "type" : "openGui",
@@ -71,11 +100,11 @@
         "language":
         {
             "text" : "",
-            "posX" : -87,
-            "posY" : 48,
+            "posX" : -23,
+            "posY" : -100,
             "width" : 20,
             "height" : 20,
-            "alignment" : "center",
+            "alignment" : "bottom_right",
             "action" :
             {
                 "type" : "openGui",
@@ -86,11 +115,17 @@
         "options":
         {
             "text" : "menu.options",
-            "posX" : -62,
-            "posY" : 48,
-            "width" : 85,
-            "height" : 20,
-            "alignment" : "center",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : 6,
+            "posY" : 270,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left",
             "action" :
             {
                 "type" : "openGui",
@@ -101,25 +136,90 @@
         "quit":
         {
             "text" : "menu.quit",
-            "posX" : 27,
-            "posY" : 48,
-            "width" : 60,
-            "height" : 20,
-            "alignment" : "center",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : 6,
+            "posY" : 295,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center_left",
             "action" :
             {
                 "type" : "quit"
             }
         },
 
+        "discord":
+        {
+            "text" : ".",
+            "shadow" : false,
+            "texture" : "menu:textures/discord3.png",
+            "posX" : -175,
+            "posY" : -102,
+            "width" : 150,
+            "height" : 26,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "http://discord.beyondrealitygaming.com/"
+            }
+        },
+
+        "github":
+        {
+            "text" : ".",
+            "shadow" : false,
+            "texture" : "menu:textures/github4.png",
+            "posX" : -175,
+            "posY" : -75,
+            "width" : 150,
+            "height" : 25,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues"
+            }
+        },
+
+        "website":
+        {
+            "text" : ".",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/website.png",
+            "posX" : -175,
+            "posY" : -130,
+            "width" : 150,
+            "height" : 26,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "https://beyondrealitygaming.com"
+            }
+        },
+
         "refresh":
         {
-            "text" : "",
-            "posX" : -12,
-            "posY" : -25,
+            "text" : ".",
+            "posX" : -23,
+            "posY" : -128,
             "width" : 20,
             "height" : 20,
-            "alignment" : "bottom_center",
+            "alignment" : "bottom_right",
             "texture" : "custommainmenu:textures/gui/buttons.png",
             "action" :
             {
@@ -133,7 +233,7 @@
         "mojang":
         {
             "text" : "© Mojang AB. Do not distribute!",
-            "posX" : -170,
+            "posX" : -175,
             "posY" : -10,
             "color" : -1,
             "alignment" : "bottom_right"
@@ -141,18 +241,18 @@
         "BR":
         {
             "text" : "1.0.0-r1",
-            "posX" : 90,
-            "posY" : 80,
+            "posX" : 10,
+            "posY" : -20,
             "color" : -1,
-            "alignment" : "top_center"
+            "alignment" : "bottom_left"
         },
         "fml":
         {
             "text" : "",
-            "posX" : 2,
-            "posY" : -46,
+            "posX" : -175,
+            "posY" : -50,
             "color" : -1,
-            "alignment" : "bottom_left"
+            "alignment" : "bottom_right"
         }
     },
 
@@ -160,21 +260,22 @@
     {
         "splash-text":
         {
-            "posX" : 160,
-            "posY" : 100,
-            "color" : 16746496,
-            "width" : 1,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
+            "posX" : 250,
+            "posY" : 120,
+            "color" : 16777215,
+            "shadow" : false,
+            "alignment" : "top_center"
         },
 
-        "panorama":
+        "background":
         {
-          "images" : "menu:textures/panorama%c.png",
-          "animate" : true,
-          "animationSpeed" : 1,
-          "blur" : false,
-          "gradient" : false
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["menu:textures/background0.png","menu:textures/background1.png","menu:textures/background2.png","menu:textures/background3.png"],
+                "displayDuration" : 30,
+                "fadeDuration" : 10
+            }
         }
     }
 }
