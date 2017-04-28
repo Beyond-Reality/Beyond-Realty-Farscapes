@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE HTML SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
+    <head>
     <meta charset="UTF-8"/>
     <title>Mod List</title>
     <meta name="description" content="Display pack mod list from ATLauncher Node CDN"/>
@@ -25,6 +25,12 @@ padding: 6px 13px 6px 13px
 }
 tr:nth-child(even) {background: rgb(246, 248, 250)}
 tr:nth-child(odd) {background: rgb(255, 255, 255)}
+.modlist_msg {
+  margin-left: 4em;
+}
+.modlist_msg summary{
+  margin-left: -4em;
+}
     ]]></style>
   </head>
   <body onload="displayVersion('Beyond Reality: Farscapes', 'devBuild1.11')">
@@ -111,9 +117,9 @@ function modTR(mods) {
         for (k = 0; k < mod.authors.length - 1; k++) {
           authors.push(mod.authors[k]);
           authors.push(createElement("br", {}));
-          console.log(mod.authors[k]);
         }
-          authors.push(mod.authors[k]);
+        authors.push(mod.authors[k]);
+      break;
     }
     modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name)}, [
       createElement("td", {"align":"left"},
@@ -127,7 +133,7 @@ function modTR(mods) {
   return modsrows;
 }
 
-Array.prototype.keySort = function(key, desc){
+Array.prototype.keySort = function(key, desc) {
   this.sort(function(a, b) {
     var result = desc ? (a[key] < b[key]) : (a[key] > b[key]);
     return result ? 1 : -1;
@@ -135,8 +141,13 @@ Array.prototype.keySort = function(key, desc){
   return this;
 }
 
+function capFrst(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
 function displayVersion(packname, packversion)
 {
+  var parser = new DOMParser();
   var urlvars = getUrlVars();
   console.log(urlvars);
   packname = urlvars["p"] ? urlvars["p"] : packname;
@@ -162,6 +173,22 @@ function displayVersion(packname, packversion)
       createElement("li", {}, createElement("a", {"href":"#modlist_depend"},
         depmods.length + ' Dependency/Core Mods'))
     ]));
+
+    if (typeof(data.messages) !== 'undefined' && Object.keys(data.messages).length > 0) {
+      modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
+      var htmldoc = document.implementation.createHTMLDocument();
+      for (msg in data.messages) {
+        htmldoc.body.innerHTML = data.messages[msg];
+        var msgfragment = createElement("details", {"class":"modlist_msg"}, [
+          createElement("summary", {"id":'modlist_msg_' + encodeURIComponent(msg)}, capFrst(msg)),
+          ]);
+        var msgnodes = htmldoc.body.childNodes;
+        for(var i = 0; i < msgnodes.length; i = i++) {
+          console.log('element = ' + msgnodes[i]);
+          modlist.appendChild(msgfragment).appendChild(msgnodes[i]);
+        }
+      }
+    }
 
     modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
     modlist.appendChild(createElement("table", {}, [
