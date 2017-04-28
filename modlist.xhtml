@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE HTML SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8"/>
     <title>Mod List</title>
     <meta name="description" content="Display pack mod list from ATLauncher Node CDN"/>
@@ -25,11 +25,27 @@ padding: 6px 13px 6px 13px
 }
 tr:nth-child(even) {background: rgb(246, 248, 250)}
 tr:nth-child(odd) {background: rgb(255, 255, 255)}
-.modlist_msg {
+details, summary {display:block;}
+summary.modlist_warn::before {
+  content: "⚠";
+  color: #FFCC00;
+  font-weight:800;
+  margin-right: 1em;
+}
+details.modlist_msg {
   margin-left: 4em;
 }
-.modlist_msg summary{
+summary.modlist_msg {
   margin-left: -4em;
+}
+details.modlist_warn div {
+  padding: 2em 4em;
+  background: #444444;
+}
+summary.modlist_warn {
+  background: transparent;
+  color: #FFCC00;
+  font-weight: 800;
 }
     ]]></style>
   </head>
@@ -102,7 +118,7 @@ function getUrlVars() {
   return vars;
 }
 
-function modTR(mods) {
+function modTR(data, mods) {
   var modsrows = [];
   mods.forEach(function(mod) {
     var authors = [];
@@ -121,13 +137,30 @@ function modTR(mods) {
         authors.push(mod.authors[k]);
       break;
     }
-    modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name)}, [
+
+    var modwarn = '';
+    if (typeof(mod.warning) !== 'undefined'
+      && typeof(data.warnings) !== 'undefined'
+      && data.warnings[mod.warning] !== 'undefined') {
+      var htmldoc = document.implementation.createHTMLDocument();
+      var nodewarn = htmldoc.body.appendChild(createElement("div"));
+      nodewarn.innerHTML = data.warnings[mod.warning];
+      var modwarn = createElement("details", {"class":"modlist_warn"}, [
+        createElement("summary", {"class":"modlist_warn"}, "WARNING"),
+        ]);
+      var msgnodes = nodewarn.childNodes;
+      for(var i = 0; i < msgnodes.length; i = i++) {
+        modwarn.appendChild(msgnodes[i]);
+      }
+
+    }
+    modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name.replace(/(?:[^A-Za-z])+/g,'-'))}, [
       createElement("td", {"align":"left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
       createElement("td", {"align":"center"}, mod.version),
       createElement("td", {"align":"left"}, authors),
-      createElement("td", {"align":"left"}, mod.description),
+      createElement("td", {"align":"left"}, [mod.description, modwarn]),
     ]));
   });
   return modsrows;
@@ -147,7 +180,7 @@ function capFrst(str) {
 
 function displayVersion(packname, packversion)
 {
-  var parser = new DOMParser();
+  var htmldoc = document.implementation.createHTMLDocument();
   var urlvars = getUrlVars();
   console.log(urlvars);
   packname = urlvars["p"] ? urlvars["p"] : packname;
@@ -176,15 +209,13 @@ function displayVersion(packname, packversion)
 
     if (typeof(data.messages) !== 'undefined' && Object.keys(data.messages).length > 0) {
       modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
-      var htmldoc = document.implementation.createHTMLDocument();
       for (msg in data.messages) {
         htmldoc.body.innerHTML = data.messages[msg];
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
-          createElement("summary", {"id":'modlist_msg_' + encodeURIComponent(msg)}, capFrst(msg)),
+          createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + encodeURIComponent(msg)}, capFrst(msg)),
           ]);
         var msgnodes = htmldoc.body.childNodes;
         for(var i = 0; i < msgnodes.length; i = i++) {
-          console.log('element = ' + msgnodes[i]);
           modlist.appendChild(msgfragment).appendChild(msgnodes[i]);
         }
       }
@@ -200,7 +231,7 @@ function displayVersion(packname, packversion)
           createElement("th", {"align":"left"}, 'Description')
         ])
       ]),
-      createElement("tbody", {}, modTR(stdmods))
+      createElement("tbody", {}, modTR(data, stdmods))
     ]));
 
     modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
@@ -213,7 +244,7 @@ function displayVersion(packname, packversion)
           createElement("th", {"align":"left"}, 'Description')
         ])
       ]),
-      createElement("tbody", {}, modTR(depmods))
+      createElement("tbody", {}, modTR(data, depmods))
     ]));    document.getElementById("modlist").appendChild(modlist);
   });
 }
