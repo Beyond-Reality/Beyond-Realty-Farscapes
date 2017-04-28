@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE HTML SYSTEM "about:legacy-compat">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8"/>
@@ -16,6 +15,7 @@ overflow-wrap: break-word;
 table {
 border-collapse: collapse;
 }
+table.modlist_table td, table.modlist_table th { vertical-align: top }
 td, th {
 border-spacing: 0px 0px;
 border-color: rgb(198, 203, 209);
@@ -25,6 +25,15 @@ padding: 6px 13px 6px 13px
 }
 tr:nth-child(even) {background: rgb(246, 248, 250)}
 tr:nth-child(odd) {background: rgb(255, 255, 255)}
+ul.mod_authors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.mod_authors li {
+}
+.left {text-align:left;}
+.center {text-align:center;}
 details, summary {display:block;}
 summary.modlist_warn::before {
   content: "⚠";
@@ -35,12 +44,22 @@ summary.modlist_warn::before {
 details.modlist_msg {
   margin-left: 4em;
 }
+details.modlist_msg>div {
+  width: 512px;
+  font-size: 12px;
+  padding: 1em 2em;
+  background: #444444;
+  color: #dcdcdc;
+}
 summary.modlist_msg {
   margin-left: -4em;
 }
-details.modlist_warn div {
-  padding: 2em 4em;
+details.modlist_warn>div {
+  width: 512px;
+  font-size: 12px;
+  padding: 1em 2em;
   background: #444444;
+  color: #dcdcdc;
 }
 summary.modlist_warn {
   background: transparent;
@@ -49,14 +68,28 @@ summary.modlist_warn {
 }
     ]]></style>
   </head>
-  <body onload="displayVersion('Beyond Reality: Farscapes', 'devBuild1.11')">
+  <body>
     <article id="modlist"></article>
     <script type="application/javascript"><![CDATA[
+document.onreadystatechange = function () {
+  if (document.readyState == "interactive") {
+      displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
+    if (typeof(anchor) !== 'undefined' && anchor !== '' ){
+      var anchor = window.location.hash.slice(1);
+      var target = document.getElementById(anchor);
+      console.log('target: ' + target);
+      if (target != null) {
+        document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});;
+      }
+    }
+  }
+}
+
 function ajax_get(url, callback) {
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      console.log("responseText:\n" + xmlhttp.responseText);
+//      console.log("responseText:\n" + xmlhttp.responseText);
       try {
         var data = JSON.parse(xmlhttp.responseText);
       }
@@ -124,17 +157,15 @@ function modTR(data, mods) {
     var authors = [];
     switch (mod.authors === undefined ? 0 : mod.authors.length) {
       case 0:
-        authors.push(createElement("i",{} ,"Unknown"));
+        authors.push(createElement("li", {"class":"mod_author_unknown"}, [createElement("i",{} ,"Unknown")]));
       break;
       case 1:
-        authors.push(mod.authors[0]);
+        authors.push(createElement("li", {"class":"mod_author_single"}, mod.authors[0]));
       break;
       default:
-        for (k = 0; k < mod.authors.length - 1; k++) {
-          authors.push(mod.authors[k]);
-          authors.push(createElement("br", {}));
+        for (k = 0; k < mod.authors.length; k++) {
+          authors.push(createElement("li", {"class":"mod_author"},mod.authors[k]));
         }
-        authors.push(mod.authors[k]);
       break;
     }
 
@@ -155,12 +186,12 @@ function modTR(data, mods) {
 
     }
     modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name.replace(/(?:[^A-Za-z])+/g,'-'))}, [
-      createElement("td", {"align":"left"},
+      createElement("td", {"class":"left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
-      createElement("td", {"align":"center"}, mod.version),
-      createElement("td", {"align":"left"}, authors),
-      createElement("td", {"align":"left"}, [mod.description, modwarn]),
+      createElement("td", {"class":"center"}, mod.version),
+      createElement("td", {"class":"left"}, createElement("ul", {"class":"mod_authors"}, authors)),
+      createElement("td", {"class":"left"}, [mod.description, modwarn]),
     ]));
   });
   return modsrows;
@@ -180,9 +211,7 @@ function capFrst(str) {
 
 function displayVersion(packname, packversion)
 {
-  var htmldoc = document.implementation.createHTMLDocument();
   var urlvars = getUrlVars();
-  console.log(urlvars);
   packname = urlvars["p"] ? urlvars["p"] : packname;
   packversion = urlvars["v"] ? urlvars["v"] : packversion;
   var packurl = 'https://download.nodecdn.net/containers/atl/packs/'
@@ -210,38 +239,38 @@ function displayVersion(packname, packversion)
     if (typeof(data.messages) !== 'undefined' && Object.keys(data.messages).length > 0) {
       modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
       for (msg in data.messages) {
-        htmldoc.body.innerHTML = data.messages[msg];
+        var htmldoc = document.implementation.createHTMLDocument();
+        var msgdiv = htmldoc.body.appendChild(createElement("div"));
+        msgdiv.innerHTML = data.messages[msg];
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
           createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + encodeURIComponent(msg)}, capFrst(msg)),
           ]);
-        var msgnodes = htmldoc.body.childNodes;
-        for(var i = 0; i < msgnodes.length; i = i++) {
-          modlist.appendChild(msgfragment).appendChild(msgnodes[i]);
-        }
+        msgfragment.appendChild(msgdiv);
+        modlist.appendChild(msgfragment);
       }
     }
 
     modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
-    modlist.appendChild(createElement("table", {}, [
+    modlist.appendChild(createElement("table", {"id":"modlist_stdtable","class":"modlist_table"}, [
       createElement("thead", {}, [
         createElement("tr", {}, [
-          createElement("th", {"align":"left"}, 'Mod'),
-          createElement("th", {"align":"center"}, 'Version'),
-          createElement("th", {"align":"left"}, 'Authors'),
-          createElement("th", {"align":"left"}, 'Description')
+          createElement("th", {"class":"left"}, 'Mod'),
+          createElement("th", {"class":"center"}, 'Version'),
+          createElement("th", {"class":"left"}, 'Authors'),
+          createElement("th", {"class":"left"}, 'Description')
         ])
       ]),
       createElement("tbody", {}, modTR(data, stdmods))
     ]));
 
     modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
-    modlist.appendChild(createElement("table", {}, [
+    modlist.appendChild(createElement("table", {"id":"modlist_deptable","class":"modlist_table"}, [
       createElement("thead", {}, [
         createElement("tr", {}, [
-          createElement("th", {"align":"left"}, 'Mod'),
-          createElement("th", {"align":"center"}, 'Version'),
-          createElement("th", {"align":"left"}, 'Authors'),
-          createElement("th", {"align":"left"}, 'Description')
+          createElement("th", {"class":"left"}, 'Mod'),
+          createElement("th", {"class":"center"}, 'Version'),
+          createElement("th", {"class":"left"}, 'Authors'),
+          createElement("th", {"class":"left"}, 'Description')
         ])
       ]),
       createElement("tbody", {}, modTR(data, depmods))
