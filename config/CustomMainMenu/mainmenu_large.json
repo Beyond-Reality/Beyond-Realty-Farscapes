@@ -1,0 +1,267 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "menu:textures/logo.png",
+            "posX" : -220,
+            "posY" : 10,
+            "width" : 440,
+            "height" : 68,
+            "alignment" : "top_center"
+        },
+        "black":
+        {
+            "image" : "menu:textures/bar.png",
+            "posX" : -100,
+            "posY" : -52,
+            "width" : 100,
+            "height" : 50,
+            "alignment" : "bottom_right"
+        },
+        "overlook":
+        {
+            "image" : "menu:textures/overlook1.png",
+            "posX" : 0,
+            "posY" : -127,
+            "width" : 128,
+            "height" : 128,
+            "imageWidth" : 256,
+            "imageHeight" : 256,
+            "alignment" : "bottom_left"
+        }
+    },
+
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : -63,
+            "posY" : -40,
+            "width" : 120,
+            "height" : 20,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "normalTextColor": 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : -63,
+            "posY" : -20,
+            "width" : 120,
+            "height" : 20,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : -63,
+            "posY" : 0,
+            "width" : 120,
+            "height" : 20,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+
+        "language":
+        {
+            "text" : "",
+            "posX" : -13,
+            "posY" : 60,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+
+        "options":
+        {
+            "text" : "menu.options",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : -63,
+            "posY" : 20,
+            "width" : 120,
+            "height" : 20,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+
+        "quit":
+        {
+            "text" : "menu.quit",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/spnormal.png",
+            "posX" : -63,
+            "posY" : 40,
+            "width" : 120,
+            "height" : 20,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "center",
+            "action" :
+            {
+                "type" : "quit"
+            }
+        },
+
+        "discord":
+        {
+            "text" : ".",
+            "shadow" : false,
+            "texture" : "menu:textures/discord3.png",
+            "posX" : -100,
+            "posY" : -35,
+            "width" : 100,
+            "height" : 16,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "http://discord.beyondrealitygaming.com/"
+            }
+        },
+
+        "github":
+        {
+            "text" : ".",
+            "shadow" : false,
+            "texture" : "menu:textures/github4.png",
+            "posX" : -100,
+            "posY" : -20,
+            "width" : 100,
+            "height" : 16,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues"
+            }
+        },
+
+        "website":
+        {
+            "text" : ".",
+            "normalTextColor" : 0,
+            "hoverTextColor": 16711680,
+            "shadow" : false,
+            "texture" : "menu:textures/website.png",
+            "posX" : -100,
+            "posY" : -50,
+            "width" : 100,
+            "height" : 16,
+            "imageWidth" : 256,
+            "imageHeight" : 60,
+            "alignment" : "bottom_right",
+            "action" :
+            {
+              "type" : "openLink",
+              "link" : "https://beyondrealitygaming.com"
+            }
+        },
+
+        "refresh":
+        {
+            "text" : ".",
+            "posX" : -23,
+            "posY" : -128,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "bottom_right",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" :
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+
+    "labels":
+    {
+        "fml":
+        {
+            "text" : "",
+            "posX" : 200,
+            "posY" : -40,
+            "color" : -1,
+            "fontSize" : 1,
+            "anchor" : "middle",
+            "alignment" : "bottom_left"
+        }
+    },
+
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 240,
+            "posY" : 75,
+            "color" : 16777215,
+            "shadow" : false,
+            "alignment" : "top_center"
+        },
+
+        "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["menu:textures/background0.png","menu:textures/background1.png","menu:textures/background2.png","menu:textures/background3.png"],
+                "displayDuration" : 100,
+                "fadeDuration" : 40
+            }
+        }
+    }
+}
