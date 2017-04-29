@@ -71,18 +71,11 @@ summary.modlist_warn {
   <body>
     <article id="modlist"></article>
     <script type="application/javascript"><![CDATA[
-document.onreadystatechange = function () {
-  if (document.readyState == "interactive") {
-      displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
-    if (typeof(anchor) !== 'undefined' && anchor !== '' ){
-      var anchor = window.location.hash.slice(1);
-      var target = document.getElementById(anchor);
-      console.log('target: ' + target);
-      if (target != null) {
-        document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});;
-      }
-    }
-  }
+var htmldoc = document.implementation.createHTMLDocument('Document parser');
+var foreignHTMLDivNode = htmldoc.createElement("div");
+window.onload = function () {
+  console.log('window.onload ticked');
+  displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
 }
 
 function ajax_get(url, callback) {
@@ -173,19 +166,14 @@ function modTR(data, mods) {
     if (typeof(mod.warning) !== 'undefined'
       && typeof(data.warnings) !== 'undefined'
       && data.warnings[mod.warning] !== 'undefined') {
-      var htmldoc = document.implementation.createHTMLDocument();
-      var nodewarn = htmldoc.body.appendChild(createElement("div"));
-      nodewarn.innerHTML = data.warnings[mod.warning];
+      foreignHTMLDivNode.innerHTML = data.warnings[mod.warning];
       var modwarn = createElement("details", {"class":"modlist_warn"}, [
         createElement("summary", {"class":"modlist_warn"}, "WARNING"),
         ]);
-      var msgnodes = nodewarn.childNodes;
-      for(var i = 0; i < msgnodes.length; i = i++) {
-        modwarn.appendChild(msgnodes[i]);
-      }
+      modwarn.appendChild(document.importNode(foreignHTMLDivNode, true));
 
     }
-    modsrows.push(createElement("tr", {"id":encodeURIComponent('mod_' + mod.name.replace(/(?:[^A-Za-z])+/g,'-'))}, [
+    modsrows.push(createElement("tr", {"id":'mod-' + mod.name.safeCSSId()}, [
       createElement("td", {"class":"left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
@@ -205,17 +193,25 @@ Array.prototype.keySort = function(key, desc) {
   return this;
 }
 
-function capFrst(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+String.prototype.safeCSSId = function() {
+  return encodeURIComponent(this.toLowerCase()).replace(/%[0-9A-F]{2}/gi,'-');
+}
+
+String.prototype.capFrst = function () {
+  return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 }
 
 function displayVersion(packname, packversion)
 {
+  var renderNode = document.getElementById("modlist");
   var urlvars = getUrlVars();
+  var anchor = window.location.hash.slice(1);
+
   packname = urlvars["p"] ? urlvars["p"] : packname;
   packversion = urlvars["v"] ? urlvars["v"] : packversion;
+
   var packurl = 'https://download.nodecdn.net/containers/atl/packs/'
-    + packname.replace(/(?:\s|\:)+/g,'')
+    + packname.replace(/[\s:_-]*/gi,'')
     + '/versions/'
     + packversion
     + '/Configs.json';
@@ -238,14 +234,12 @@ function displayVersion(packname, packversion)
 
     if (typeof(data.messages) !== 'undefined' && Object.keys(data.messages).length > 0) {
       modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
-      for (msg in data.messages) {
-        var htmldoc = document.implementation.createHTMLDocument();
-        var msgdiv = htmldoc.body.appendChild(createElement("div"));
-        msgdiv.innerHTML = data.messages[msg];
+      for (msgId in data.messages) {
+        foreignHTMLDivNode.innerHTML = data.messages[msgId];
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
-          createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + encodeURIComponent(msg)}, capFrst(msg)),
+          createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + msgId.safeCSSId()}, msgId.capFrst()),
           ]);
-        msgfragment.appendChild(msgdiv);
+        msgfragment.appendChild(document.importNode(foreignHTMLDivNode, true));
         modlist.appendChild(msgfragment);
       }
     }
@@ -274,8 +268,25 @@ function displayVersion(packname, packversion)
         ])
       ]),
       createElement("tbody", {}, modTR(data, depmods))
-    ]));    document.getElementById("modlist").appendChild(modlist);
+    ]));
+  renderNode.appendChild(modlist);
+
   });
+
+  renderNode.addEventListener("DOMSubtreeModified", function()
+    {
+      if (typeof(anchor) !== 'undefined' && anchor !== '' ){
+        var target = window.document.getElementById(anchor);
+        console.log('target: ' + target);
+        if (target != null) {
+          console.log(target);
+          document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});
+        }
+      }
+    }
+    , false
+  );
+
 }
     ]]></script>
   </body>
