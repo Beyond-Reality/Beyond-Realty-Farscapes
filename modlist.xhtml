@@ -84,13 +84,13 @@ function ajax_get(url, callback) {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 //      console.log("responseText:\n" + xmlhttp.responseText);
       try {
-        var data = JSON.parse(xmlhttp.responseText);
+        var packConfig = JSON.parse(xmlhttp.responseText);
       }
       catch(err) {
         console.log(err.message + " in " + xmlhttp.responseText);
         return;
       }
-      callback(data);
+      callback(packConfig);
     }
   };
 
@@ -144,7 +144,7 @@ function getUrlVars() {
   return vars;
 }
 
-function modTR(data, mods) {
+function modTR(packConfig, mods) {
   var modsrows = [];
   mods.forEach(function(mod) {
     var authors = [];
@@ -164,9 +164,9 @@ function modTR(data, mods) {
 
     var modwarn = '';
     if (typeof(mod.warning) !== 'undefined'
-      && typeof(data.warnings) !== 'undefined'
-      && data.warnings[mod.warning] !== 'undefined') {
-      foreignHTMLDivNode.innerHTML = data.warnings[mod.warning];
+      && typeof(packConfig.warnings) !== 'undefined'
+      && packConfig.warnings[mod.warning] !== 'undefined') {
+      foreignHTMLDivNode.innerHTML = packConfig.warnings[mod.warning];
       var modwarn = createElement("details", {"class":"modlist_warn"}, [
         createElement("summary", {"class":"modlist_warn"}, "WARNING"),
         ]);
@@ -215,27 +215,29 @@ function displayVersion(packname, packversion)
     + '/versions/'
     + packversion
     + '/Configs.json';
-  ajax_get(packurl, function(data) {
+  ajax_get(packurl, function(packConfig) {
     var modlist = document.createDocumentFragment();
-    var forge = getModsByType(data.mods, 'forge')[0];
-    var stdmods = getModsByType(data.mods, 'mods').keySort('name');
-    var depmods = getModsByType(data.mods, 'dependency').keySort('name');
+    var forge = getModsByType(packConfig.mods, 'forge')[0];
+    var stdmods = getModsByType(packConfig.mods, 'mods').keySort('name');
+    var depmods = getModsByType(packConfig.mods, 'dependency').keySort('name');
     modlist.appendChild(createElement("h1", {"id":"modlist_packtitle"}, packname));
-    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + data["version"])]));
-    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + data["minecraft"]));
+    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + packConfig["version"])]));
+    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + packConfig["minecraft"]));
     modlist.appendChild(createElement("h3", {}, 'Powered by'));
     modlist.appendChild(createElement("ul", {}, [
       createElement("li", {}, forge.name + ' ' + forge.version),
-      createElement("li", {}, createElement("a", {"href":"#modlist_mods"},
-        stdmods.length + ' Mods')),
-      createElement("li", {}, createElement("a", {"href":"#modlist_depend"},
-        depmods.length + ' Dependency/Core Mods'))
+      stdmods.length > 0 ?
+        createElement("li", {}, createElement("a", {"href":"#modlist_mods"}, stdmods.length + ' Mods'))
+        : '',
+      depmods.length > 0 ?
+        createElement("li", {}, createElement("a", {"href":"#modlist_depend"}, depmods.length + ' Dependency/Core Mods'))
+        : ''
     ]));
 
-    if (typeof(data.messages) !== 'undefined' && Object.keys(data.messages).length > 0) {
+    if (typeof(packConfig.messages) !== 'undefined' && Object.keys(packConfig.messages).length > 0) {
       modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
-      for (msgId in data.messages) {
-        foreignHTMLDivNode.innerHTML = data.messages[msgId];
+      for (msgId in packConfig.messages) {
+        foreignHTMLDivNode.innerHTML = packConfig.messages[msgId];
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
           createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + msgId.safeCSSId()}, msgId.capFrst()),
           ]);
@@ -244,31 +246,35 @@ function displayVersion(packname, packversion)
       }
     }
 
-    modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
-    modlist.appendChild(createElement("table", {"id":"modlist_stdtable","class":"modlist_table"}, [
-      createElement("thead", {}, [
-        createElement("tr", {}, [
-          createElement("th", {"class":"left"}, 'Mod'),
-          createElement("th", {"class":"center"}, 'Version'),
-          createElement("th", {"class":"left"}, 'Authors'),
-          createElement("th", {"class":"left"}, 'Description')
-        ])
-      ]),
-      createElement("tbody", {}, modTR(data, stdmods))
-    ]));
+    if (stdmods.length > 0) {
+      modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
+      modlist.appendChild(createElement("table", {"id":"modlist_stdtable","class":"modlist_table"}, [
+        createElement("thead", {}, [
+          createElement("tr", {}, [
+            createElement("th", {"class":"left"}, 'Mod'),
+            createElement("th", {"class":"center"}, 'Version'),
+            createElement("th", {"class":"left"}, 'Authors'),
+            createElement("th", {"class":"left"}, 'Description')
+          ])
+        ]),
+        createElement("tbody", {}, modTR(packConfig, stdmods))
+      ]));
+    }
 
-    modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
-    modlist.appendChild(createElement("table", {"id":"modlist_deptable","class":"modlist_table"}, [
-      createElement("thead", {}, [
-        createElement("tr", {}, [
-          createElement("th", {"class":"left"}, 'Mod'),
-          createElement("th", {"class":"center"}, 'Version'),
-          createElement("th", {"class":"left"}, 'Authors'),
-          createElement("th", {"class":"left"}, 'Description')
-        ])
-      ]),
-      createElement("tbody", {}, modTR(data, depmods))
-    ]));
+    if (depmods.length > 0) {
+      modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
+      modlist.appendChild(createElement("table", {"id":"modlist_deptable","class":"modlist_table"}, [
+        createElement("thead", {}, [
+          createElement("tr", {}, [
+            createElement("th", {"class":"left"}, 'Mod'),
+            createElement("th", {"class":"center"}, 'Version'),
+            createElement("th", {"class":"left"}, 'Authors'),
+            createElement("th", {"class":"left"}, 'Description')
+          ])
+        ]),
+        createElement("tbody", {}, modTR(packConfig, depmods))
+      ]));
+    }
   renderNode.appendChild(modlist);
 
   });
