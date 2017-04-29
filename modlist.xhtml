@@ -73,8 +73,8 @@ summary.modlist_warn {
     <script type="application/javascript"><![CDATA[
 var htmldoc = document.implementation.createHTMLDocument('Document parser');
 var foreignHTMLDivNode = htmldoc.createElement("div");
+
 window.onload = function () {
-  console.log('window.onload ticked');
   displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
 }
 
@@ -273,13 +273,12 @@ function displayVersion(packname, packversion)
 
   });
 
-  renderNode.addEventListener("DOMSubtreeModified", function()
+  renderNode.addEventListener("DOMSubtreeModified", function(e)
     {
+      e.target.removeEventListener(e.type, arguments.callee);
       if (typeof(anchor) !== 'undefined' && anchor !== '' ){
         var target = window.document.getElementById(anchor);
-        console.log('target: ' + target);
         if (target != null) {
-          console.log(target);
           document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});
         }
       }
