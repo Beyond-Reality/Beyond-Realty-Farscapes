@@ -39,7 +39,7 @@
             "text" : "menu.singleplayer",
             "normalTextColor" : 0,
             "hoverTextColor": 16711680,
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/spnormal.png",
             "posX" : -63,
             "posY" : -40,
@@ -60,7 +60,7 @@
             "text" : "menu.multiplayer",
             "normalTextColor": 0,
             "hoverTextColor": 16711680,
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/spnormal.png",
             "posX" : -63,
             "posY" : -20,
@@ -81,7 +81,7 @@
             "text" : "fml.menu.mods",
             "normalTextColor" : 0,
             "hoverTextColor": 16711680,
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/spnormal.png",
             "posX" : -63,
             "posY" : 0,
@@ -100,11 +100,11 @@
         "language":
         {
             "text" : "",
-            "posX" : -13,
-            "posY" : 60,
+            "posX" : -23,
+            "posY" : -106,
             "width" : 20,
             "height" : 20,
-            "alignment" : "center",
+            "alignment" : "bottom_right",
             "action" :
             {
                 "type" : "openGui",
@@ -117,7 +117,7 @@
             "text" : "menu.options",
             "normalTextColor" : 0,
             "hoverTextColor": 16711680,
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/spnormal.png",
             "posX" : -63,
             "posY" : 20,
@@ -138,7 +138,7 @@
             "text" : "menu.quit",
             "normalTextColor" : 0,
             "hoverTextColor": 16711680,
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/spnormal.png",
             "posX" : -63,
             "posY" : 40,
@@ -175,7 +175,7 @@
         "github":
         {
             "text" : ".",
-            "shadow" : false,
+            "shadow" : "false",
             "texture" : "menu:textures/github4.png",
             "posX" : -100,
             "posY" : -20,
@@ -230,28 +230,33 @@
 
     "labels":
     {
+      "mojang":
+      {
+          "text" : "© Mojang AB. Do not distribute!",
+          "posX" : 115,
+          "posY" : -10,
+          "normalTextColor" : 16711680,
+          "hoverTextColor": 16711680,
+          "fontSize" : 1,
+          "shadow" : false,
+          "alignment" : "bottom_left"
+        },
         "fml":
         {
             "text" : "",
-            "posX" : 200,
-            "posY" : -40,
+            "posX" : 205,
+            "posY" : -46,
             "color" : -1,
             "fontSize" : 1,
             "anchor" : "middle",
             "alignment" : "bottom_left"
         }
+
     },
 
     "other":
     {
-        "splash-text":
-        {
-            "posX" : 240,
-            "posY" : 75,
-            "color" : 16777215,
-            "shadow" : false,
-            "alignment" : "top_center"
-        },
+
 
         "background":
         {
@@ -259,7 +264,7 @@
             "slideshow":
             {
                 "images" : ["menu:textures/background0.png","menu:textures/background1.png","menu:textures/background2.png","menu:textures/background3.png"],
-                "displayDuration" : 10,
+                "displayDuration" : 100,
                 "fadeDuration" : 40
             }
         }
