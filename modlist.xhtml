@@ -78,26 +78,6 @@ window.onload = function () {
   displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
 }
 
-function ajax_get(url, callback) {
-  xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-//      console.log("responseText:\n" + xmlhttp.responseText);
-      try {
-        var packConfig = JSON.parse(xmlhttp.responseText);
-      }
-      catch(err) {
-        console.log(err.message + " in " + xmlhttp.responseText);
-        return;
-      }
-      callback(packConfig);
-    }
-  };
-
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-}
-
 function createElement(element, attribute, inner) {
   if (typeof(element) === "undefined") {
     return false;
@@ -144,7 +124,7 @@ function getUrlVars() {
   return vars;
 }
 
-function modTR(packConfig, mods) {
+function modTR(packver, mods) {
   var modsrows = [];
   mods.forEach(function(mod) {
     var authors = [];
@@ -164,9 +144,9 @@ function modTR(packConfig, mods) {
 
     var modwarn = '';
     if (typeof(mod.warning) !== 'undefined'
-      && typeof(packConfig.warnings) !== 'undefined'
-      && packConfig.warnings[mod.warning] !== 'undefined') {
-      foreignHTMLDivNode.innerHTML = packConfig.warnings[mod.warning];
+      && typeof(packver.warnings) !== 'undefined'
+      && packver.warnings[mod.warning] !== 'undefined') {
+      foreignHTMLDivNode.innerHTML = packver.warnings[mod.warning];
       var modwarn = createElement("details", {"class":"modlist_warn"}, [
         createElement("summary", {"class":"modlist_warn"}, "WARNING"),
         ]);
@@ -197,32 +177,58 @@ String.prototype.safeCSSId = function() {
   return encodeURIComponent(this.toLowerCase()).replace(/%[0-9A-F]{2}/gi,'-');
 }
 
-String.prototype.capFrst = function () {
+String.prototype.capFrst = function() {
   return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 }
 
-function displayVersion(packname, packversion)
-{
-  var renderNode = document.getElementById("modlist");
-  var urlvars = getUrlVars();
-  var anchor = window.location.hash.slice(1);
-
-  packname = urlvars["p"] ? urlvars["p"] : packname;
-  packversion = urlvars["v"] ? urlvars["v"] : packversion;
-
-  var packurl = 'https://download.nodecdn.net/containers/atl/packs/'
-    + packname.replace(/[\s:_-]*/gi,'')
+PackVersions = function(name, version) {
+  this.name = name;
+  this.version = version;
+  this.url = 'https://download.nodecdn.net/containers/atl/packs/'
+    + name.replace(/[\s:_-]*/gi,'')
     + '/versions/'
-    + packversion
+    + version
     + '/Configs.json';
-  ajax_get(packurl, function(packConfig) {
+  this.fetch();
+}
+
+PackVersions.prototype = {
+  fetch: function() {
+    var parent = this;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", this.url, true);
+    xmlhttp.onreadystatechange = function(aEvt) {
+      if (xmlhttp.readyState === XMLHttpRequest.DONE && xmlhttp.status == 200) {
+//      console.log("responseText:\n" + xmlhttp.responseText);
+        try {
+          var data = JSON.parse(xmlhttp.responseText);
+          parent.data = data;
+        }
+        catch(err) {
+          console.log(err.message + " in " + xmlhttp.responseText);
+          return;
+        }
+        parent.display();
+      }
+    }.bind(parent);
+    xmlhttp.send();
+  },
+
+  display: function() {
+    if (this.data === undefined) {
+      console.log('Fetch first!!!');
+      return
+    }
+    console.log(this.data.mods);
+    var renderNode = document.getElementById("modlist");
     var modlist = document.createDocumentFragment();
-    var forge = getModsByType(packConfig.mods, 'forge')[0];
-    var stdmods = getModsByType(packConfig.mods, 'mods').keySort('name');
-    var depmods = getModsByType(packConfig.mods, 'dependency').keySort('name');
-    modlist.appendChild(createElement("h1", {"id":"modlist_packtitle"}, packname));
-    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + packConfig["version"])]));
-    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + packConfig["minecraft"]));
+    var forge = getModsByType(this.data.mods, 'forge')[0];
+    console.log(forge);
+    var stdmods = getModsByType(this.data.mods, 'mods').keySort('name');
+    var depmods = getModsByType(this.data.mods, 'dependency').keySort('name');
+    modlist.appendChild(createElement("h1", {"id":"modlist_packtitle"}, this.name));
+    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + this.version)]));
+    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + this.data.minecraft));
     modlist.appendChild(createElement("h3", {}, 'Powered by'));
     modlist.appendChild(createElement("ul", {}, [
       createElement("li", {}, forge.name + ' ' + forge.version),
@@ -234,10 +240,10 @@ function displayVersion(packname, packversion)
         : ''
     ]));
 
-    if (typeof(packConfig.messages) !== 'undefined' && Object.keys(packConfig.messages).length > 0) {
+    if (typeof(this.data.messages) !== 'undefined' && Object.keys(this.data.messages).length > 0) {
       modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
-      for (msgId in packConfig.messages) {
-        foreignHTMLDivNode.innerHTML = packConfig.messages[msgId];
+      for (msgId in this.data.messages) {
+        foreignHTMLDivNode.innerHTML = this.data.messages[msgId];
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
           createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + msgId.safeCSSId()}, msgId.capFrst()),
           ]);
@@ -257,7 +263,7 @@ function displayVersion(packname, packversion)
             createElement("th", {"class":"left"}, 'Description')
           ])
         ]),
-        createElement("tbody", {}, modTR(packConfig, stdmods))
+        createElement("tbody", {}, modTR(this.data, stdmods))
       ]));
     }
 
@@ -272,12 +278,25 @@ function displayVersion(packname, packversion)
             createElement("th", {"class":"left"}, 'Description')
           ])
         ]),
-        createElement("tbody", {}, modTR(packConfig, depmods))
+        createElement("tbody", {}, modTR(this.data, depmods))
       ]));
     }
-  renderNode.appendChild(modlist);
 
-  });
+    renderNode.appendChild(modlist);
+  }
+  
+};
+
+function displayVersion(packname, packversion)
+{
+  var renderNode = document.getElementById("modlist");
+  var urlvars = getUrlVars();
+  var anchor = window.location.hash.slice(1);
+  
+  packname = urlvars["p"] ? urlvars["p"] : packname;
+  packversion = urlvars["v"] ? urlvars["v"] : packversion;
+
+  var pack = new PackVersions(packname, packversion);
 
   renderNode.addEventListener("DOMSubtreeModified", function(e)
     {
