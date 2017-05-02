@@ -233,8 +233,8 @@
       "mojang":
       {
           "text" : "© Mojang AB. Do not distribute!",
-          "posX" : 115,
-          "posY" : -10,
+          "posX" : 120,
+          "posY" : -13,
           "normalTextColor" : 16711680,
           "hoverTextColor": 16711680,
           "fontSize" : 1,
@@ -245,7 +245,7 @@
         {
             "text" : "",
             "posX" : 205,
-            "posY" : -46,
+            "posY" : -60,
             "color" : -1,
             "fontSize" : 1,
             "anchor" : "middle",
