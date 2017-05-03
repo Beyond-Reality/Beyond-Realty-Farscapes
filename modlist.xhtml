@@ -15,7 +15,6 @@ overflow-wrap: break-word;
 table {
 border-collapse: collapse;
 }
-table.modlist_table td, table.modlist_table th { vertical-align: top }
 td, th {
 border-spacing: 0px 0px;
 border-color: rgb(198, 203, 209);
@@ -25,57 +24,25 @@ padding: 6px 13px 6px 13px
 }
 tr:nth-child(even) {background: rgb(246, 248, 250)}
 tr:nth-child(odd) {background: rgb(255, 255, 255)}
-ul.mod_authors {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-ul.mod_authors li {
-}
-.left {text-align:left;}
-.center {text-align:center;}
 details, summary {display:block;}
-summary.modlist_warn::before {
-  content: "⚠";
-  color: #FFCC00;
-  font-weight:800;
-  margin-right: 1em;
-}
 details.modlist_msg {
   margin-left: 4em;
-}
-details.modlist_msg>div {
-  width: 512px;
-  font-size: 12px;
-  padding: 1em 2em;
-  background: #444444;
-  color: #dcdcdc;
 }
 summary.modlist_msg {
   margin-left: -4em;
 }
-details.modlist_warn>div {
-  width: 512px;
-  font-size: 12px;
-  padding: 1em 2em;
-  background: #444444;
-  color: #dcdcdc;
-}
-summary.modlist_warn {
-  background: transparent;
-  color: #FFCC00;
-  font-weight: 800;
-}
+
     ]]></style>
   </head>
   <body>
     <article id="modlist"></article>
     <script type="application/javascript"><![CDATA[
-var htmldoc = document.implementation.createHTMLDocument('Document parser');
+var htmldoc = document.implementation.createHTMLDocument("Document parser");
 var foreignHTMLDivNode = htmldoc.createElement("div");
+foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:16px;padding:14px 8px;background:#444444;color:#dcdcdc");
 
 window.onload = function () {
-  displayVersion('Beyond Reality: Farscapes', 'devBuild1.11');
+  displayVersion("Beyond Reality: Farscapes", "devBuild1.11");
 }
 
 function createElement(element, attribute, inner) {
@@ -86,7 +53,7 @@ function createElement(element, attribute, inner) {
     inner = "";
   }
   var el = document.createElement(element);
-  if (typeof(attribute) === 'object') {
+  if (typeof(attribute) === "object") {
     for (var key in attribute) {
       el.setAttribute(key, attribute[key]);
     }
@@ -128,39 +95,43 @@ function modTR(packver, mods) {
   var modsrows = [];
   mods.forEach(function(mod) {
     var authors = [];
-    switch (mod.authors === undefined ? 0 : mod.authors.length) {
+    switch (typeof(mod.authors) === "undefined" ? 0 : mod.authors.length) {
       case 0:
-        authors.push(createElement("li", {"class":"mod_author_unknown"}, [createElement("i",{} ,"Unknown")]));
+        var elLiAuthor = createElement("li", {"class":"mod_author_unknown"}, [createElement("i",{} ,"Unknown")]);
+        authors.push(elLiAuthor);
       break;
       case 1:
-        authors.push(createElement("li", {"class":"mod_author_single"}, mod.authors[0]));
+        var elLiAuthor = createElement("li", {"class":"mod_author_single"}, mod.authors[0]);
+        authors.push(elLiAuthor);
       break;
       default:
         for (k = 0; k < mod.authors.length; k++) {
-          authors.push(createElement("li", {"class":"mod_author"},mod.authors[k]));
+          var elLiAuthor = createElement("li", {"class":"mod_author"},mod.authors[k]);
+          authors.push(elLiAuthor);
         }
       break;
     }
 
-    var modwarn = '';
-    if (typeof(mod.warning) !== 'undefined'
-      && typeof(packver.warnings) !== 'undefined'
-      && packver.warnings[mod.warning] !== 'undefined') {
+    var modwarn = "";
+    if (typeof(mod.warning) !== "undefined"
+      && typeof(packver.warnings) !== "undefined"
+      && packver.warnings[mod.warning] !== "undefined") {
       foreignHTMLDivNode.innerHTML = packver.warnings[mod.warning];
-      var modwarn = createElement("details", {"class":"modlist_warn"}, [
-        createElement("summary", {"class":"modlist_warn"}, "WARNING"),
+      var modwarn = createElement("details", {"style":"color:#DD7700;font-weight:800;"}, [
+        createElement("summary", {"class":"modlist_warn"}, "⚠ WARNING"),
         ]);
       modwarn.appendChild(document.importNode(foreignHTMLDivNode, true));
-
     }
-    modsrows.push(createElement("tr", {"id":'mod-' + mod.name.safeCSSId()}, [
-      createElement("td", {"class":"left"},
+
+    var tr = createElement("tr", {"style":"vertical-align:top","id":"mod-" + mod.name.safeCSSId()}, [
+      createElement("td", {"style":"vertical-align:top;text-align:left"},
         createElement("a", {"href":mod.website}, mod.name)
       ),
-      createElement("td", {"class":"center"}, mod.version),
-      createElement("td", {"class":"left"}, createElement("ul", {"class":"mod_authors"}, authors)),
-      createElement("td", {"class":"left"}, [mod.description, modwarn]),
-    ]));
+      createElement("td", {"style":"vertical-align:top;text-align:center"}, mod.version),
+      createElement("td", {"style":"vertical-align:top;text-align:left"}, createElement("ul", {"style":"list-style:none;margin:0;padding:0"}, authors)),
+      createElement("td", {"style":"vertical-align:top;text-align:left"}, [mod.description, modwarn]),
+    ]);
+    modsrows.push(tr);
   });
   return modsrows;
 }
@@ -174,7 +145,7 @@ Array.prototype.keySort = function(key, desc) {
 }
 
 String.prototype.safeCSSId = function() {
-  return encodeURIComponent(this.toLowerCase()).replace(/%[0-9A-F]{2}/gi,'-');
+  return encodeURIComponent(this.toLowerCase()).replace(/%[0-9A-F]{2}/gi,"-");
 }
 
 String.prototype.capFrst = function() {
@@ -184,12 +155,11 @@ String.prototype.capFrst = function() {
 PackVersions = function(name, version) {
   this.name = name;
   this.version = version;
-  this.url = 'https://download.nodecdn.net/containers/atl/packs/'
-    + name.replace(/[\s:_-]*/gi,'')
-    + '/versions/'
+  this.url = "https://download.nodecdn.net/containers/atl/packs/"
+    + name.replace(/[\s:_-]*/gi,"")
+    + "/versions/"
     + version
-    + '/Configs.json';
-  this.fetch();
+    + "/Configs.json";
 }
 
 PackVersions.prototype = {
@@ -215,37 +185,36 @@ PackVersions.prototype = {
   },
 
   display: function() {
-    if (this.data === undefined) {
-      console.log('Fetch first!!!');
+    if (typeof(this.data) === "undefined") {
+      console.log("Fetch first!!!");
       return
     }
-    console.log(this.data.mods);
     var renderNode = document.getElementById("modlist");
     var modlist = document.createDocumentFragment();
-    var forge = getModsByType(this.data.mods, 'forge')[0];
-    console.log(forge);
-    var stdmods = getModsByType(this.data.mods, 'mods').keySort('name');
-    var depmods = getModsByType(this.data.mods, 'dependency').keySort('name');
+    var forge = getModsByType(this.data.mods, "forge")[0];
+    var stdmods = getModsByType(this.data.mods, "mods").keySort("name");
+    var depmods = getModsByType(this.data.mods, "dependency").keySort("name");
     modlist.appendChild(createElement("h1", {"id":"modlist_packtitle"}, this.name));
-    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, 'Version: ' + this.version)]));
-    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, 'An ATLauncher Mod-pack for Minecraft: ' + this.data.minecraft));
-    modlist.appendChild(createElement("h3", {}, 'Powered by'));
+    modlist.appendChild(createElement("ul", {}, [createElement("li", {}, "Version: " + this.version)]));
+    modlist.appendChild(createElement("h2", {"id":"modlist_mcversion"}, "An ATLauncher Mod-pack for Minecraft: " + this.data.minecraft));
+    modlist.appendChild(createElement("h3", {}, "Powered by"));
     modlist.appendChild(createElement("ul", {}, [
-      createElement("li", {}, forge.name + ' ' + forge.version),
+      createElement("li", {}, forge.name + " " + forge.version),
       stdmods.length > 0 ?
-        createElement("li", {}, createElement("a", {"href":"#modlist_mods"}, stdmods.length + ' Mods'))
-        : '',
+        createElement("li", {}, createElement("a", {"href":"#modlist_mods"}, stdmods.length + " Mods"))
+        : "",
       depmods.length > 0 ?
-        createElement("li", {}, createElement("a", {"href":"#modlist_depend"}, depmods.length + ' Dependency/Core Mods'))
-        : ''
+        createElement("li", {}, createElement("a", {"href":"#modlist_depend"}, depmods.length + " Dependency/Core Mods"))
+        : ""
     ]));
 
-    if (typeof(this.data.messages) !== 'undefined' && Object.keys(this.data.messages).length > 0) {
-      modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, 'Messages'));
+    if (typeof(this.data.messages) !== "undefined" && Object.keys(this.data.messages).length > 0) {
+      modlist.appendChild(createElement("h2", {"id":"modlist_messages"}, "Messages"));
       for (msgId in this.data.messages) {
         foreignHTMLDivNode.innerHTML = this.data.messages[msgId];
+
         var msgfragment = createElement("details", {"class":"modlist_msg"}, [
-          createElement("summary", {"class":"modlist_msg","id":'modlist_msg_' + msgId.safeCSSId()}, msgId.capFrst()),
+          createElement("summary", {"class":"modlist_msg","id":"modlist_msg_" + msgId.safeCSSId()}, msgId.capFrst()),
           ]);
         msgfragment.appendChild(document.importNode(foreignHTMLDivNode, true));
         modlist.appendChild(msgfragment);
@@ -253,14 +222,14 @@ PackVersions.prototype = {
     }
 
     if (stdmods.length > 0) {
-      modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, 'Mods'));
+      modlist.appendChild(createElement("h2", {"id":"modlist_mods"}, "Mods"));
       modlist.appendChild(createElement("table", {"id":"modlist_stdtable","class":"modlist_table"}, [
         createElement("thead", {}, [
           createElement("tr", {}, [
-            createElement("th", {"class":"left"}, 'Mod'),
-            createElement("th", {"class":"center"}, 'Version'),
-            createElement("th", {"class":"left"}, 'Authors'),
-            createElement("th", {"class":"left"}, 'Description')
+            createElement("th", {"style":"text-align:left"}, "Mod"),
+            createElement("th", {"style":"text-align:center"}, "Version"),
+            createElement("th", {"style":"text-align:left"}, "Authors"),
+            createElement("th", {"style":"text-align:left"}, "Description")
           ])
         ]),
         createElement("tbody", {}, modTR(this.data, stdmods))
@@ -268,14 +237,14 @@ PackVersions.prototype = {
     }
 
     if (depmods.length > 0) {
-      modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, 'Dependency/Core Mods'));
+      modlist.appendChild(createElement("h2", {"id":"modlist_depend"}, "Dependency/Core Mods"));
       modlist.appendChild(createElement("table", {"id":"modlist_deptable","class":"modlist_table"}, [
         createElement("thead", {}, [
           createElement("tr", {}, [
-            createElement("th", {"class":"left"}, 'Mod'),
-            createElement("th", {"class":"center"}, 'Version'),
-            createElement("th", {"class":"left"}, 'Authors'),
-            createElement("th", {"class":"left"}, 'Description')
+            createElement("th", {"style":"text-align:left"}, "Mod"),
+            createElement("th", {"style":"text-align:center"}, "Version"),
+            createElement("th", {"style":"text-align:left"}, "Authors"),
+            createElement("th", {"style":"text-align:left"}, "Description")
           ])
         ]),
         createElement("tbody", {}, modTR(this.data, depmods))
@@ -283,6 +252,7 @@ PackVersions.prototype = {
     }
 
     renderNode.appendChild(modlist);
+
   }
   
 };
@@ -298,18 +268,27 @@ function displayVersion(packname, packversion)
 
   var pack = new PackVersions(packname, packversion);
 
-  renderNode.addEventListener("DOMSubtreeModified", function(e)
-    {
-      e.target.removeEventListener(e.type, arguments.callee);
-      if (typeof(anchor) !== 'undefined' && anchor !== '' ){
-        var target = window.document.getElementById(anchor);
-        if (target != null) {
-          document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});
-        }
+  pack.fetch();
+
+  /* Observe when the generated document fragment
+   * has been attached to its element
+   * scroll view to matching element ID, now that it exists
+   *
+   * @var
+   * renderNode: The element to observe
+   * anchor: The location hash to scroll to
+   */
+  var observer = new MutationObserver(function(mutations) {
+    observer.disconnect();
+    if (typeof(anchor) !== "undefined" && anchor !== "" ){
+      var target = window.document.getElementById(anchor);
+      if (target != null) {
+        document.getElementById(anchor).scrollIntoView({block: "start", behavior: "instant"});
       }
     }
-    , false
-  );
+  });
+
+  observer.observe(renderNode, { childList: true });
 
 }
     ]]></script>
