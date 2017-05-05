@@ -2,7 +2,7 @@
 ATLauncher Configs.xml Sorter
 Author: Léa Gris @ Beyond Reality Team https://github.com/Beyond-Reality
 Date: 2017-05-04
-Version: 1.0.0
+Version: 1.0.1
 License: http://www.wtfpl.net/
 
 Example usage:
@@ -37,7 +37,7 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
   <xsl:template match="mods">
     <xsl:copy>
       <xsl:text>&#10;&#10;      </xsl:text>
-      <xsl:comment><xsl:text> </xsl:text><xsl:value-of select="mod[@type='forge']/@name"/><xsl:text> </xsl:text></xsl:comment>
+      <xsl:comment><xsl:text> </xsl:text><xsl:value-of select="mod[@type='forge' or @type='mcpc']/@name"/><xsl:text> </xsl:text></xsl:comment>
       <xsl:text>&#10;</xsl:text>
       <xsl:apply-templates select="mod[@type='forge' or @type='mcpc']"/>
       <xsl:variable name="nmods" select="count(mod[@type='mods' or @type='jar' or @type='flan'])"/>
