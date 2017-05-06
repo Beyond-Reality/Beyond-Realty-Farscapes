@@ -123,24 +123,29 @@ PackVersions = function(name, version) {
 
 PackVersions.prototype = {
   fetch: function() {
-    var parent = this;
-    parent.xmlhttp = new XMLHttpRequest();
-    parent.xmlhttp.open("GET", this.url, true);
-    parent.xmlhttp.onreadystatechange = function(aEvt) {
-      if (parent.xmlhttp.readyState === XMLHttpRequest.DONE && parent.xmlhttp.status == 200) {
-//      console.log("responseText:\n" + xmlhttp.responseText);
-        try {
-          var data = JSON.parse(parent.xmlhttp.responseText);
-          parent.data = data;
-        }
-        catch(err) {
-          console.log(err.message + " in " + xmlhttp.responseText);
-          return;
-        }
-        parent.display();
+    var here = this;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", here.url, true);
+    xmlhttp.onreadystatechange = this.jsonReady.bind(here);
+    xmlhttp.send();
+  },
+  
+  jsonReady: function(aEvt) {
+    console.log(aEvt);
+
+    if (aEvt.target.readyState === XMLHttpRequest.DONE && aEvt.target.status == 200) {
+//    console.log("responseText:\n" + this.xmlhttp.responseText);
+      try {
+        var data = JSON.parse(aEvt.target.responseText);
+        this.data = data;
       }
-    }.bind(parent);
-    this.xmlhttp.send();
+      catch(err) {
+        console.log(err.message + " in " + aEvt.target.statusText);
+        return;
+      }
+      this.display();
+    }
+
   },
 
   display: function() {
