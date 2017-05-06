@@ -146,8 +146,8 @@
         </VeinsPreset>
         <!-- Cloud presets -->
         <CloudPreset name='StrategicCloud' inherits='PresetStrategicCloud'>
-            <Setting name='CloudRadius' avg='15' range='8'/>
-            <Setting name='CloudThickness' avg='10' range='6'/>
+            <Setting name='CloudRadius' avg='20' range='8'/>
+            <Setting name='CloudThickness' avg='15' range='6'/>
             <Setting name='CloudSizeNoise' avg='0.4'/>
             <Setting name='CloudInclination' avg='0.25' range='0.45'/>
             <Setting name='OreRadiusMult' avg='1' range='0.1'/>
@@ -1491,6 +1491,57 @@
                         <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
                         <Setting name='HeightOffset' avg='3' range='1'/>
                       </Cloud>
+                      <!-- ************** Mountain Sparse ores ********************** -->
+                      <StandardGen name="Sparse mountain Iron 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseiron" />
+                          <Setting name="Frequency" avg="18" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain Tin 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsetin" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain nickel 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsenickel" />
+                          <Setting name="Frequency" avg="16" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain coal 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsecoal" />
+                          <Setting name="Frequency" avg="28" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain bauxite 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsebauxite" />
+                          <Setting name="Frequency" avg="15" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain ruby 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseruby" />
+                          <Setting name="Frequency" avg="12" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain emerald 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseemerald" />
+                          <Setting name="Frequency" avg="10" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain sapphire 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsesapphire" />
+                          <Setting name="Frequency" avg="10" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain redstone 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseredstone" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain lapis 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparselapis" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
                     </IfModInstalled>
 
 
