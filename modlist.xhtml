@@ -41,10 +41,6 @@ var htmldoc = document.implementation.createHTMLDocument("Document parser");
 var foreignHTMLDivNode = htmldoc.createElement("div");
 foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:16px;padding:14px 8px;background:#444444;color:#dcdcdc");
 
-window.onload = function () {
-  displayVersion("Beyond Reality: Farscapes", "devBuild1.11");
-}
-
 function createElement(element, attribute, inner) {
   if (typeof(element) === "undefined") {
     return false;
@@ -347,6 +343,10 @@ function displayVersion(packname, packversion)
   });
 
   observer.observe(renderNode, { childList: true });
+}
+
+window.onload = function () {
+  displayVersion("Beyond Reality: Farscapes", "devBuild1.11");
 }
     ]]></script>
 
