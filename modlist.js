@@ -1,7 +1,3 @@
-var htmldoc = document.implementation.createHTMLDocument("Document parser");
-var foreignHTMLDivNode = htmldoc.createElement("div");
-foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:12px;padding:14px 8px;background:#444444;color:#dcdcdc");
-
 function makeElement(element, attribute, inner) {
   if (typeof(element) === "undefined") {
     return false;
@@ -48,51 +44,6 @@ function getUrlVars() {
   return vars;
 }
 
-function modTR(packver, mods) {
-  var modsrows = [];
-  mods.forEach(function(mod) {
-    var authors = [];
-    switch (typeof(mod.authors) === "undefined" ? 0 : mod.authors.length) {
-      case 0:
-        var elLiAuthor = makeElement("li", {"class":"mod_author_unknown"}, [makeElement("i",{} ,"Unknown")]);
-        authors.push(elLiAuthor);
-      break;
-      case 1:
-        var elLiAuthor = makeElement("li", {"class":"mod_author_single"}, mod.authors[0]);
-        authors.push(elLiAuthor);
-      break;
-      default:
-        for (k = 0; k < mod.authors.length; k++) {
-          var elLiAuthor = makeElement("li", {"class":"mod_author"},mod.authors[k]);
-          authors.push(elLiAuthor);
-        }
-      break;
-    }
-
-    var modwarn = "";
-    if (typeof(mod.warning) !== "undefined"
-      && typeof(packver.warnings) !== "undefined"
-      && packver.warnings[mod.warning] !== "undefined") {
-      foreignHTMLDivNode.innerHTML = packver.warnings[mod.warning];
-      var modwarn = makeElement("details", {"style":"color:#DD7700;font-weight:800;"}, [
-        makeElement("summary", {"class":"modlist_warn"}, "⚠ WARNING"),
-        ]);
-      modwarn.appendChild(document.importNode(foreignHTMLDivNode, true));
-    }
-
-    var tr = makeElement("tr", {"style":"vertical-align:top","id":"mod-" + mod.name.safeCSSId()}, [
-      makeElement("td", {"style":"vertical-align:top;text-align:left"},
-        makeElement("a", {"href":mod.website}, mod.name)
-      ),
-      makeElement("td", {"style":"vertical-align:top;text-align:center"}, mod.version),
-      makeElement("td", {"style":"vertical-align:top;text-align:left"}, makeElement("ul", {"class":"list-unstyled"}, authors)),
-      makeElement("td", {"style":"vertical-align:top;text-align:left"}, [mod.description, modwarn]),
-    ]);
-    modsrows.push(tr);
-  });
-  return modsrows;
-}
-
 Array.prototype.keySort = function(key, desc) {
   this.sort(function(a, b) {
     var la = a[key].toLowerCase();
@@ -114,24 +65,24 @@ String.prototype.capFrst = function() {
 PackVersions = function(name, version) {
   this.name = name;
   this.version = version;
-  this.url = "https://download.nodecdn.net/containers/atl/packs/"
-    + name.replace(/[\s:_-]*/gi,"")
-    + "/versions/"
-    + version
-    + "/Configs.json";
 }
 
 PackVersions.prototype = {
   fetch: function() {
+    var url = "https://download.nodecdn.net/containers/atl/packs/"
+      + this.name.replace(/[\s:_-]*/gi,"")
+      + "/versions/"
+      + this.version
+      + "/Configs.json";
     var here = this;
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", here.url, true);
+    xmlhttp.open("GET", url, true);
     xmlhttp.onload = this.jsonLoaded.bind(here);
     xmlhttp.send();
   },
   
   jsonLoaded: function(aEvt) {
-    console.log(aEvt);
+//    console.log(aEvt);
 
     if (aEvt.target.readyState === XMLHttpRequest.DONE && aEvt.target.status == 200) {
 //    console.log("responseText:\n" + this.xmlhttp.responseText);
@@ -144,7 +95,51 @@ PackVersions.prototype = {
       }
       this.display();
     }
+  },
 
+  modTR: function(mods) {
+    var modsrows = [];
+    mods.forEach(function(mod) {
+      var authors = [];
+      switch (typeof(mod.authors) === "undefined" ? 0 : mod.authors.length) {
+        case 0:
+          var elLiAuthor = makeElement("li", {"class":"mod_author_unknown"}, [makeElement("i",{} ,"Unknown")]);
+          authors.push(elLiAuthor);
+        break;
+        case 1:
+          var elLiAuthor = makeElement("li", {"class":"mod_author_single"}, mod.authors[0]);
+          authors.push(elLiAuthor);
+        break;
+        default:
+          for (k = 0; k < mod.authors.length; k++) {
+            var elLiAuthor = makeElement("li", {"class":"mod_author"},mod.authors[k]);
+            authors.push(elLiAuthor);
+          }
+        break;
+      }
+
+      var modwarn = "";
+      if (typeof(mod.warning) !== "undefined"
+        && typeof(this.data.warnings) !== "undefined"
+        && this.data.warnings[mod.warning] !== "undefined") {
+        this.foreignHTMLDivNode.innerHTML = this.data.warnings[mod.warning];
+        var modwarn = makeElement("details", {"style":"color:#DD7700;font-weight:800;"}, [
+          makeElement("summary", {"class":"modlist_warn"}, "⚠ WARNING"),
+          ]);
+        modwarn.appendChild(document.importNode(this.foreignHTMLDivNode, true));
+      }
+
+      var tr = makeElement("tr", {"style":"vertical-align:top","id":"mod-" + mod.name.safeCSSId()}, [
+        makeElement("td", {"style":"vertical-align:top;text-align:left"},
+          makeElement("a", {"href":mod.website}, mod.name)
+        ),
+        makeElement("td", {"style":"vertical-align:top;text-align:center"}, mod.version),
+        makeElement("td", {"style":"vertical-align:top;text-align:left"}, makeElement("ul", {"class":"list-unstyled"}, authors)),
+        makeElement("td", {"style":"vertical-align:top;text-align:left"}, [mod.description, modwarn]),
+      ]);
+      modsrows.push(tr);
+    }.bind(this));
+    return modsrows;
   },
 
   display: function() {
@@ -152,6 +147,10 @@ PackVersions.prototype = {
       console.log("Fetch first!!!");
       return
     }
+    this.htmldoc = document.implementation.createHTMLDocument("Document parser");
+    this.foreignHTMLDivNode = this.htmldoc.createElement("div");
+    this.foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:12px;padding:14px 8px;background:#444444;color:#dcdcdc");
+
     var renderNode = document.getElementById("modlist");
     var modlist = document.createDocumentFragment();
 
@@ -185,19 +184,19 @@ PackVersions.prototype = {
         makeElement("ul", {}, [
           makeElement("li", {}, forge.name + " " + forge.version),
           makeElement("li", {}, [
-            makeElement("a", {"href":"#modlist_components"}, this.data.mods.length - 1 + " Components"),
+            makeElement("a", {"href":"#modlist_components"}, (this.data.mods.length > 2 ? this.data.mods.length - 1 : "A") + " Component" + (this.data.mods.length > 2 ? "s" : "")),
               modlist.appendChild(makeElement("ul", {}, [
                 stdmods.length > 0 ?
-                  makeElement("li", {}, makeElement("a", {"href":"#modlist_mods"}, stdmods.length + " Mods"))
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_mods"}, (stdmods.length > 1 ? stdmods.length : "A") + " Mod" + (stdmods.length > 1 ? "s" : "")))
                   : "",
                 plugins.length > 0 ?
-                  makeElement("li", {}, makeElement("a", {"href":"#modlist_plugins"}, plugins.length + " Plugins"))
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_plugins"}, (plugins.length > 1 ? plugins.length : "A") + " Plugin" + (plugins.length > 1 ? "s" : "")))
                   : "",
                 resources.length > 0 ?
-                  makeElement("li", {}, makeElement("a", {"href":"#modlist_resources"}, resources.length + " Resources"))
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_resources"}, (resources.length > 1 ? resources.length : "A" ) + " Resource" + (resources.length > 1 ? "s" : "")))
                   : "",
                 depmods.length > 0 ?
-                  makeElement("li", {}, makeElement("a", {"href":"#modlist_depend"}, depmods.length + " Dependency/Core Mods"))
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_depend"}, (depmods.length > 1 ? depmods.length : "A") + " Dependency/Core Mods" + (depmods.length > 1 ? "s" : "")))
                   : ""
               ])
             )
@@ -209,12 +208,12 @@ PackVersions.prototype = {
     if (typeof(this.data.messages) !== "undefined" && Object.keys(this.data.messages).length > 0) {
       modlist.appendChild(makeElement("h2", {"id":"modlist_messages"}, "Messages"));
       for (msgId in this.data.messages) {
-        foreignHTMLDivNode.innerHTML = this.data.messages[msgId];
+        this.foreignHTMLDivNode.innerHTML = this.data.messages[msgId];
 
         var msgfragment = makeElement("details", {"class":"modlist_msg"}, [
           makeElement("summary", {"class":"modlist_msg","id":"modlist_msg_" + msgId.safeCSSId()}, msgId.capFrst()),
           ]);
-        msgfragment.appendChild(document.importNode(foreignHTMLDivNode, true));
+        msgfragment.appendChild(document.importNode(this.foreignHTMLDivNode, true));
         modlist.appendChild(msgfragment);
       }
     }
@@ -226,7 +225,7 @@ PackVersions.prototype = {
       if (stdmods.length > 0) {
         modsPanels.appendChild(
           makeElement("div", {"id":"modlist_mods","class":"panel panel-primary panel-collapse"}, [
-            makeElement("div", {"class":"panel-heading"}, stdmods.length + " Standard Mods"),
+            makeElement("div", {"class":"panel-heading"}, (stdmods.length > 1 ? stdmods.length : "A" ) + " Standard Mod" + (stdmods.length > 1 ? "s" : "")),
             makeElement("div", {"class":"table-responsive"}, [
               makeElement("table", {"id":"modlist_modstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
                 makeElement("thead", {}, [
@@ -237,7 +236,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, modTR(this.data, stdmods))
+                makeElement("tbody", {}, this.modTR(stdmods))
               ])
             ])
           ])
@@ -247,7 +246,7 @@ PackVersions.prototype = {
       if (plugins.length > 0) {
         modsPanels.appendChild(
           makeElement("div", {"id":"modlist_plugins","class":"panel panel-primary panel-collapse"}, [
-            makeElement("div", {"class":"panel-heading"}, plugins.length + " Plugins"),
+            makeElement("div", {"class":"panel-heading"}, (plugins.length > 1 ? plugins.length : "A" )+ " Plugin" + (plugins.length > 1 ? "s" : "")),
             makeElement("div", {"class":"table-responsive"}, [
               makeElement("table", {"id":"modlist_pluginstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
                 makeElement("thead", {}, [
@@ -258,7 +257,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, modTR(this.data, plugins))
+                makeElement("tbody", {}, this.modTR(plugins))
               ])
             ])
           ])
@@ -268,7 +267,7 @@ PackVersions.prototype = {
       if (resources.length > 0) {
         modsPanels.appendChild(
           makeElement("div", {"id":"modlist_resources","class":"panel panel-primary panel-collapse"}, [
-            makeElement("div", {"class":"panel-heading"}, resources.length + " Resources"),
+            makeElement("div", {"class":"panel-heading"}, (resources.length > 1 ? resources.length : "A") + " Resource"  + (resources.length > 1 ? "s" : "")),
             makeElement("div", {"class":"table-responsive"}, [
               makeElement("table", {"id":"modlist_resourcestable","class":"table table-condensed table-hover table-bordered table-striped"}, [
                 makeElement("thead", {}, [
@@ -279,7 +278,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, modTR(this.data, resources))
+                makeElement("tbody", {}, this.modTR(resources))
               ])
             ])
           ])
@@ -289,7 +288,7 @@ PackVersions.prototype = {
       if (depmods.length > 0) {
         modsPanels.appendChild(
           makeElement("div", {"id":"modlist_depend","class":"panel panel-primary panel-collapse"}, [
-            makeElement("div", {"class":"panel-heading"}, depmods.length +" Dependency/Core Mods"),
+            makeElement("div", {"class":"panel-heading"}, (depmods.length > 1 ? depmods.length : "A") + " Dependency/Core Mod" + (depmods.length > 1 ? "s" : "")),
             makeElement("div", {"class":"table-responsive"}, [
               makeElement("table", {"id":"modlist_modstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
                 makeElement("thead", {}, [
@@ -300,7 +299,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, modTR(this.data, depmods))
+                makeElement("tbody", {}, this.modTR(depmods))
               ])
             ])
           ])
@@ -315,15 +314,8 @@ PackVersions.prototype = {
   
 };
 
-function displayVersion(packname, packversion)
+function displayVersion(renderNode, packname, packversion)
 {
-  var renderNode = document.getElementById("modlist");
-  var urlvars = getUrlVars();
-  var anchor = window.location.hash.slice(1);
-  
-  packname = urlvars["p"] ? urlvars["p"] : packname;
-  packversion = urlvars["v"] ? urlvars["v"] : packversion;
-
   var pack = new PackVersions(packname, packversion);
 
   pack.fetch();
@@ -338,6 +330,7 @@ function displayVersion(packname, packversion)
    */
   var observer = new MutationObserver(function(mutations) {
     observer.disconnect();
+    var anchor = window.location.hash.slice(1);
     if (typeof(anchor) !== "undefined" && anchor !== "" ){
       var target = window.document.getElementById(anchor);
       if (target != null) {
@@ -350,5 +343,11 @@ function displayVersion(packname, packversion)
 }
 
 window.onload = function () {
-  displayVersion("Beyond Reality: Farscapes", "devBuild1.11");
+  var renderNode = document.getElementById("modlist");
+  var urlvars = getUrlVars();
+
+  var packname = urlvars["p"] ? urlvars["p"] : renderNode.dataset.packName;
+  var packversion = urlvars["v"] ? urlvars["v"] : renderNode.dataset.packVersion;
+
+  displayVersion(renderNode, packname, packversion);
 }
