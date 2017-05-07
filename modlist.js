@@ -1,6 +1,6 @@
 var htmldoc = document.implementation.createHTMLDocument("Document parser");
 var foreignHTMLDivNode = htmldoc.createElement("div");
-foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:16px;padding:14px 8px;background:#444444;color:#dcdcdc");
+foreignHTMLDivNode.setAttribute("style", "widgh:512px;font-size:12px;padding:14px 8px;background:#444444;color:#dcdcdc");
 
 function makeElement(element, attribute, inner) {
   if (typeof(element) === "undefined") {
@@ -85,7 +85,7 @@ function modTR(packver, mods) {
         makeElement("a", {"href":mod.website}, mod.name)
       ),
       makeElement("td", {"style":"vertical-align:top;text-align:center"}, mod.version),
-      makeElement("td", {"style":"vertical-align:top;text-align:left"}, makeElement("ul", {"style":"list-style:none;margin:0;padding:0"}, authors)),
+      makeElement("td", {"style":"vertical-align:top;text-align:left"}, makeElement("ul", {"class":"list-unstyled"}, authors)),
       makeElement("td", {"style":"vertical-align:top;text-align:left"}, [mod.description, modwarn]),
     ]);
     modsrows.push(tr);
@@ -126,18 +126,17 @@ PackVersions.prototype = {
     var here = this;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", here.url, true);
-    xmlhttp.onreadystatechange = this.jsonReady.bind(here);
+    xmlhttp.onload = this.jsonLoaded.bind(here);
     xmlhttp.send();
   },
   
-  jsonReady: function(aEvt) {
+  jsonLoaded: function(aEvt) {
     console.log(aEvt);
 
     if (aEvt.target.readyState === XMLHttpRequest.DONE && aEvt.target.status == 200) {
 //    console.log("responseText:\n" + this.xmlhttp.responseText);
       try {
-        var data = JSON.parse(aEvt.target.responseText);
-        this.data = data;
+        this.data = JSON.parse(aEvt.target.responseText);
       }
       catch(err) {
         console.log(err.message + " in " + aEvt.target.statusText);
@@ -181,22 +180,32 @@ PackVersions.prototype = {
     modlist.appendChild(makeElement("ul", {}, [makeElement("li", {}, "Version: " + this.version)]));
     modlist.appendChild(makeElement("h2", {"id":"modlist_mcversion"}, "An ATLauncher Mod-pack for Minecraft: " + this.data.minecraft));
     modlist.appendChild(makeElement("h3", {}, "Powered by"));
-    modlist.appendChild(makeElement("ul", {}, [
-      makeElement("li", {}, forge.name + " " + forge.version),
-      stdmods.length > 0 ?
-        makeElement("li", {}, makeElement("a", {"href":"#modlist_mods"}, stdmods.length + " Mods"))
-        : "",
-      plugins.length > 0 ?
-        makeElement("li", {}, makeElement("a", {"href":"#modlist_plugins"}, plugins.length + " Plugins"))
-        : "",
-      resources.length > 0 ?
-        makeElement("li", {}, makeElement("a", {"href":"#modlist_resources"}, resources.length + " Resources"))
-        : "",
-      depmods.length > 0 ?
-        makeElement("li", {}, makeElement("a", {"href":"#modlist_depend"}, depmods.length + " Dependency/Core Mods"))
-        : ""
-    ]));
-
+    if (this.data.mods.length > 1) {
+      modlist.appendChild(
+        makeElement("ul", {}, [
+          makeElement("li", {}, forge.name + " " + forge.version),
+          makeElement("li", {}, [
+            makeElement("a", {"href":"#modlist_components"}, this.data.mods.length - 1 + " Components"),
+              modlist.appendChild(makeElement("ul", {}, [
+                stdmods.length > 0 ?
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_mods"}, stdmods.length + " Mods"))
+                  : "",
+                plugins.length > 0 ?
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_plugins"}, plugins.length + " Plugins"))
+                  : "",
+                resources.length > 0 ?
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_resources"}, resources.length + " Resources"))
+                  : "",
+                depmods.length > 0 ?
+                  makeElement("li", {}, makeElement("a", {"href":"#modlist_depend"}, depmods.length + " Dependency/Core Mods"))
+                  : ""
+              ])
+            )
+          ])
+        ])
+      );
+    }
+    
     if (typeof(this.data.messages) !== "undefined" && Object.keys(this.data.messages).length > 0) {
       modlist.appendChild(makeElement("h2", {"id":"modlist_messages"}, "Messages"));
       for (msgId in this.data.messages) {
@@ -210,67 +219,96 @@ PackVersions.prototype = {
       }
     }
 
-    if (stdmods.length > 0) {
-      modlist.appendChild(makeElement("h2", {"id":"modlist_mods"}, "Mods"));
-      modlist.appendChild(makeElement("table", {"id":"modlist_modstable","class":"modlist_table"}, [
-        makeElement("thead", {}, [
-          makeElement("tr", {}, [
-            makeElement("th", {"style":"text-align:left"}, "Mod"),
-            makeElement("th", {"style":"text-align:center"}, "Version"),
-            makeElement("th", {"style":"text-align:left"}, "Authors"),
-            makeElement("th", {"style":"text-align:left"}, "Description")
+    var modsPanels = makeElement("div", {"class":"panel-group"}, "");
+    if (this.data.mods.length > 1) {
+      modsPanels.appendChild(makeElement("h3", {"id":"modlist_components"}, this.data.mods.length - 1 + " Components"));
+
+      if (stdmods.length > 0) {
+        modsPanels.appendChild(
+          makeElement("div", {"id":"modlist_mods","class":"panel panel-primary panel-collapse"}, [
+            makeElement("div", {"class":"panel-heading"}, stdmods.length + " Standard Mods"),
+            makeElement("div", {"class":"table-responsive"}, [
+              makeElement("table", {"id":"modlist_modstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
+                makeElement("thead", {}, [
+                  makeElement("tr", {}, [
+                    makeElement("th", {"style":"text-align:left"}, "Mod"),
+                    makeElement("th", {"style":"text-align:center"}, "Version"),
+                    makeElement("th", {"style":"text-align:left"}, "Authors"),
+                    makeElement("th", {"style":"text-align:left"}, "Description")
+                  ])
+                ]),
+                makeElement("tbody", {}, modTR(this.data, stdmods))
+              ])
+            ])
           ])
-        ]),
-        makeElement("tbody", {}, modTR(this.data, stdmods))
-      ]));
+        );
+      }
+
+      if (plugins.length > 0) {
+        modsPanels.appendChild(
+          makeElement("div", {"id":"modlist_plugins","class":"panel panel-primary panel-collapse"}, [
+            makeElement("div", {"class":"panel-heading"}, plugins.length + " Plugins"),
+            makeElement("div", {"class":"table-responsive"}, [
+              makeElement("table", {"id":"modlist_pluginstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
+                makeElement("thead", {}, [
+                  makeElement("tr", {}, [
+                    makeElement("th", {"style":"text-align:left"}, "Mod"),
+                    makeElement("th", {"style":"text-align:center"}, "Version"),
+                    makeElement("th", {"style":"text-align:left"}, "Authors"),
+                    makeElement("th", {"style":"text-align:left"}, "Description")
+                  ])
+                ]),
+                makeElement("tbody", {}, modTR(this.data, plugins))
+              ])
+            ])
+          ])
+        );
+      }
+
+      if (resources.length > 0) {
+        modsPanels.appendChild(
+          makeElement("div", {"id":"modlist_resources","class":"panel panel-primary panel-collapse"}, [
+            makeElement("div", {"class":"panel-heading"}, resources.length + " Resources"),
+            makeElement("div", {"class":"table-responsive"}, [
+              makeElement("table", {"id":"modlist_resourcestable","class":"table table-condensed table-hover table-bordered table-striped"}, [
+                makeElement("thead", {}, [
+                  makeElement("tr", {}, [
+                    makeElement("th", {"style":"text-align:left"}, "Mod"),
+                    makeElement("th", {"style":"text-align:center"}, "Version"),
+                    makeElement("th", {"style":"text-align:left"}, "Authors"),
+                    makeElement("th", {"style":"text-align:left"}, "Description")
+                  ])
+                ]),
+                makeElement("tbody", {}, modTR(this.data, resources))
+              ])
+            ])
+          ])
+        );
+      }
+
+      if (depmods.length > 0) {
+        modsPanels.appendChild(
+          makeElement("div", {"id":"modlist_depend","class":"panel panel-primary panel-collapse"}, [
+            makeElement("div", {"class":"panel-heading"}, depmods.length +" Dependency/Core Mods"),
+            makeElement("div", {"class":"table-responsive"}, [
+              makeElement("table", {"id":"modlist_modstable","class":"table table-condensed table-hover table-bordered table-striped"}, [
+                makeElement("thead", {}, [
+                  makeElement("tr", {}, [
+                    makeElement("th", {"style":"text-align:left"}, "Mod"),
+                    makeElement("th", {"style":"text-align:center"}, "Version"),
+                    makeElement("th", {"style":"text-align:left"}, "Authors"),
+                    makeElement("th", {"style":"text-align:left"}, "Description")
+                  ])
+                ]),
+                makeElement("tbody", {}, modTR(this.data, depmods))
+              ])
+            ])
+          ])
+        );
+      }
     }
 
-    if (plugins.length > 0) {
-      modlist.appendChild(makeElement("h2", {"id":"modlist_plugins"}, "Plugins"));
-      modlist.appendChild(makeElement("table", {"id":"modlist_pluginstable","class":"modlist_table"}, [
-        makeElement("thead", {}, [
-          makeElement("tr", {}, [
-            makeElement("th", {"style":"text-align:left"}, "Mod"),
-            makeElement("th", {"style":"text-align:center"}, "Version"),
-            makeElement("th", {"style":"text-align:left"}, "Authors"),
-            makeElement("th", {"style":"text-align:left"}, "Description")
-          ])
-        ]),
-        makeElement("tbody", {}, modTR(this.data, plugins))
-      ]));
-    }
-
-
-    if (resources.length > 0) {
-      modlist.appendChild(makeElement("h2", {"id":"modlist_resources"}, "Resources"));
-      modlist.appendChild(makeElement("table", {"id":"modlist_resourcestable","class":"modlist_table"}, [
-        makeElement("thead", {}, [
-          makeElement("tr", {}, [
-            makeElement("th", {"style":"text-align:left"}, "Mod"),
-            makeElement("th", {"style":"text-align:center"}, "Version"),
-            makeElement("th", {"style":"text-align:left"}, "Authors"),
-            makeElement("th", {"style":"text-align:left"}, "Description")
-          ])
-        ]),
-        makeElement("tbody", {}, modTR(this.data, resources))
-      ]));
-    }
-
-    if (depmods.length > 0) {
-      modlist.appendChild(makeElement("h2", {"id":"modlist_depend"}, "Dependency/Core Mods"));
-      modlist.appendChild(makeElement("table", {"id":"modlist_deptable","class":"modlist_table"}, [
-        makeElement("thead", {}, [
-          makeElement("tr", {}, [
-            makeElement("th", {"style":"text-align:left"}, "Mod"),
-            makeElement("th", {"style":"text-align:center"}, "Version"),
-            makeElement("th", {"style":"text-align:left"}, "Authors"),
-            makeElement("th", {"style":"text-align:left"}, "Description")
-          ])
-        ]),
-        makeElement("tbody", {}, modTR(this.data, depmods))
-      ]));
-    }
-
+    modlist.appendChild(modsPanels);
     renderNode.appendChild(modlist);
 
   }
