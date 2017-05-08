@@ -1,0 +1,5 @@
+drawWireframes=true
+COGActive=true
+deferredPopulationRange=32.0
+debugDist=false
+
