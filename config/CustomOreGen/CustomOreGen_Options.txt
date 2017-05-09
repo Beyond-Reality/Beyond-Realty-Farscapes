@@ -1,5 +1,8 @@
-drawWireframes=true
 COGActive=true
+oreFreq=1  
+oreSize=1
+debugMode=false
 deferredPopulationRange=32.0
+drawWireframes=false
 debugDist=false
-
+advOptions=false
