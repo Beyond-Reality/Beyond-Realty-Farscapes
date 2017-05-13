@@ -1,3 +1,15 @@
+"use strict";
+
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,    
+  function(m, key, value) {
+    vars[key] = decodeURIComponent(value);
+  });
+  return vars;
+}
+
 function makeElement(element, attribute, inner) {
   if (typeof(element) === "undefined") {
     return false;
@@ -25,33 +37,28 @@ function makeElement(element, attribute, inner) {
   return el;
 }
 
-function getModsByType(mods, type) {
-  var typemods = [];
-  for (var mod in mods) {
-    if (mods[mod].type == type) {
-      typemods.push(mods[mod]);
+function Mods(arr) {
+  var mods = arr;
+  var collator = new Intl.Collator("en", { sensitivity: 'variant', ignorePunctuation: true, numeric: true, caseFirst: false });
+  this.length = mods.length;
+
+  this.byType = function () {
+    let types = (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments));
+
+    let gt = function (modA, modB) {
+      let nameA = modA.name.toLowerCase();
+      let nameB = modB.name.toLowerCase();
+      return collator.compare(nameA, nameB);
     }
+    let hasType = function (mod) {
+      return types.includes(mod.type);
+    };
+    return mods.filter(hasType).sort(gt);
   }
-  return typemods;
-}
-
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,    
-  function(m, key, value) {
-    vars[key] = decodeURIComponent(value);
-  });
-  return vars;
-}
-
-Array.prototype.keySort = function(key, desc) {
-  this.sort(function(a, b) {
-    var la = a[key].toLowerCase();
-    var lb = b[key].toLowerCase();
-    var result = desc ? (la < lb) : (la > lb);
-    return result ? 1 : -1;
-  });
-  return this;
+  
+  this.count = function () {
+    return mods.length;
+  }
 }
 
 String.prototype.safeCSSId = function() {
@@ -62,32 +69,32 @@ String.prototype.capFrst = function() {
   return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
 }
 
-PackVersions = function(name, version) {
+function PackVersions(name, version) {
+
   this.name = name;
   this.version = version;
-}
-
-PackVersions.prototype = {
-  fetch: function() {
+  var that = this;
+  
+  this.fetch = function () {
     var url = "https://download.nodecdn.net/containers/atl/packs/"
       + this.name.replace(/[\s:_-]*/gi,"")
       + "/versions/"
       + this.version
       + "/Configs.json";
-    var here = this;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", url, true);
-    xmlhttp.onload = this.jsonLoaded.bind(here);
+    xmlhttp.onload = parse.bind(this);
     xmlhttp.send();
-  },
+  }
   
-  jsonLoaded: function(aEvt) {
+  var parse = function(aEvt) {
 //    console.log(aEvt);
-
     if (aEvt.target.readyState === XMLHttpRequest.DONE && aEvt.target.status == 200) {
-//    console.log("responseText:\n" + this.xmlhttp.responseText);
+//    console.log("responseText:\n" + aEvt.target.responseText);
       try {
-        this.data = JSON.parse(aEvt.target.responseText);
+        var json = JSON.parse(aEvt.target.responseText);
+        this.data = json;
+        this.data.mods = (typeof json.mods !== "undefined") ? new Mods(json.mods) : new Mods ([]);
       }
       catch(err) {
         console.log(err.message + " in " + aEvt.target.statusText);
@@ -95,9 +102,9 @@ PackVersions.prototype = {
       }
       this.display();
     }
-  },
+  };
 
-  modTR: function(mods) {
+  var modBodyRows = function(mods) {
     var modsrows = [];
     mods.forEach(function(mod) {
       var authors = [];
@@ -111,7 +118,7 @@ PackVersions.prototype = {
           authors.push(elLiAuthor);
         break;
         default:
-          for (k = 0; k < mod.authors.length; k++) {
+          for (let k = 0; k < mod.authors.length; k++) {
             var elLiAuthor = makeElement("li", {"class":"mod_author"},mod.authors[k]);
             authors.push(elLiAuthor);
           }
@@ -138,11 +145,11 @@ PackVersions.prototype = {
         makeElement("td", {"style":"vertical-align:top;text-align:left"}, [mod.description, modwarn]),
       ]);
       modsrows.push(tr);
-    }.bind(this));
+    }.bind(that));
     return modsrows;
-  },
+  }
 
-  display: function() {
+  this.display = function() {
     if (typeof(this.data) === "undefined") {
       console.log("Fetch first!!!");
       return
@@ -154,37 +161,31 @@ PackVersions.prototype = {
     var renderNode = document.getElementById("modlist");
     var modlist = document.createDocumentFragment();
 
-    var forge = getModsByType(this.data.mods, "forge").concat(
-      getModsByType(this.data.mods, "mcpc"))[0];
+    var forge = this.data.mods.byType("forge", "mcpc");
+    var elForge = makeElement("ul", {"class":"list-unstyled"});
+    if (forge.length == 0) {
+      elForge.appendChild(makeElement("li", {}, "Vanilla Minecraft" + " " + this.version));
+    } else {
+      for (let k in forge) {
+        elForge.appendChild(makeElement("li", {}, forge[k].name + " " +  forge[k].version));
+      }
+    }
 
-    var stdmods = getModsByType(this.data.mods, "mods").concat(
-      getModsByType(this.data.mods, "jar").concat(
-        getModsByType(this.data.mods, "flan")
-        )
-      ).keySort("name");
-
-    var plugins = getModsByType(this.data.mods, "plugins").keySort("name");
-
-    var resources = getModsByType(this.data.mods, "resourcepack").concat(
-      getModsByType(this.data.mods, "extract").concat(
-        getModsByType(this.data.mods, "decomp")
-        )
-      ).keySort("name");
-
-    var depmods = getModsByType(this.data.mods, "dependency").concat(
-      getModsByType(this.data.mods, "coremods")
-    ).keySort("name");
+    var stdmods = this.data.mods.byType("mods", "jar", "flan");
+    var plugins = this.data.mods.byType("plugins");
+    var resources = this.data.mods.byType("resourcepack", "extract", "decomp");
+    var depmods = this.data.mods.byType("dependency", "coremods");
 
     modlist.appendChild(makeElement("h1", {"id":"modlist_packtitle"}, this.name));
     modlist.appendChild(makeElement("ul", {}, [makeElement("li", {}, "Version: " + this.version)]));
     modlist.appendChild(makeElement("h2", {"id":"modlist_mcversion"}, "An ATLauncher Mod-pack for Minecraft: " + this.data.minecraft));
-    modlist.appendChild(makeElement("h3", {}, "Powered by"));
-    if (this.data.mods.length > 1) {
+    if (this.data.mods.length > 0) {
+      modlist.appendChild(makeElement("h3", {}, "Powered by"));
       modlist.appendChild(
         makeElement("ul", {}, [
-          makeElement("li", {}, forge.name + " " + forge.version),
+          makeElement("li", {}, elForge),
           makeElement("li", {}, [
-            makeElement("a", {"href":"#modlist_components"}, (this.data.mods.length > 2 ? this.data.mods.length - 1 : "A") + " Component" + (this.data.mods.length > 2 ? "s" : "")),
+            makeElement("a", {"href":"#modlist_components"}, (this.data.mods.length > 2 ? this.data.mods.length - forge.length : "A") + " Component" + (this.data.mods.length > 2 ? "s" : "")),
               modlist.appendChild(makeElement("ul", {}, [
                 stdmods.length > 0 ?
                   makeElement("li", {}, makeElement("a", {"href":"#modlist_mods"}, (stdmods.length > 1 ? stdmods.length : "A") + " Mod" + (stdmods.length > 1 ? "s" : "")))
@@ -207,7 +208,7 @@ PackVersions.prototype = {
     
     if (typeof(this.data.messages) !== "undefined" && Object.keys(this.data.messages).length > 0) {
       modlist.appendChild(makeElement("h2", {"id":"modlist_messages"}, "Messages"));
-      for (msgId in this.data.messages) {
+      for (let msgId in this.data.messages) {
         this.foreignHTMLDivNode.innerHTML = this.data.messages[msgId];
 
         var msgfragment = makeElement("details", {"class":"modlist_msg"}, [
@@ -219,7 +220,7 @@ PackVersions.prototype = {
     }
 
     var modsPanels = makeElement("div", {"class":"panel-group"}, "");
-    if (this.data.mods.length > 1) {
+    if (this.data.mods.length > 0) {
       modsPanels.appendChild(makeElement("h3", {"id":"modlist_components"}, this.data.mods.length - 1 + " Components"));
 
       if (stdmods.length > 0) {
@@ -236,7 +237,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, this.modTR(stdmods))
+                makeElement("tbody", {}, modBodyRows(stdmods))
               ])
             ])
           ])
@@ -257,7 +258,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, this.modTR(plugins))
+                makeElement("tbody", {}, modBodyRows(plugins))
               ])
             ])
           ])
@@ -278,7 +279,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, this.modTR(resources))
+                makeElement("tbody", {}, modBodyRows(resources))
               ])
             ])
           ])
@@ -299,7 +300,7 @@ PackVersions.prototype = {
                     makeElement("th", {"style":"text-align:left"}, "Description")
                   ])
                 ]),
-                makeElement("tbody", {}, this.modTR(depmods))
+                makeElement("tbody", {}, modBodyRows(depmods))
               ])
             ])
           ])
@@ -312,7 +313,7 @@ PackVersions.prototype = {
 
   }
   
-};
+}
 
 function displayVersion(renderNode, packname, packversion)
 {
