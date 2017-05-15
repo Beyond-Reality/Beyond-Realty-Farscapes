@@ -1383,7 +1383,7 @@
                       </StandardGen>
                     </IfModInstalled>
                     <!-- RTG Mountain generation -->
-                    <IfModInstalled name="rtg">
+                    <IfModInstalled name="atg">
                       <!-- Iron Hills/Mountains -->
                       <Cloud name="IronCloud" inherits="StrategicCloud">
                         <OreBlock block="minecraft:iron_ore" weight="0.20" />
