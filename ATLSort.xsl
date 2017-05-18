@@ -10,10 +10,11 @@ Example usage:
   saxon-xslt Configs.xml ATLSort.xsl > SortedConfigs.xml
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:date="http://exslt.org/dates-and-times" 
+  xmlns:date="http://exslt.org/dates-and-times"
+  xmlns:saxon="http://saxon.sf.net/"
   extension-element-prefixes="date">
 
-  <xsl:output method="xml" indent="yes" omit-xml-declaration="yes" cdata-section-elements="install update warning" />
+  <xsl:output method="xml" indent="yes" saxon:indent="yes" saxon:indent-spaces="4" omit-xml-declaration="yes" cdata-section-elements="install update warning"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:template match="@* | node()">
@@ -22,7 +23,7 @@ Example usage:
     </xsl:copy>
   </xsl:template>
 
- <xsl:template match="comment()[contains(., 'ATLSort')]"/>
+  <xsl:template match="comment()[contains(., 'ATLSort')]"/>
 
   <xsl:template match="/">
     <xsl:comment>
