@@ -1382,8 +1382,9 @@
                               <BiomeSet inherits="ThoriumBiomes" />
                       </StandardGen>
                     </IfModInstalled>
-                    <!-- RTG Mountain generation -->
-                    <IfModInstalled name="atg">
+                    <!-- **************************************** RTG Mountain generation ******************************************* -->
+                  <IfCondition condition=':=dimension.generator.class="ChunkProviderRTG"'>
+                    <IfModInstalled name="rtg">
                       <!-- Iron Hills/Mountains -->
                       <Cloud name="IronCloud" inherits="StrategicCloud">
                         <OreBlock block="minecraft:iron_ore" weight="0.20" />
@@ -1543,6 +1544,7 @@
                           <Setting name="Height" avg="85" range="20" scaleTo="world" />
                       </StandardGen>
                     </IfModInstalled>
+                  </IfCondition>
 
 
                 </IfCondition>
