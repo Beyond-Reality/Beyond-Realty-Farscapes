@@ -47,6 +47,8 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
         <xsl:comment> Mods </xsl:comment>
         <xsl:text>&#10;</xsl:text>
         <xsl:apply-templates select="mod[@type='mods' or @type='jar' or @type='flan']">
+          <xsl:sort select="@optional"/>
+          <xsl:sort select="@colour"/>
           <xsl:sort select="@name"/>
         </xsl:apply-templates>
       </xsl:if>
@@ -57,6 +59,8 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
         <xsl:comment> Plugins </xsl:comment>
         <xsl:text>&#10;</xsl:text>
         <xsl:apply-templates select="mod[@type='plugins']">
+          <xsl:sort select="@optional"/>
+          <xsl:sort select="@colour"/>
           <xsl:sort select="@name"/>
         </xsl:apply-templates>
         <xsl:text>&#10;&#10;</xsl:text>
@@ -68,6 +72,8 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
         <xsl:comment> Resources </xsl:comment>
         <xsl:text>&#10;</xsl:text>
         <xsl:apply-templates select="mod[@type='resourcepack' or @type='extract' or @type='decomp']">
+          <xsl:sort select="@optional"/>
+          <xsl:sort select="@colour"/>
           <xsl:sort select="@name"/>
         </xsl:apply-templates>
       </xsl:if>
@@ -78,6 +84,8 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
         <xsl:comment> Dependency / Core Mods </xsl:comment>
         <xsl:text>&#10;</xsl:text>
         <xsl:apply-templates select="mod[@type='dependency' or @type='coremods' or @type='denlib' or @type='ic2lib']">
+          <xsl:sort select="@optional"/>
+          <xsl:sort select="@colour"/>
           <xsl:sort select="@name"/>
         </xsl:apply-templates>
       </xsl:if>
