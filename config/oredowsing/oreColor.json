@@ -1,0 +1,157 @@
+[
+  {
+    "oreDictionayEntries": [
+      "oreCoal"
+    ],
+    "color": {
+      "red": 51,
+      "green": 51,
+      "blue": 51
+    },
+    "value": 4
+  },
+  {
+    "oreDictionayEntries": [
+      "oreIron"
+    ],
+    "color": {
+      "red": 211,
+      "green": 173,
+      "blue": 141
+    },
+    "value": 8
+  },
+  {
+    "oreDictionayEntries": [
+      "oreGold"
+    ],
+    "color": {
+      "red": 149,
+      "green": 142,
+      "blue": 6
+    },
+    "value": 16
+  },
+  {
+    "oreDictionayEntries": [
+      "oreLapis"
+    ],
+    "color": {
+      "red": 44,
+      "green": 59,
+      "blue": 166
+    },
+    "value": 10
+  },
+  {
+    "oreDictionayEntries": [
+      "oreRedstone"
+    ],
+    "color": {
+      "red": 162,
+      "green": 6,
+      "blue": 0
+    },
+    "value": 12
+  },
+  {
+    "oreDictionayEntries": [
+      "oreDiamond"
+    ],
+    "color": {
+      "red": 106,
+      "green": 231,
+      "blue": 234
+    },
+    "value": 14
+  },
+  {
+    "oreDictionayEntries": [
+      "oreEmerald"
+    ],
+    "color": {
+      "red": 33,
+      "green": 118,
+      "blue": 30
+    },
+    "value": 16
+  },
+  {
+    "oreDictionayEntries": [
+      "oreQuartz"
+    ],
+    "color": {
+      "red": 175,
+      "green": 157,
+      "blue": 144
+    },
+    "value": 10
+  },
+  {
+    "oreDictionayEntries": [
+      "oreCopper"
+    ],
+    "color": {
+      "red": 140,
+      "green": 73,
+      "blue": 0
+    },
+    "value": 8
+  },
+  {
+    "oreDictionayEntries": [
+      "oreLead"
+    ],
+    "color": {
+      "red": 94,
+      "green": 107,
+      "blue": 152
+    },
+    "value": 8
+  },
+  {
+    "oreDictionayEntries": [
+      "oreMithril",
+      "orePlatinum"
+    ],
+    "color": {
+      "red": 84,
+      "green": 146,
+      "blue": 152
+    },
+    "value": 12
+  },
+  {
+    "oreDictionayEntries": [
+      "oreNickel"
+    ],
+    "color": {
+      "red": 163,
+      "green": 162,
+      "blue": 125
+    },
+    "value": 10
+  },
+  {
+    "oreDictionayEntries": [
+      "oreSilver"
+    ],
+    "color": {
+      "red": 165,
+      "green": 184,
+      "blue": 194
+    },
+    "value": 8
+  },
+  {
+    "oreDictionayEntries": [
+      "oreTin"
+    ],
+    "color": {
+      "red": 151,
+      "green": 183,
+      "blue": 219
+    },
+    "value": 4
+  }
+]
