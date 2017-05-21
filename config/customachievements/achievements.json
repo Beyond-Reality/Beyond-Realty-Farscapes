@@ -557,18 +557,6 @@
           "ypos": 2
         },
         {
-          "uid": "rflux",
-          "name": "rflux",
-          "desc": "Unlock rflux",
-          "type": "MINE",
-          "item": "beyondreality:block",
-          "statValue": 0,
-          "ignoreMeta": false,
-          "trophy": true,
-          "xpos": 0,
-          "ypos": 2
-        },
-        {
           "uid": "schr0chastmob",
           "name": "chastmob",
           "desc": "Unlock Chast Mob",
