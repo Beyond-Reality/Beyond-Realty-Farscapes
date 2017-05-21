@@ -35,6 +35,73 @@ Author: Léa Gris<xsl:text>&#10;</xsl:text>
     <xsl:apply-templates/>
   </xsl:template>
 
+  <xsl:template match="mods/mod">
+    <xsl:copy>
+      <xsl:attribute name="name">
+        <xsl:value-of select="@name"/>
+      </xsl:attribute>
+      <xsl:attribute name="version">
+        <xsl:value-of select="@version"/>
+      </xsl:attribute>
+      <xsl:attribute name="url">
+        <xsl:value-of select="@url"/>
+      </xsl:attribute>
+      <xsl:attribute name="file">
+        <xsl:value-of select="@file"/>
+      </xsl:attribute>
+      <xsl:if test="@md5">
+        <xsl:attribute name="md5">
+          <xsl:value-of select="@md5"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:attribute name="download">
+        <xsl:value-of select="@download"/>
+      </xsl:attribute>
+      <xsl:attribute name="type">
+        <xsl:value-of select="@type"/>
+      </xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="not(@optional) or @optional='no'">
+          <xsl:attribute name="optional">no</xsl:attribute>
+          <xsl:attribute name="selected">yes</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="optional">yes</xsl:attribute>
+          <xsl:choose>
+            <xsl:when test="not(@recommended='no')">
+              <xsl:attribute name="recommended">yes</xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="recommended">no</xsl:attribute>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:attribute name="selected">yes</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="not(@server)">
+          <xsl:attribute name="server">yes</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="server">
+            <xsl:value-of select="@server"/>
+          </xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="not(@client)">
+          <xsl:attribute name="client">yes</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="client">
+            <xsl:value-of select="@client"/>
+          </xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="@* | node()"/>
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template match="mods">
     <xsl:copy>
       <xsl:text>&#10;&#10;      </xsl:text>
