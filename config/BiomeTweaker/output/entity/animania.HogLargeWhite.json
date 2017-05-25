@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.HogLargeWhite",
+  "Registry ID": "animania:textures/entity/pigs/hog_large_white.png",
+  "Class": "com.animania.entities.pigs.EntityHogLargeWhite"
+}

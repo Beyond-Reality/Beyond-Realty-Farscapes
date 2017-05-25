@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.ChickOrpington",
+  "Registry ID": "animania:textures/entity/chickens/chick_golden.png",
+  "Class": "com.animania.entities.chickens.EntityChickOrpington"
+}

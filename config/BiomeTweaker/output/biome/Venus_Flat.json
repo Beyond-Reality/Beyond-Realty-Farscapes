@@ -1,0 +1,78 @@
+
+{
+  "ID": 113,
+  "Name": "Venus Flat",
+  "Class": "micdoodle8.mods.galacticraft.planets.venus.world.gen.BiomeGenFlatVenus",
+  "Root Height": 0.5,
+  "Height Variation": 0.4,
+  "Top Block": "minecraft:grass",
+  "Filler Block": "minecraft:dirt",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "16777215",
+  "Temperature": 0.5,
+  "Humidity": 0.0,
+  "Water Tint": 16777215,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "HOT",
+    "DEAD",
+    "SANDY",
+    "DRY"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "micdoodle8.mods.galacticraft.core.entities.EntityEvolvedZombie",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSpider",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "micdoodle8.mods.galacticraft.core.entities.EntityEvolvedSkeleton",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "micdoodle8.mods.galacticraft.core.entities.EntityEvolvedCreeper",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 3
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Spawn Biome": true,
+  "Tweaked": true,
+  "BOP Generators": {
+    "FLOWERS Generators": [
+      {
+        "ID": "flora",
+        "Name": "glowshrooms"
+      },
+      {
+        "ID": "flora",
+        "Name": "miners_delight"
+      },
+      {
+        "ID": "columns",
+        "Name": "stone_formations"
+      },
+      {
+        "ID": "flora",
+        "Name": "roots"
+      }
+    ]
+  },
+  "BOP Owner": "OTHER",
+  "BOP Weight Map": {}
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.CowFriesian",
+  "Registry ID": "animania:textures/entity/cows/cow_friesian.png",
+  "Class": "com.animania.entities.cows.EntityCowFriesian"
+}

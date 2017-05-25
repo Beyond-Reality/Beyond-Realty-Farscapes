@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.RoosterRhodeIslandRed",
+  "Registry ID": "animania:textures/entity/chickens/rooster_red.png",
+  "Class": "com.animania.entities.chickens.EntityRoosterRhodeIslandRed"
+}

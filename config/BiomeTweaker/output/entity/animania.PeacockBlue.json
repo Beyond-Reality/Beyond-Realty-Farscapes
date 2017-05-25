@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.PeacockBlue",
+  "Registry ID": "animania:textures/entity/pigs/peacock_blue.png",
+  "Class": "com.animania.entities.peacocks.EntityPeacockBlue"
+}

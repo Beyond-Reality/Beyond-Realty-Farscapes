@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.HogYorkshire",
+  "Registry ID": "animania:textures/entity/chickens/hog_yorkshire.png",
+  "Class": "com.animania.entities.pigs.EntityHogYorkshire"
+}

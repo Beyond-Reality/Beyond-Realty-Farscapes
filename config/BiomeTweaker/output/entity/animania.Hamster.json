@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.Hamster",
+  "Registry ID": "animania:textures/entity/pigs/hamster_tarou.png",
+  "Class": "com.animania.entities.rodents.EntityHamster"
+}

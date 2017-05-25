@@ -1,0 +1,6 @@
+
+{
+  "Name": "swarm",
+  "Registry ID": "computronics:swarm",
+  "Class": "pl.asie.computronics.integration.forestry.entity.EntitySwarm"
+}

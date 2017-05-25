@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.BullLonghorn",
+  "Registry ID": "animania:textures/entity/cows/bull_longhorn.png",
+  "Class": "com.animania.entities.cows.EntityBullLonghorn"
+}

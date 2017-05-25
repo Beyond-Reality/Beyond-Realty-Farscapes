@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.HenWyandotte",
+  "Registry ID": "animania:textures/entity/chickens/hen_brown.png",
+  "Class": "com.animania.entities.chickens.EntityHenWyandotte"
+}

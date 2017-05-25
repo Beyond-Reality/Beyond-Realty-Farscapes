@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.HenPlymouthRock",
+  "Registry ID": "animania:textures/entity/chickens/hen_specked.png",
+  "Class": "com.animania.entities.chickens.EntityHenPlymouthRock"
+}

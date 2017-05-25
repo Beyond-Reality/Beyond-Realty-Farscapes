@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.PigletHampshire",
+  "Registry ID": "animania:textures/entity/pigs/piglet_hampshire.png",
+  "Class": "com.animania.entities.pigs.EntityPigletHampshire"
+}

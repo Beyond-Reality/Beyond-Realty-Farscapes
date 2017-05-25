@@ -1,0 +1,6 @@
+
+{
+  "Name": "Wolf",
+  "Registry ID": "wolfarmor:wolf",
+  "Class": "com.attributestudios.wolfarmor.entity.passive.EntityWolfArmored"
+}

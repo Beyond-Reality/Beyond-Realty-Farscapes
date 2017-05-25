@@ -1,0 +1,6 @@
+
+{
+  "Name": "animania.CalfHolstein",
+  "Registry ID": "animania:textures/entity/cows/calf_holstein.png",
+  "Class": "com.animania.entities.cows.EntityCalfHolstein"
+}
