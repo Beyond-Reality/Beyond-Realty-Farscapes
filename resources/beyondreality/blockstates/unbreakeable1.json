@@ -24,112 +24,112 @@
       "0": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks"
+          "all": "beyondreality:blocks/unbreakableblock"
         },
         "model": "beyondreality:block"
       },
       "1": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks1"
+          "all": "beyondreality:blocks/unbreakableblock1"
         },
         "model": "beyondreality:block"
       },
       "2": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks2"
+          "all": "beyondreality:blocks/unbreakableblock2"
         },
         "model": "beyondreality:block"
       },
       "3": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks3"
+          "all": "beyondreality:blocks/unbreakableblock3"
         },
         "model": "beyondreality:block"
       },
       "4": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks4"
+          "all": "beyondreality:blocks/unbreakableblock4"
         },
         "model": "beyondreality:block"
       },
       "5": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks5"
+          "all": "beyondreality:blocks/unbreakableblock5"
         },
         "model": "beyondreality:block"
       },
       "6": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks6"
+          "all": "beyondreality:blocks/unbreakableblock6"
         },
         "model": "beyondreality:block"
       },
       "7": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks7"
+          "all": "beyondreality:blocks/unbreakableblock7"
         },
         "model": "beyondreality:block"
       },
       "8": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks8"
+          "all": "beyondreality:blocks/unbreakableblock8"
         },
         "model": "beyondreality:block"
       },
       "9": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks9"
+          "all": "beyondreality:blocks/unbreakableblock9"
         },
         "model": "beyondreality:block"
       },
       "10": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks10"
+          "all": "beyondreality:blocks/unbreakableblock10"
         },
         "model": "beyondreality:block"
       },
       "11": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks11"
+          "all": "beyondreality:blocks/unbreakableblock11"
         },
         "model": "beyondreality:block"
       },
       "12": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks12"
+          "all": "beyondreality:blocks/unbreakableblock12"
         },
         "model": "beyondreality:block"
       },
       "13": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks13"
+          "all": "beyondreality:blocks/unbreakableblock13"
         },
         "model": "beyondreality:block"
       },
       "14": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks14"
+          "all": "beyondreality:blocks/unbreakableblock14"
         },
         "model": "beyondreality:block"
       },
       "15": {
         "textures": {
           "particle": "blocks/bedrock",
-          "all": "beyondreality:blocks/buildingblocks15"
+          "all": "beyondreality:blocks/unbreakableblock15"
         },
         "model": "beyondreality:block"
       }
