@@ -1,0 +1,1 @@
+{"name":"Testing Set","quests":[{"uuid":"fbe198ad-95d5-4a63-87e0-d3af8811762d","name":"Testing quest","description":"TestTest quest","x":69,"y":43,"icon":{"id":"minecraft:wheat"},"tasks":[{"type":"CONSUME","items":[{"item":{"id":"minecraft:wheat"},"required":64}]}],"commandrewards":[]}],"reputationBar":[]}
