@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="3248" height="1008">
+   <g name="Admin" transform="translate(10, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Admin</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Chunk-Pregenerator</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">DiscordChat</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Dynmap</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">FTBUtilities</text>
+      </g>
+   </g>
+   <g name="Decoration" transform="translate(226, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Decoration</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">BiblioCraft</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Chisel</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Chisels &amp; Bits</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Extra Bit Manipulation</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Fairy Lights</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MalisisDoors</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MalisisSwitches</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Missing Pieces</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MrCrayfish's Furniture Mod</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Pink Flamingo</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Platforms</text>
+      </g>
+      <g transform="translate(0,296)">
+         <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Rustic</text>
+      </g>
+   </g>
+   <g name="Fix" transform="translate(442, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Fix</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Foamfix</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Fullscreen Fix</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Fullscreen Windowed</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">HelpFixer</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ReAuth</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Villager Fix</text>
+      </g>
+   </g>
+   <g name="Forge" transform="translate(658, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Forge</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#9B3D15" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Minecraft Forge</text>
+      </g>
+   </g>
+   <g name="Gameplay" transform="translate(874, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Gameplay</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Akashic Tome</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Baubles</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ChastMob</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Clipboard</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Cooking for Blockheads</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Extra Utilities</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Hardcore Questing Mode</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Literal Ascension</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Mob Capper</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Morph-o-Tool</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Morpheus</text>
+      </g>
+      <g transform="translate(0,296)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Multi Mine</text>
+      </g>
+      <g transform="translate(0,320)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Ore Dowsing</text>
+      </g>
+      <g transform="translate(0,344)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Ore Flowers</text>
+      </g>
+      <g transform="translate(0,368)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Passthrough Signs</text>
+      </g>
+      <g transform="translate(0,392)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Placeable Items Mod</text>
+      </g>
+      <g transform="translate(0,416)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Quark</text>
+      </g>
+      <g transform="translate(0,440)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Random Things</text>
+      </g>
+      <g transform="translate(0,464)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Rope Bridge</text>
+      </g>
+      <g transform="translate(0,488)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Shield</text>
+      </g>
+      <g transform="translate(0,512)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Shulkerbox</text>
+      </g>
+      <g transform="translate(0,536)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Sophisticated Wolves</text>
+      </g>
+      <g transform="translate(0,560)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Spartan Shields</text>
+      </g>
+      <g transform="translate(0,584)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Super Crafting Frame</text>
+      </g>
+      <g transform="translate(0,608)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Timberjack</text>
+      </g>
+      <g transform="translate(0,632)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tomb Many Graves</text>
+      </g>
+      <g transform="translate(0,656)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tool Belt</text>
+      </g>
+      <g transform="translate(0,680)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">TorchMaster</text>
+      </g>
+      <g transform="translate(0,704)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Waystones</text>
+      </g>
+      <g transform="translate(0,728)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Wearable Backpacks</text>
+      </g>
+      <g transform="translate(0,752)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Wearables</text>
+      </g>
+      <g transform="translate(0,776)">
+         <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Wolf Armor and Storage</text>
+      </g>
+   </g>
+   <g name="Hard" transform="translate(1090, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Hard</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Blank Planet</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Bloodmoon</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Custom Achievements</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Mowzie's Mobs</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Skillable</text>
+      </g>
+   </g>
+   <g name="Helpers" transform="translate(1306, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Helpers</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">AppleSkin</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Augmented Interactions</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Better Achievements</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Better Foliage</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Better Fonts</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Blur</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">BotaniaVisualizer</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Dynamic Surroundings</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Fast Leave Decay</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Harvestables</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">huds</text>
+      </g>
+      <g transform="translate(0,296)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Inventory Tweaks</text>
+      </g>
+      <g transform="translate(0,320)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">JEI Bees</text>
+      </g>
+      <g transform="translate(0,344)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">JourneyMap</text>
+      </g>
+      <g transform="translate(0,368)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Just Enough HarvestCraft</text>
+      </g>
+      <g transform="translate(0,392)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Just Enough Items</text>
+      </g>
+      <g transform="translate(0,416)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Just Enough Resources</text>
+      </g>
+      <g transform="translate(0,440)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Login Shield</text>
+      </g>
+      <g transform="translate(0,464)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MaryTTS</text>
+      </g>
+      <g transform="translate(0,488)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MCMultiPart</text>
+      </g>
+      <g transform="translate(0,512)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MoreOverlays</text>
+      </g>
+      <g transform="translate(0,536)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Mouse Tweaks</text>
+      </g>
+      <g transform="translate(0,560)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Neat</text>
+      </g>
+      <g transform="translate(0,584)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Not Enough Items</text>
+      </g>
+      <g transform="translate(0,608)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Optifine</text>
+      </g>
+      <g transform="translate(0,632)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Placement Preview</text>
+      </g>
+      <g transform="translate(0,656)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Sound Filters</text>
+      </g>
+      <g transform="translate(0,680)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">The One Probe</text>
+      </g>
+      <g transform="translate(0,704)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">TrashSlot</text>
+      </g>
+      <g transform="translate(0,728)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Village Names</text>
+      </g>
+      <g transform="translate(0,752)">
+         <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">What's That Slot</text>
+      </g>
+   </g>
+   <g name="Internal" transform="translate(1522, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Internal</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">AutoRegLib</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">BD Lib</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Beyond Reality Core</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">BiomeTweaker</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Bookshelf</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Chameleon</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">CodeChicken Lib</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">CommonCapabilities</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">compatlayer</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Custom Main Menu</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Cyclops Core</text>
+      </g>
+      <g transform="translate(0,296)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Default Options</text>
+      </g>
+      <g transform="translate(0,320)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Default World Generator</text>
+      </g>
+      <g transform="translate(0,344)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ElecCore</text>
+      </g>
+      <g transform="translate(0,368)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">EXCore</text>
+      </g>
+      <g transform="translate(0,392)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Farseek</text>
+      </g>
+      <g transform="translate(0,416)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">FTBLib</text>
+      </g>
+      <g transform="translate(0,440)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Guide-API</text>
+      </g>
+      <g transform="translate(0,464)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">HardLib</text>
+      </g>
+      <g transform="translate(0,488)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">IvToolkit</text>
+      </g>
+      <g transform="translate(0,512)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Just Enough Dimensions</text>
+      </g>
+      <g transform="translate(0,536)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">LLibrary</text>
+      </g>
+      <g transform="translate(0,560)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">LootTweaker</text>
+      </g>
+      <g transform="translate(0,584)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MalisisCore</text>
+      </g>
+      <g transform="translate(0,608)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Mantle</text>
+      </g>
+      <g transform="translate(0,632)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MattDahEpic Core</text>
+      </g>
+      <g transform="translate(0,656)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">McJtyLib</text>
+      </g>
+      <g transform="translate(0,680)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MicdoodleCore</text>
+      </g>
+      <g transform="translate(0,704)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MineTweaker 3</text>
+      </g>
+      <g transform="translate(0,728)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">NetherPortalFix</text>
+      </g>
+      <g transform="translate(0,752)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">RebornCore</text>
+      </g>
+      <g transform="translate(0,776)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Resource Loader</text>
+      </g>
+      <g transform="translate(0,800)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Resources</text>
+      </g>
+      <g transform="translate(0,824)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Shadowfacts-Forgelin</text>
+      </g>
+      <g transform="translate(0,848)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ShadowMC</text>
+      </g>
+      <g transform="translate(0,872)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ShetiPhian-Core</text>
+      </g>
+      <g transform="translate(0,896)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Structures</text>
+      </g>
+      <g transform="translate(0,920)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">TESLA</text>
+      </g>
+      <g transform="translate(0,944)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tesla Core Lib</text>
+      </g>
+      <g transform="translate(0,968)">
+         <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Teslafied</text>
+      </g>
+   </g>
+   <g name="Logistic" transform="translate(1738, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Logistic</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Experience Cache</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Integrated Dynamics</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Integrated Tunnels</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Iron Chest</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Modular Routers</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Packing Tape</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Pressure Pipes</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Refined Storage</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Storage Drawers</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Translocator</text>
+      </g>
+   </g>
+   <g name="Magic" transform="translate(1954, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Magic</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">AngelRing 2 Bauble</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Blood Magic: Alchemical Wizardry</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Botania</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Embers</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Mana Wells</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Not Enough Potions</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Not Enough Wands</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Potion Core</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Psi</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Reliquary</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Roots 2</text>
+      </g>
+   </g>
+   <g name="Mapping" transform="translate(2170, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Mapping</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">NBTEdit</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tell Me</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">World Stripper</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">WorldEdit</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">WorldEdit CUI Forge Edition 2</text>
+      </g>
+   </g>
+   <g name="Nature" transform="translate(2386, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Nature</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Animania</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Forestry</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">More Bees</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Pam's HarvestCraft</text>
+      </g>
+   </g>
+   <g name="Tech" transform="translate(2602, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Tech</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Actually Additions</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">ActuallyComputers</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Advanced Generators</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Buildcraft</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Computronics</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">GalacticraftCore</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">GenDustry</text>
+      </g>
+      <g transform="translate(0,200)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Immersive Engineering</text>
+      </g>
+      <g transform="translate(0,224)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Immersive Petroleum</text>
+      </g>
+      <g transform="translate(0,248)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Industrial Foregoing</text>
+      </g>
+      <g transform="translate(0,272)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">IndustrialCraft 2</text>
+      </g>
+      <g transform="translate(0,296)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">MNU</text>
+      </g>
+      <g transform="translate(0,320)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">NuclearCraft</text>
+      </g>
+      <g transform="translate(0,344)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">OpenComputers</text>
+      </g>
+      <g transform="translate(0,368)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">RF Lux</text>
+      </g>
+      <g transform="translate(0,392)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Steve's Carts 2</text>
+      </g>
+      <g transform="translate(0,416)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tech Reborn</text>
+      </g>
+      <g transform="translate(0,440)">
+         <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Tinkers' Construct</text>
+      </g>
+   </g>
+   <g name="Tool" transform="translate(2818, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Tool</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#ECA05D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Auto Ore Dictionary Converter</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#ECA05D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Better Builder's Wands</text>
+      </g>
+   </g>
+   <g name="Worldgen" transform="translate(3034, 10)">
+      <text x="104" y="16" font-size="16px" font-weight="bold" text-anchor="middle" dy="-.4em">Worldgen</text>
+      <g transform="translate(0,32)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Biomes O' Plenty</text>
+      </g>
+      <g transform="translate(0,56)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Custom Ore Generation</text>
+      </g>
+      <g transform="translate(0,80)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Galacticraft-Planets</text>
+      </g>
+      <g transform="translate(0,104)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Realistic Terrain Generation</text>
+      </g>
+      <g transform="translate(0,128)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Recurrent Complex</text>
+      </g>
+      <g transform="translate(0,152)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Roguelike Dungeons</text>
+      </g>
+      <g transform="translate(0,176)">
+         <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
+         <text x="104" y="16" font-size="12px" text-anchor="middle" dy="-.4em">Streams</text>
+      </g>
+   </g>
+</svg>
