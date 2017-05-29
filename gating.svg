@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1386"
-   height="827.45001"
+   height="491.05624"
    version="1.1"
    id="svg1190"
    sodipodi:docname="gating.svg"
@@ -44,798 +44,536 @@
      fit-margin-top="16"
      fit-margin-right="16"
      fit-margin-bottom="16"
-     inkscape:zoom="0.20377215"
-     inkscape:cx="-946.19413"
-     inkscape:cy="-391.10846"
+     inkscape:zoom="0.8150886"
+     inkscape:cx="688.21605"
+     inkscape:cy="112.65677"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1190" />
+  <text
+     style="font-weight:bold;font-size:16px;text-anchor:middle"
+     id="text156"
+     dy="-4.8000002"
+     font-weight="bold"
+     font-size="16px"
+     y="34.85154"
+     x="120.5">Gameplay</text>
   <g
-     name="Gameplay"
-     transform="translate(16.5,18.949988)"
-     id="g350">
+     id="g174"
+     transform="translate(16.5,50.753088)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect170"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
     <text
-       x="104"
-       y="16"
-       font-size="16px"
-       font-weight="bold"
+       style="font-size:12px;text-anchor:middle"
+       id="text172"
        dy="-0.40000001em"
-       id="text156"
-       style="font-weight:bold;font-size:16px;text-anchor:middle">Gameplay</text>
-    <g
-       transform="translate(0,32)"
-       id="g162">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect158"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text160"
-         style="font-size:12px;text-anchor:middle">Akashic Tome</text>
-    </g>
-    <g
-       transform="translate(0,56)"
-       id="g168">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect164"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text166"
-         style="font-size:12px;text-anchor:middle">Baubles</text>
-    </g>
-    <g
-       transform="translate(0,80)"
-       id="g174">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect170"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text172"
-         style="font-size:12px;text-anchor:middle">ChastMob</text>
-    </g>
-    <g
-       transform="translate(0,104)"
-       id="g180">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect176"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text178"
-         style="font-size:12px;text-anchor:middle">Clipboard</text>
-    </g>
-    <g
-       transform="translate(0,128)"
-       id="g186">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect182"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text184"
-         style="font-size:12px;text-anchor:middle">Cooking for Blockheads</text>
-    </g>
-    <g
-       transform="translate(0,152)"
-       id="g192">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect188"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text190"
-         style="font-size:12px;text-anchor:middle">Extra Utilities</text>
-    </g>
-    <g
-       transform="translate(0,176)"
-       id="g198">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect194"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text196"
-         style="font-size:12px;text-anchor:middle">Hardcore Questing Mode</text>
-    </g>
-    <g
-       transform="translate(0,200)"
-       id="g204">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect200"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text202"
-         style="font-size:12px;text-anchor:middle">Literal Ascension</text>
-    </g>
-    <g
-       transform="translate(0,224)"
-       id="g210">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect206"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text208"
-         style="font-size:12px;text-anchor:middle">Mob Capper</text>
-    </g>
-    <g
-       transform="translate(0,248)"
-       id="g216">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect212"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text214"
-         style="font-size:12px;text-anchor:middle">Morph-o-Tool</text>
-    </g>
-    <g
-       transform="translate(0,272)"
-       id="g222">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect218"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text220"
-         style="font-size:12px;text-anchor:middle">Morpheus</text>
-    </g>
-    <g
-       transform="translate(0,296)"
-       id="g228">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect224"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text226"
-         style="font-size:12px;text-anchor:middle">Multi Mine</text>
-    </g>
-    <g
-       transform="translate(0,320)"
-       id="g234">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect230"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text232"
-         style="font-size:12px;text-anchor:middle">Ore Dowsing</text>
-    </g>
-    <g
-       transform="translate(0,344)"
-       id="g240">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect236"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text238"
-         style="font-size:12px;text-anchor:middle">Ore Flowers</text>
-    </g>
-    <g
-       transform="translate(0,368)"
-       id="g246">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect242"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text244"
-         style="font-size:12px;text-anchor:middle">Passthrough Signs</text>
-    </g>
-    <g
-       transform="translate(0,392)"
-       id="g252">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect248"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text250"
-         style="font-size:12px;text-anchor:middle">Placeable Items Mod</text>
-    </g>
-    <g
-       transform="translate(0,416)"
-       id="g258">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect254"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text256"
-         style="font-size:12px;text-anchor:middle">Quark</text>
-    </g>
-    <g
-       transform="translate(0,440)"
-       id="g264">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect260"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text262"
-         style="font-size:12px;text-anchor:middle">Random Things</text>
-    </g>
-    <g
-       transform="translate(0,464)"
-       id="g270">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect266"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text268"
-         style="font-size:12px;text-anchor:middle">Rope Bridge</text>
-    </g>
-    <g
-       transform="translate(0,488)"
-       id="g276">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect272"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text274"
-         style="font-size:12px;text-anchor:middle">Shield</text>
-    </g>
-    <g
-       transform="translate(0,512)"
-       id="g282">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect278"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text280"
-         style="font-size:12px;text-anchor:middle">Shulkerbox</text>
-    </g>
-    <g
-       transform="translate(0,536)"
-       id="g288">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect284"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text286"
-         style="font-size:12px;text-anchor:middle">Sophisticated Wolves</text>
-    </g>
-    <g
-       transform="translate(0,560)"
-       id="g294">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect290"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text292"
-         style="font-size:12px;text-anchor:middle">Spartan Shields</text>
-    </g>
-    <g
-       transform="translate(0,584)"
-       id="g300">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect296"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text298"
-         style="font-size:12px;text-anchor:middle">Super Crafting Frame</text>
-    </g>
-    <g
-       transform="translate(0,608)"
-       id="g306">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect302"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text304"
-         style="font-size:12px;text-anchor:middle">Timberjack</text>
-    </g>
-    <g
-       transform="translate(0,632)"
-       id="g312">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect308"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text310"
-         style="font-size:12px;text-anchor:middle">Tomb Many Graves</text>
-    </g>
-    <g
-       transform="translate(0,656)"
-       id="g318">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect314"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text316"
-         style="font-size:12px;text-anchor:middle">Tool Belt</text>
-    </g>
-    <g
-       transform="translate(0,680)"
-       id="g324">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect320"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text322"
-         style="font-size:12px;text-anchor:middle">TorchMaster</text>
-    </g>
-    <g
-       transform="translate(0,704)"
-       id="g330">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect326"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text328"
-         style="font-size:12px;text-anchor:middle">Waystones</text>
-    </g>
-    <g
-       transform="translate(0,728)"
-       id="g336">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect332"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text334"
-         style="font-size:12px;text-anchor:middle">Wearable Backpacks</text>
-    </g>
-    <g
-       transform="translate(0,752)"
-       id="g342">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect338"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text340"
-         style="font-size:12px;text-anchor:middle">Wearables</text>
-    </g>
-    <g
-       transform="translate(0,776)"
-       id="g348">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect344"
-         style="fill:#00fff3;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text346"
-         style="font-size:12px;text-anchor:middle">Wolf Armor and Storage</text>
-    </g>
+       font-size="12px"
+       y="16"
+       x="104">ChastMob</text>
   </g>
   <g
-     name="Logistic"
-     transform="translate(245.5,18.851538)"
-     id="g882">
+     id="g186"
+     transform="translate(16.5,74.753088)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect182"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
     <text
-       x="104"
-       y="16"
-       font-size="16px"
-       font-weight="bold"
+       style="font-size:12px;text-anchor:middle"
+       id="text184"
        dy="-0.40000001em"
-       id="text820"
-       style="font-weight:bold;font-size:16px;text-anchor:middle">Logistic</text>
-    <g
-       transform="translate(0,32)"
-       id="g826">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect822"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text824"
-         style="font-size:12px;text-anchor:middle">Experience Cache</text>
-    </g>
-    <g
-       transform="translate(0,56)"
-       id="g832">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect828"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text830"
-         style="font-size:12px;text-anchor:middle">Integrated Dynamics</text>
-    </g>
-    <g
-       transform="translate(0,80)"
-       id="g838">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect834"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text836"
-         style="font-size:12px;text-anchor:middle">Integrated Tunnels</text>
-    </g>
-    <g
-       transform="translate(0,104)"
-       id="g844">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect840"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text842"
-         style="font-size:12px;text-anchor:middle">Iron Chest</text>
-    </g>
-    <g
-       transform="translate(0,128)"
-       id="g850">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect846"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text848"
-         style="font-size:12px;text-anchor:middle">Modular Routers</text>
-    </g>
-    <g
-       transform="translate(0,152)"
-       id="g856">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect852"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text854"
-         style="font-size:12px;text-anchor:middle">Packing Tape</text>
-    </g>
-    <g
-       transform="translate(0,176)"
-       id="g862">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect858"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text860"
-         style="font-size:12px;text-anchor:middle">Pressure Pipes</text>
-    </g>
-    <g
-       transform="translate(0,200)"
-       id="g868">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect864"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text866"
-         style="font-size:12px;text-anchor:middle">Refined Storage</text>
-    </g>
-    <g
-       transform="translate(0,224)"
-       id="g874">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect870"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text872"
-         style="font-size:12px;text-anchor:middle">Storage Drawers</text>
-    </g>
-    <g
-       transform="translate(0,248)"
-       id="g880">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect876"
-         style="fill:#f3ad16;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text878"
-         style="font-size:12px;text-anchor:middle">Translocator</text>
-    </g>
+       font-size="12px"
+       y="16"
+       x="104">Cooking for Blockheads</text>
+  </g>
+  <g
+     id="g192"
+     transform="translate(16.5,98.753088)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect188"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text190"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Extra Utilities</text>
+  </g>
+  <g
+     id="g204"
+     transform="translate(16.5,122.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect200"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text202"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Literal Ascension</text>
+  </g>
+  <g
+     id="g216"
+     transform="translate(16.5,146.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect212"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text214"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Morph-o-Tool</text>
+  </g>
+  <g
+     id="g234"
+     transform="translate(16.5,170.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect230"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text232"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Ore Dowsing</text>
+  </g>
+  <g
+     id="g258"
+     transform="translate(16.5,194.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect254"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text256"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Quark</text>
+  </g>
+  <g
+     id="g264"
+     transform="translate(16.5,218.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect260"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text262"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Random Things</text>
+  </g>
+  <g
+     id="g270"
+     transform="translate(16.5,242.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect266"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text268"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Rope Bridge</text>
+  </g>
+  <g
+     id="g282"
+     transform="translate(16.5,266.75309)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect278"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text280"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Shulkerbox</text>
+  </g>
+  <g
+     id="g294"
+     transform="translate(16.5,314.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect290"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text292"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Spartan Shields</text>
+  </g>
+  <g
+     id="g300"
+     transform="translate(16.5,290.6547)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect296"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text298"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Super Crafting Frame</text>
+  </g>
+  <g
+     id="g318"
+     transform="translate(16.5,338.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect314"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text316"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Tool Belt</text>
+  </g>
+  <g
+     id="g324"
+     transform="translate(16.5,362.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect320"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text322"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">TorchMaster</text>
+  </g>
+  <g
+     id="g330"
+     transform="translate(16.5,386.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect326"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text328"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Waystones</text>
+  </g>
+  <g
+     id="g336"
+     transform="translate(16.5,410.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect332"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text334"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Wearable Backpacks</text>
+  </g>
+  <g
+     id="g342"
+     transform="translate(16.5,434.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect338"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text340"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Wearables</text>
+  </g>
+  <g
+     id="g348"
+     transform="translate(16.5,458.55625)">
+    <rect
+       style="fill:#00fff3;stroke:#000000"
+       id="rect344"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text346"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Wolf Armor and Storage</text>
+  </g>
+  <text
+     style="font-weight:bold;font-size:16px;text-anchor:middle"
+     id="text820"
+     dy="-4.8000002"
+     font-weight="bold"
+     font-size="16px"
+     y="34.75309"
+     x="349.5">Logistic</text>
+  <g
+     id="g826"
+     transform="translate(245.5,50.753088)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect822"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text824"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Experience Cache</text>
+  </g>
+  <g
+     id="g832"
+     transform="translate(245.5,74.753088)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect828"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text830"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Integrated Dynamics</text>
+  </g>
+  <g
+     id="g838"
+     transform="translate(245.5,98.753088)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect834"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text836"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Integrated Tunnels</text>
+  </g>
+  <g
+     id="g844"
+     transform="translate(245.5,122.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect840"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text842"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Iron Chest</text>
+  </g>
+  <g
+     id="g850"
+     transform="translate(245.5,146.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect846"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text848"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Modular Routers</text>
+  </g>
+  <g
+     id="g856"
+     transform="translate(245.5,170.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect852"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text854"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Packing Tape</text>
+  </g>
+  <g
+     id="g862"
+     transform="translate(245.5,194.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect858"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text860"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Pressure Pipes</text>
+  </g>
+  <g
+     id="g868"
+     transform="translate(245.5,218.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect864"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text866"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Refined Storage</text>
+  </g>
+  <g
+     id="g874"
+     transform="translate(245.5,242.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect870"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text872"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Storage Drawers</text>
+  </g>
+  <g
+     id="g880"
+     transform="translate(245.5,266.75309)">
+    <rect
+       style="fill:#f3ad16;stroke:#000000"
+       id="rect876"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
+    <text
+       style="font-size:12px;text-anchor:middle"
+       id="text878"
+       dy="-0.40000001em"
+       font-size="12px"
+       y="16"
+       x="104">Translocator</text>
   </g>
   <g
      name="Magic"
-     transform="translate(474.5,18.753149)"
+     transform="translate(474.5,18.654699)"
      id="g952">
     <text
        x="104"
@@ -1046,7 +784,7 @@
   </g>
   <g
      name="Nature"
-     transform="translate(703.5,18.55625)"
+     transform="translate(703.5,18.4578)"
      id="g1014">
     <text
        x="104"
@@ -1131,7 +869,7 @@
   </g>
   <g
      name="Tech"
-     transform="translate(932.5,18.6547)"
+     transform="translate(932.5,18.55625)"
      id="g1126">
     <text
        x="104"
@@ -1466,143 +1204,33 @@
          style="font-size:12px;text-anchor:middle">Tinkers' Construct</text>
     </g>
   </g>
+  <text
+     style="font-weight:bold;font-size:16px;text-anchor:middle"
+     id="text1144"
+     dy="-4.8000002"
+     font-weight="bold"
+     font-size="16px"
+     y="34.457802"
+     x="1265.5">Worldgen</text>
   <g
-     name="Worldgen"
-     transform="translate(1161.5,18.55625)"
-     id="g1188">
+     id="g1162"
+     transform="translate(1161.5,50.55625)">
+    <rect
+       style="fill:#00720d;stroke:#000000"
+       id="rect1158"
+       height="16"
+       width="208"
+       y="0"
+       x="0" />
     <text
-       x="104"
-       y="16"
-       font-size="16px"
-       font-weight="bold"
+       style="font-size:12px;text-anchor:middle"
+       id="text1160"
        dy="-0.40000001em"
-       id="text1144"
-       style="font-weight:bold;font-size:16px;text-anchor:middle">Worldgen</text>
-    <g
-       transform="translate(0,32)"
-       id="g1150">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1146"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1148"
-         style="font-size:12px;text-anchor:middle">Biomes O' Plenty</text>
-    </g>
-    <g
-       transform="translate(0,56)"
-       id="g1156">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1152"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1154"
-         style="font-size:12px;text-anchor:middle">Custom Ore Generation</text>
-    </g>
-    <g
-       transform="translate(0,80)"
-       id="g1162">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1158"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1160"
-         style="font-size:12px;text-anchor:middle">Galacticraft-Planets</text>
-    </g>
-    <g
-       transform="translate(0,104)"
-       id="g1168">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1164"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1166"
-         style="font-size:12px;text-anchor:middle">Realistic Terrain Generation</text>
-    </g>
-    <g
-       transform="translate(0,128)"
-       id="g1174">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1170"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1172"
-         style="font-size:12px;text-anchor:middle">Recurrent Complex</text>
-    </g>
-    <g
-       transform="translate(0,152)"
-       id="g1180">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1176"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1178"
-         style="font-size:12px;text-anchor:middle">Roguelike Dungeons</text>
-    </g>
-    <g
-       transform="translate(0,176)"
-       id="g1186">
-      <rect
-         x="0"
-         y="0"
-         width="208"
-         height="16"
-         id="rect1182"
-         style="fill:#00720d;stroke:#000000" />
-      <text
-         x="104"
-         y="16"
-         font-size="12px"
-         dy="-0.40000001em"
-         id="text1184"
-         style="font-size:12px;text-anchor:middle">Streams</text>
-    </g>
+       font-size="12px"
+       y="16"
+       x="104">Galacticraft-Planets</text>
   </g>
+  <g
+     id="g1186"
+     transform="translate(1161.5,74.55625)" />
 </svg>
