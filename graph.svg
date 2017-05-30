@@ -4,800 +4,800 @@
   PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" width="3260" height="1002">
    <g name="Admin" transform="translate(10, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Admin</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Admin</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Chunk-Pregenerator</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Chunk-Pregenerator</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">DiscordChat</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">DiscordChat</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Dynmap</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Dynmap</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#EBFF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">FTBUtilities</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">FTBUtilities</text>
       </g>
    </g>
    <g name="Decoration" transform="translate(226, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Decoration</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Decoration</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">BiblioCraft</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">BiblioCraft</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Chisel</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Chisel</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Chisels &amp; Bits</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Chisels &amp; Bits</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Extra Bit Manipulation</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Extra Bit Manipulation</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Fairy Lights</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Fairy Lights</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MalisisDoors</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MalisisDoors</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MalisisSwitches</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MalisisSwitches</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Missing Pieces</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Missing Pieces</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MrCrayfish's Furniture Mod</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MrCrayfish's Furniture Mod</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Pink Flamingo</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Pink Flamingo</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Platforms</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Platforms</text>
       </g>
       <g transform="translate(0,296)">
          <rect x="0" y="0" width="208" height="16" fill="#E52B50" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Rustic</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Rustic</text>
       </g>
    </g>
    <g name="Fix" transform="translate(442, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Fix</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Fix</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Foamfix</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Foamfix</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Fullscreen Fix</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Fullscreen Fix</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Fullscreen Windowed</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Fullscreen Windowed</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">HelpFixer</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">HelpFixer</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ReAuth</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ReAuth</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#5846FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Villager Fix</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Villager Fix</text>
       </g>
    </g>
    <g name="Forge" transform="translate(658, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Forge</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Forge</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#9B3D15" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Minecraft Forge</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Minecraft Forge</text>
       </g>
    </g>
    <g name="Gameplay" transform="translate(874, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Gameplay</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Gameplay</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Akashic Tome</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Akashic Tome</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Baubles</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Baubles</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ChastMob</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ChastMob</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Clipboard</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Clipboard</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Cooking for Blockheads</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Cooking for Blockheads</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Extra Utilities</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Extra Utilities</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Hardcore Questing Mode</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Hardcore Questing Mode</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Literal Ascension</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Literal Ascension</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Mob Capper</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Mob Capper</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Morph-o-Tool</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Morph-o-Tool</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Morpheus</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Morpheus</text>
       </g>
       <g transform="translate(0,296)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Multi Mine</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Multi Mine</text>
       </g>
       <g transform="translate(0,320)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Ore Dowsing</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Ore Dowsing</text>
       </g>
       <g transform="translate(0,344)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Ore Flowers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Ore Flowers</text>
       </g>
       <g transform="translate(0,368)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Passthrough Signs</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Passthrough Signs</text>
       </g>
       <g transform="translate(0,392)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Placeable Items Mod</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Placeable Items Mod</text>
       </g>
       <g transform="translate(0,416)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Quark</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Quark</text>
       </g>
       <g transform="translate(0,440)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Random Things</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Random Things</text>
       </g>
       <g transform="translate(0,464)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Rope Bridge</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Rope Bridge</text>
       </g>
       <g transform="translate(0,488)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Shield</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Shield</text>
       </g>
       <g transform="translate(0,512)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Shulkerbox</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Shulkerbox</text>
       </g>
       <g transform="translate(0,536)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Sophisticated Wolves</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Sophisticated Wolves</text>
       </g>
       <g transform="translate(0,560)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Spartan Shields</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Spartan Shields</text>
       </g>
       <g transform="translate(0,584)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Super Crafting Frame</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Super Crafting Frame</text>
       </g>
       <g transform="translate(0,608)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Timberjack</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Timberjack</text>
       </g>
       <g transform="translate(0,632)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tomb Many Graves</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tomb Many Graves</text>
       </g>
       <g transform="translate(0,656)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tool Belt</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tool Belt</text>
       </g>
       <g transform="translate(0,680)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">TorchMaster</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">TorchMaster</text>
       </g>
       <g transform="translate(0,704)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Waystones</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Waystones</text>
       </g>
       <g transform="translate(0,728)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Wearable Backpacks</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Wearable Backpacks</text>
       </g>
       <g transform="translate(0,752)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Wearables</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Wearables</text>
       </g>
       <g transform="translate(0,776)">
          <rect x="0" y="0" width="208" height="16" fill="#00FFF3" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Wolf Armor and Storage</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Wolf Armor and Storage</text>
       </g>
    </g>
    <g name="Hard" transform="translate(1090, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Hard</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Hard</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Blank Planet</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Blank Planet</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Bloodmoon</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Bloodmoon</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Custom Achievements</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Custom Achievements</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Mowzie's Mobs</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Mowzie's Mobs</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#FF003C" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Skillable</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Skillable</text>
       </g>
    </g>
    <g name="Helpers" transform="translate(1306, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Helpers</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Helpers</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">AppleSkin</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">AppleSkin</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Augmented Interactions</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Augmented Interactions</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Better Achievements</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Better Achievements</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Better Foliage</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Better Foliage</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Better Fonts</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Better Fonts</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Blur</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Blur</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">BotaniaVisualizer</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">BotaniaVisualizer</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Dynamic Surroundings</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Dynamic Surroundings</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Fast Leave Decay</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Fast Leave Decay</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Harvestables</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Harvestables</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">huds</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">huds</text>
       </g>
       <g transform="translate(0,296)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Inventory Tweaks</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Inventory Tweaks</text>
       </g>
       <g transform="translate(0,320)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">JEI Bees</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">JEI Bees</text>
       </g>
       <g transform="translate(0,344)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">JourneyMap</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">JourneyMap</text>
       </g>
       <g transform="translate(0,368)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Just Enough HarvestCraft</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Just Enough HarvestCraft</text>
       </g>
       <g transform="translate(0,392)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Just Enough Items</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Just Enough Items</text>
       </g>
       <g transform="translate(0,416)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Just Enough Resources</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Just Enough Resources</text>
       </g>
       <g transform="translate(0,440)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Login Shield</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Login Shield</text>
       </g>
       <g transform="translate(0,464)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MaryTTS</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MaryTTS</text>
       </g>
       <g transform="translate(0,488)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MCMultiPart</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MCMultiPart</text>
       </g>
       <g transform="translate(0,512)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MoreOverlays</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MoreOverlays</text>
       </g>
       <g transform="translate(0,536)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Mouse Tweaks</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Mouse Tweaks</text>
       </g>
       <g transform="translate(0,560)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Neat</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Neat</text>
       </g>
       <g transform="translate(0,584)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Not Enough Items</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Not Enough Items</text>
       </g>
       <g transform="translate(0,608)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Optifine</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Optifine</text>
       </g>
       <g transform="translate(0,632)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Placement Preview</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Placement Preview</text>
       </g>
       <g transform="translate(0,656)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Sound Filters</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Sound Filters</text>
       </g>
       <g transform="translate(0,680)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">The One Probe</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">The One Probe</text>
       </g>
       <g transform="translate(0,704)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">TrashSlot</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">TrashSlot</text>
       </g>
       <g transform="translate(0,728)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Village Names</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Village Names</text>
       </g>
       <g transform="translate(0,752)">
          <rect x="0" y="0" width="208" height="16" fill="#6F7EEE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">What's That Slot</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">What's That Slot</text>
       </g>
    </g>
    <g name="Internal" transform="translate(1522, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Internal</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Internal</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">AutoRegLib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">AutoRegLib</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">BD Lib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">BD Lib</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Beyond Reality Core</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Beyond Reality Core</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">BiomeTweaker</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">BiomeTweaker</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Bookshelf</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Bookshelf</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Chameleon</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Chameleon</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">CodeChicken Lib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">CodeChicken Lib</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">CommonCapabilities</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">CommonCapabilities</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">compatlayer</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">compatlayer</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Custom Main Menu</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Custom Main Menu</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Cyclops Core</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Cyclops Core</text>
       </g>
       <g transform="translate(0,296)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Default Options</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Default Options</text>
       </g>
       <g transform="translate(0,320)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Default World Generator</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Default World Generator</text>
       </g>
       <g transform="translate(0,344)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ElecCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ElecCore</text>
       </g>
       <g transform="translate(0,368)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">EXCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">EXCore</text>
       </g>
       <g transform="translate(0,392)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Farseek</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Farseek</text>
       </g>
       <g transform="translate(0,416)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">FTBLib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">FTBLib</text>
       </g>
       <g transform="translate(0,440)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Guide-API</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Guide-API</text>
       </g>
       <g transform="translate(0,464)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">HardLib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">HardLib</text>
       </g>
       <g transform="translate(0,488)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">IvToolkit</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">IvToolkit</text>
       </g>
       <g transform="translate(0,512)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Just Enough Dimensions</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Just Enough Dimensions</text>
       </g>
       <g transform="translate(0,536)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">LLibrary</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">LLibrary</text>
       </g>
       <g transform="translate(0,560)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">LootTweaker</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">LootTweaker</text>
       </g>
       <g transform="translate(0,584)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MalisisCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MalisisCore</text>
       </g>
       <g transform="translate(0,608)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Mantle</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Mantle</text>
       </g>
       <g transform="translate(0,632)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MattDahEpic Core</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MattDahEpic Core</text>
       </g>
       <g transform="translate(0,656)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">McJtyLib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">McJtyLib</text>
       </g>
       <g transform="translate(0,680)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MicdoodleCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MicdoodleCore</text>
       </g>
       <g transform="translate(0,704)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MineTweaker 3</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MineTweaker 3</text>
       </g>
       <g transform="translate(0,728)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">NetherPortalFix</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">NetherPortalFix</text>
       </g>
       <g transform="translate(0,752)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">RebornCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">RebornCore</text>
       </g>
       <g transform="translate(0,776)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Resource Loader</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Resource Loader</text>
       </g>
       <g transform="translate(0,800)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Resources</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Resources</text>
       </g>
       <g transform="translate(0,824)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Shadowfacts-Forgelin</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Shadowfacts-Forgelin</text>
       </g>
       <g transform="translate(0,848)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ShadowMC</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ShadowMC</text>
       </g>
       <g transform="translate(0,872)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ShetiPhian-Core</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ShetiPhian-Core</text>
       </g>
       <g transform="translate(0,896)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Structures</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Structures</text>
       </g>
       <g transform="translate(0,920)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">TESLA</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">TESLA</text>
       </g>
       <g transform="translate(0,944)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tesla Core Lib</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tesla Core Lib</text>
       </g>
       <g transform="translate(0,968)">
          <rect x="0" y="0" width="208" height="16" fill="#BEBEBE" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Teslafied</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Teslafied</text>
       </g>
    </g>
    <g name="Logistic" transform="translate(1738, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Logistic</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Logistic</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Experience Cache</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Experience Cache</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Integrated Dynamics</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Integrated Dynamics</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Integrated Tunnels</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Integrated Tunnels</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Iron Chest</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Iron Chest</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Modular Routers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Modular Routers</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Packing Tape</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Packing Tape</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Pressure Pipes</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Pressure Pipes</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Refined Storage</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Refined Storage</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Storage Drawers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Storage Drawers</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#F3AD16" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Translocator</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Translocator</text>
       </g>
    </g>
    <g name="Magic" transform="translate(1954, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Magic</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Magic</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">AngelRing 2 Bauble</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">AngelRing 2 Bauble</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Blood Magic: Alchemical Wizardry</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Blood Magic: Alchemical Wizardry</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Botania</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Botania</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Embers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Embers</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Mana Wells</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Mana Wells</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Not Enough Potions</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Not Enough Potions</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Not Enough Wands</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Not Enough Wands</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Potion Core</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Potion Core</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Psi</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Psi</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Reliquary</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Reliquary</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#B700FF" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Roots 2</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Roots 2</text>
       </g>
    </g>
    <g name="Mapping" transform="translate(2170, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Mapping</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Mapping</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">NBTEdit</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">NBTEdit</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tell Me</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tell Me</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">World Stripper</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">World Stripper</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">WorldEdit</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">WorldEdit</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#B40404" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">WorldEdit CUI Forge Edition 2</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">WorldEdit CUI Forge Edition 2</text>
       </g>
    </g>
    <g name="Nature" transform="translate(2386, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Nature</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Nature</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Animania</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Animania</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Forestry</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Forestry</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">More Bees</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">More Bees</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#66FF00" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Pam's HarvestCraft</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Pam's HarvestCraft</text>
       </g>
    </g>
    <g name="Tech" transform="translate(2602, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Tech</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Tech</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Actually Additions</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Actually Additions</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">ActuallyComputers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">ActuallyComputers</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Advanced Generators</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Advanced Generators</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Buildcraft</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Buildcraft</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Computronics</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Computronics</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">GalacticraftCore</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">GalacticraftCore</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">GenDustry</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">GenDustry</text>
       </g>
       <g transform="translate(0,200)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Immersive Engineering</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Immersive Engineering</text>
       </g>
       <g transform="translate(0,224)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Immersive Petroleum</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Immersive Petroleum</text>
       </g>
       <g transform="translate(0,248)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Industrial Foregoing</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Industrial Foregoing</text>
       </g>
       <g transform="translate(0,272)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">IndustrialCraft 2</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">IndustrialCraft 2</text>
       </g>
       <g transform="translate(0,296)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">MNU</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">MNU</text>
       </g>
       <g transform="translate(0,320)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">NuclearCraft</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">NuclearCraft</text>
       </g>
       <g transform="translate(0,344)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">OpenComputers</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">OpenComputers</text>
       </g>
       <g transform="translate(0,368)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">RF Lux</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">RF Lux</text>
       </g>
       <g transform="translate(0,392)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Steve's Carts 2</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Steve's Carts 2</text>
       </g>
       <g transform="translate(0,416)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tech Reborn</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tech Reborn</text>
       </g>
       <g transform="translate(0,440)">
          <rect x="0" y="0" width="208" height="16" fill="#FFE600" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Tinkers' Construct</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Tinkers' Construct</text>
       </g>
    </g>
    <g name="Tool" transform="translate(2818, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Tool</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Tool</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#ECA05D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Auto Ore Dictionary Converter</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Auto Ore Dictionary Converter</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#ECA05D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Better Builder's Wands</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Better Builder's Wands</text>
       </g>
    </g>
    <g name="Worldgen" transform="translate(3034, 10)">
-      <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle">Worldgen</text>
+      <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle">Worldgen</text>
       <g transform="translate(0,32)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Biomes O' Plenty</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Biomes O' Plenty</text>
       </g>
       <g transform="translate(0,56)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Custom Ore Generation</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Custom Ore Generation</text>
       </g>
       <g transform="translate(0,80)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Galacticraft-Planets</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Galacticraft-Planets</text>
       </g>
       <g transform="translate(0,104)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Realistic Terrain Generation</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Realistic Terrain Generation</text>
       </g>
       <g transform="translate(0,128)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Recurrent Complex</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Recurrent Complex</text>
       </g>
       <g transform="translate(0,152)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Roguelike Dungeons</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Roguelike Dungeons</text>
       </g>
       <g transform="translate(0,176)">
          <rect x="0" y="0" width="208" height="16" fill="#00720D" stroke="black"/>
-         <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle">Streams</text>
+         <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle">Streams</text>
       </g>
    </g>
 </svg>

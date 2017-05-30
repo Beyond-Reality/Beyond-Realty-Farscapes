@@ -51,14 +51,14 @@ Example usage:
       <xsl:variable name="colourcode" select="/version/colours/colour[@name=$colourname]/@code"/>
 
       <g name="{$colourname}" transform="translate({10+ $dx * 216}, 10)">
-        <text x="104" y="16" font-size="16px" font-weight="bold" alignment-baseline="central" text-anchor="middle"><xsl:value-of select="@colour"/></text>  
+        <text x="104" y="16" font-size="16px" font-weight="bold" dominant-baseline="central" text-anchor="middle"><xsl:value-of select="@colour"/></text>  
 
         <xsl:for-each select="key('mods-by-colour', @colour)">
           <xsl:sort select="@name"/>
           <xsl:variable name="dy" select="position() - 1"/>
           <g transform="translate(0,{32 + $dy * 24})">
             <rect x="0" y="0" width="208" height="16" fill="{$colourcode}" stroke="black"/>
-            <text x="104" y="8" font-size="12px" alignment-baseline="central" text-anchor="middle"><xsl:value-of select="@name"/></text>  
+            <text x="104" y="8" font-size="12px" dominant-baseline="central" text-anchor="middle"><xsl:value-of select="@name"/></text>  
           </g>
         </xsl:for-each>
       </g>
