@@ -129,8 +129,8 @@
         </VeinsPreset>
         <!-- Cloud presets -->
         <CloudPreset name='StrategicCloud' inherits='PresetStrategicCloud'>
-            <Setting name='CloudRadius' avg='20' range='8'/>
-            <Setting name='CloudThickness' avg='15' range='6'/>
+            <Setting name='CloudRadius' avg='15' range='4'/>
+            <Setting name='CloudThickness' avg='11' range='3'/>
             <Setting name='CloudSizeNoise' avg='0.4'/>
             <Setting name='CloudInclination' avg='0.25' range='0.45'/>
             <Setting name='OreRadiusMult' avg='1' range='0.1'/>
