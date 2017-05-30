@@ -78,11 +78,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </VeinsPreset>
         <!-- Layered preset -->
         <VeinsPreset name='LayeredVeins' inherits='PresetLayeredVeins'>
@@ -93,11 +88,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </VeinsPreset>
         <!-- PipeVeins -->
         <VeinsPreset name='PipeVeins' inherits='PresetPipeVeins'>
@@ -123,11 +113,9 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
             <ReplacesOre block="gravel" />
             <ReplacesOre block="sandstone" />
             <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </VeinsPreset>
         <!-- Sparse Veins -->
         <VeinsPreset name='SparseVeins' inherits='PresetSparseVeins'>
@@ -138,11 +126,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </VeinsPreset>
         <!-- Cloud presets -->
         <CloudPreset name='StrategicCloud' inherits='PresetStrategicCloud'>
@@ -160,11 +143,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
             <BiomeType name="hills"/>
             <BiomeType name="mountain"/>
         </CloudPreset>
@@ -179,11 +157,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </StandardGenPreset>
         <StandardGenPreset name="SparseNetherrack">
             <Setting name="Size" avg="3" range="5" />
@@ -201,11 +174,6 @@
             <ReplacesOre block='hardenedClay'/>
             <ReplacesOre block="stoneGranite" />
             <ReplacesOre block="stoneDiorite" />
-            <ReplacesOre block="cobblestone" />
-            <ReplacesOre block="gravel" />
-            <ReplacesOre block="sandstone" />
-            <ReplacesOre block="clay" />
-            <ReplacesOre block="dirt" />
         </StandardGenPreset>
         <!-- ~~~~~~~~~~~~~~~~~~ Choices Start ~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <ConfigSection>
@@ -1383,6 +1351,169 @@
                       </StandardGen>
                     </IfModInstalled>
                     <!-- **************************************** RTG Mountain generation ******************************************* -->
+                  <IfCondition condition=':=dimension.generator.class="ChunkProviderRTG"'>
+                    <IfModInstalled name="rtg">
+                      <!-- Iron Hills/Mountains -->
+                      <Cloud name="IronCloud" inherits="StrategicCloud">
+                        <OreBlock block="minecraft:iron_ore" weight="0.20" />
+                        <OreBlock block="beyondreality:sparseiron" weight="0.50" />
+                        <OreBlock block="beyondreality:sporadiciron" weight="0.30" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.001"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                      </Cloud>
+                      <!-- Tin Hills/Mountains -->
+                      <Cloud name="TinCloud" inherits="StrategicCloud">
+                        <OreBlock block="beyondreality:oretin" weight="0.25" />
+                        <OreBlock block="beyondreality:sparsetin" weight="0.25" />
+                        <OreBlock block="beyondreality:sporadictin" weight="0.50" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.003"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="85" range="20" type="normal" scaleTo="biome"/>
+                      </Cloud>
+                      <!-- Nickel Hills/Mountains -->
+                      <Cloud name="NickelCloud" inherits="StrategicCloud">
+                        <OreBlock block="beyondreality:orenickel" weight="0.20" />
+                        <OreBlock block="beyondreality:sparsenickel" weight="0.50" />
+                        <OreBlock block="beyondreality:sporadicnickel" weight="0.30" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.002"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="85" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Coal Hills/Mountains -->
+                      <Cloud name="CoalCloud" inherits="StrategicCloud">
+                        <OreBlock block="minecraft:coal_ore" weight="0.40" />
+                        <OreBlock block="beyondreality:sporadiccoal" weight="0.60" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.003"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Bauxite Hills/Mountains -->
+                      <Cloud name="BauxiteCloud" inherits="StrategicCloud">
+                        <OreBlock block="beyondreality:orebauxite" weight="0.20" />
+                        <OreBlock block="beyondreality:sparsebauxite" weight="0.50" />
+                        <OreBlock block="beyondreality:sporadicbauxite" weight="0.30" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.001"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="75" range="11" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Ruby Hills/Mountains -->
+                      <Cloud name="RubyCloud" inherits="StrategicCloud">
+                        <OreBlock block="beyondreality:oreruby" weight="0.50" />
+                        <OreBlock block="beyondreality:sparseruby" weight="0.10" />
+                        <OreBlock block="beyondreality:sporadicruby" weight="0.40" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.002"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Emerald Hills/Mountains -->
+                      <Cloud name="EmeraldCloud" inherits="StrategicCloud">
+                        <OreBlock block="minecraft:emerald_ore" weight="0.40" />
+                        <OreBlock block="beyondreality:sparseemerald" weight="0.20" />
+                        <OreBlock block="beyondreality:sporadicemerald" weight="0.40" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.001"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="90" range="25" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Sapphire Hills/Mountains -->
+                      <Cloud name="SapphireCloud" inherits="StrategicCloud">
+                        <OreBlock block="beyondreality:oresapphire" weight="0.45" />
+                        <OreBlock block="beyondreality:sparsapphire" weight="0.15" />
+                        <OreBlock block="beyondreality:sporadicsapphire" weight="0.40" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.002"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- RedStone Hills/Mountains -->
+                      <Cloud name="RedstoneCloud" inherits="StrategicCloud">
+                        <OreBlock block="minecraft:redstone_ore" weight="0.30" />
+                        <OreBlock block="beyondreality:sparseredstone" weight="0.10" />
+                        <OreBlock block="beyondreality:sporadicredstone" weight="0.60" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.003"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- Lapis Hills/Mountains -->
+                      <Cloud name="LapisCloud" inherits="StrategicCloud">
+                        <OreBlock block="minecraft:lapis_ore" weight="0.55" />
+                        <OreBlock block="beyondreality:sparselapis" weight="0.10" />
+                        <OreBlock block="beyondreality:sporadiclapis" weight="0.35" />
+                        <!-- How Often it generates -->
+                        <Setting name='DistributionFrequency' avg="0.002"/>
+                        <!--Y Level spawn -->
+                        <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                        <Setting name='HeightOffset' avg='3' range='1'/>
+                      </Cloud>
+                      <!-- ************** Mountain Sparse ores ********************** -->
+                      <StandardGen name="Sparse mountain Iron 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseiron" />
+                          <Setting name="Frequency" avg="18" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain Tin 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsetin" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain nickel 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsenickel" />
+                          <Setting name="Frequency" avg="16" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain coal 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsecoal" />
+                          <Setting name="Frequency" avg="28" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain bauxite 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsebauxite" />
+                          <Setting name="Frequency" avg="15" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain ruby 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseruby" />
+                          <Setting name="Frequency" avg="12" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain emerald 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseemerald" />
+                          <Setting name="Frequency" avg="10" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain sapphire 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparsesapphire" />
+                          <Setting name="Frequency" avg="10" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain redstone 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparseredstone" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                      <StandardGen name="Sparse mountain lapis 1" inherits="SparseStone">
+                          <OreBlock block="beyondreality:sparselapis" />
+                          <Setting name="Frequency" avg="24" range="6" scaleTo="world" />
+                          <Setting name="Height" avg="85" range="20" scaleTo="world" />
+                      </StandardGen>
+                    </IfModInstalled>
+                    </IfCondition>
+                    <!-- **************************************** Biomes O plenty extra generation ******************************************* -->
                   <IfCondition condition=':=dimension.generator.class="ChunkProviderRTG"'>
                     <IfModInstalled name="rtg">
                       <!-- Iron Hills/Mountains -->
