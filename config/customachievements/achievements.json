@@ -59,10 +59,10 @@
           "name": "Botania (Early Game)",
           "desc": "Unlock Botania (Early Game)",
           "type": "INTERACT",
-          "item": "beyondreality:pedestal0",
-          "meta": "4",
+          "item": "botania:lexicon",
+          "meta": "0",
           "statValue": 0,
-          "ignoreMeta": false,
+          "ignoreMeta": true,
           "trophy": true,
           "xpos": 0,
           "ypos": 2
