@@ -27,7 +27,7 @@
   {
     "name": "copper",
     "type": "METAL",
-    "color": "ad6420",
+    "color": "a35309",
     "mining": 1,
     "ore": true,
     "sporadic": true,
@@ -105,7 +105,7 @@
   {
     "name": "iridium",
     "type": "METAL",
-    "color": "cecaca",
+    "color": "e8e8e8",
     "mining": 3,
     "ore": true,
     "sporadic": true,
@@ -157,7 +157,7 @@
   {
     "name": "emerald",
     "type": "METAL",
-    "color": "00cc00",
+    "color": "008400",
     "mining": 3,
     "ore": false,
     "sporadic": true,
@@ -170,7 +170,7 @@
   {
     "name": "gold",
     "type": "METAL",
-    "color": "ffcc33",
+    "color": "e0bc3a",
     "mining": 1,
     "ore": false,
     "sporadic": true,
@@ -183,7 +183,7 @@
   {
     "name": "iron",
     "type": "METAL",
-    "color": "966a40",
+    "color": "aa825c",
     "mining": 1,
     "ore": false,
     "sporadic": true,
@@ -261,7 +261,7 @@
   {
     "name": "lithium",
     "type": "METAL",
-    "color": "fcfae5",
+    "color": "f7f6ed",
     "mining": 2,
     "ore": true,
     "sporadic": true,
@@ -274,7 +274,7 @@
   {
     "name": "magnesium",
     "type": "METAL",
-    "color": "f9e5fc",
+    "color": "ddc9e0",
     "mining": 2,
     "ore": true,
     "sporadic": true,
