@@ -685,6 +685,22 @@
             <!-- Increased chances to spawn in -->
             <BiomeSet inherits="LapisBiomes"/>
           </Veins>
+          <StandardGen name="LapisStandard" inherits="StandardGen">
+            <OreBlock block="minecraft:lapis_ore" weight="0.55"/>
+            <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
+            <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
+            <Setting name="Size" avg="5" range="2"/>
+            <!--How offten it generates-->
+            <Setting name="Frequency" avg="16"/>
+            <!--Y Level spawn -->
+            <Setting name="Height" avg="12" range="5" scaleTo="world"/>
+            <ReplacesOre block="stone"/>
+            <ReplacesOre block="stoneBasalt"/>
+            <ReplacesOre block="stoneMarble"/>
+            <ReplacesOre block='stoneLimestone'/>
+            <!-- Increased chances to spawn in -->
+            <BiomeSet inherits="LapisBiomes"/>
+          </StandardGen>
           <!-- Sparse ores -->
           <StandardGen name="Sparse lapis 1" inherits="SparseStone">
             <OreBlock block="beyondreality:sparselapis"/>
