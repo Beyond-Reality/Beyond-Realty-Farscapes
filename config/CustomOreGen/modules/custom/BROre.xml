@@ -212,6 +212,13 @@
         <Replaces block="minecraft:diamond_ore"/>
         <Replaces block="minecraft:lapis_ore"/>
         <Replaces block="minecraft:emerald_ore"/>
+        <Replaces block="biomesoplenty:gem_ore:1"/>
+        <Replaces block="biomesoplenty:gem_ore:2"/>
+        <Replaces block="biomesoplenty:gem_ore:3"/>
+        <Replaces block="biomesoplenty:gem_ore:4"/>
+        <Replaces block="biomesoplenty:gem_ore:5"/>
+        <Replaces block="biomesoplenty:gem_ore:6"/>
+        <Replaces block="biomesoplenty:gem_ore:7"/>
       </Substitute>
       <ConfigSection>
         <!-- *************************************************** Standard Dist ********************************************************* -->
