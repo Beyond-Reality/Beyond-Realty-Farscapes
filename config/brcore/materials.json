@@ -6,7 +6,7 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
+    "ingot": false,
     "nugget": false,
     "dust": true,
     "tinyDust": false
@@ -84,7 +84,7 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
+    "ingot": false,
     "nugget": false,
     "dust": true,
     "tinyDust": false
@@ -97,7 +97,7 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
+    "ingot": false,
     "nugget": false,
     "dust": true,
     "tinyDust": false
