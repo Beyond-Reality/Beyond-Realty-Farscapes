@@ -728,7 +728,7 @@
             <DrawWireframe>:=drawWireframes</DrawWireframe>
             <WireframeColor>0x40221100</WireframeColor>
             <OreBlock block="techreborn:techreborn.ore:3" weight="0.55"/>
-            <OreBlock block="beyondreality:sparsapphire" weight="0.10"/>
+            <OreBlock block="beyondreality:sparsesapphire" weight="0.10"/>
             <OreBlock block="beyondreality:sporadicsapphire" weight="0.35"/>
             <Setting name="Size" avg="7" range="3"/>
             <Setting name="Frequency" avg="6"/>
@@ -739,12 +739,12 @@
             <ReplacesOre block='stoneLimestone'/>
           </StandardGen>
           <StandardGen name="Sparse sapphire 1" inherits="SparseStone">
-            <OreBlock block="beyondreality:sparsapphire"/>
+            <OreBlock block="beyondreality:sparsesapphire"/>
             <Setting name="Frequency" avg="16" range="3"/>
             <Setting name="Height" avg="20" range="10" scaleTo="world"/>
           </StandardGen>
           <StandardGen name="Sparse sapphire 2" inherits="SparseStone">
-            <OreBlock block="beyondreality:sparsapphire"/>
+            <OreBlock block="beyondreality:sparsesapphire"/>
             <Setting name="Frequency" avg="18" range="3"/>
             <Setting name="Height" avg="20" range="10" scaleTo="world"/>
           </StandardGen>
@@ -1452,7 +1452,7 @@
               <!-- Sapphire Hills/Mountains -->
               <Cloud name="SapphireCloud" inherits="StrategicCloud">
                 <OreBlock block="techreborn:techreborn.ore:3" weight="0.45"/>
-                <OreBlock block="beyondreality:sparsapphire" weight="0.15"/>
+                <OreBlock block="beyondreality:sparsesapphire" weight="0.15"/>
                 <OreBlock block="beyondreality:sporadicsapphire" weight="0.40"/>
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.002"/>
