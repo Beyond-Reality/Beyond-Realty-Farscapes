@@ -685,7 +685,7 @@
             <!-- Increased chances to spawn in -->
             <BiomeSet inherits="LapisBiomes"/>
           </Veins>
-          <StandardGen name="LapisStandard" inherits="StandardGen">
+          <StandardGen name="LapisStandard1" inherits="StandardGen">
             <OreBlock block="minecraft:lapis_ore" weight="0.55"/>
             <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
             <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
