@@ -2,13 +2,13 @@
     "name": "ruby",
     "type": "GEM", //METAL or GEM
     "color": "cc0000",
-    "mining": 3,
+    "mining": 2,
     "ore": true,
     "sporadic": true,
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -19,9 +19,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -32,9 +32,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -45,9 +45,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -58,9 +58,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -71,35 +71,35 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "sapphire",
     "type": "GEM",
     "color": "0066ff",
-    "mining": 3,
+    "mining": 2,
     "ore": true,
     "sporadic": true,
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "peridot",
     "type": "GEM",
     "color": "00cc00",
-    "mining": 3,
+    "mining": 2,
     "ore": true,
     "sporadic": true,
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -110,9 +110,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -123,14 +123,14 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "coal",
-    "type": "METAL",
+    "type": "GEM",
     "color": "2d2d2d",
     "mining": 0,
     "ore": false,
@@ -138,12 +138,12 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "diamond",
-    "type": "METAL",
+    "type": "GEM",
     "color": "00ccff",
     "mining": 2,
     "ore": false,
@@ -151,12 +151,12 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "emerald",
-    "type": "METAL",
+    "type": "GEM",
     "color": "008400",
     "mining": 3,
     "ore": false,
@@ -164,7 +164,7 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -177,7 +177,7 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -190,20 +190,20 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
     "name": "lapis",
-    "type": "METAL",
+    "type": "GEM",
     "color": "0033cc",
-    "mining": 2,
+    "mining": 1,
     "ore": false,
     "sporadic": true,
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -216,7 +216,7 @@
     "sparse": true,
     "ingot": false,
     "nugget": false,
-    "dust": true,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -227,9 +227,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -240,9 +240,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -253,9 +253,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -266,9 +266,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -279,9 +279,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -292,9 +292,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   },
   {
@@ -305,9 +305,9 @@
     "ore": true,
     "sporadic": true,
     "sparse": true,
-    "ingot": true,
-    "nugget": true,
-    "dust": true,
+    "ingot": false,
+    "nugget": false,
+    "dust": false,
     "tinyDust": false
   }
 ]
