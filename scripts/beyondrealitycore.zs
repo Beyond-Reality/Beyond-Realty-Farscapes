@@ -72,6 +72,18 @@ recipes.addShapeless(<beyondreality:orelead>, [
   <ore:chunkTinyLead>, <ore:chunkTinyLead>, <ore:chunkTinyLead>,
   <ore:chunkTinyLead>, <ore:chunkTinyLead>, <ore:chunkTinyLead>]);
 
+// Sapphire
+<ore:shardSapphire>.add(<beyondreality:shardsapphire>);
+recipes.addShapeless(<techreborn:gem:1>, [
+  <ore:shardSapphire>, <ore:shardSapphire>,
+  <ore:shardSapphire>, <ore:shardSapphire>]);
+<ore:shardTinySapphire>.add(<beyondreality:tiny_shardsapphire>);
+recipes.addShapeless(<techreborn:gem:1>, [
+  <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>,
+  <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>,
+  <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>]);
+
+
 // Peridot
 <ore:shardPeridot>.add(<beyondreality:shardperidot>);
 recipes.addShapeless(<techreborn:gem:2>, [
@@ -106,37 +118,37 @@ recipes.addShapeless(<beyondreality:oresilver>, [
   <ore:chunkTinySilver>, <ore:chunkTinySilver>, <ore:chunkTinySilver>]);
 
 // Coal
-<ore:chunkCoal>.add(<beyondreality:chunkcoal>);
+<ore:shardCoal>.add(<beyondreality:shardcoal>);
 recipes.addShapeless(<minecraft:coal:0>, [
-  <ore:chunkCoal>, <ore:chunkCoal>,
-  <ore:chunkCoal>, <ore:chunkCoal>]);
-<ore:chunkTinyCoal>.add(<beyondreality:tinycoal>);
+  <ore:shardCoal>, <ore:shardCoal>,
+  <ore:shardCoal>, <ore:shardCoal>]);
+<ore:shardTinyCoal>.add(<beyondreality:tiny_shardcoal>);
 recipes.addShapeless(<minecraft:coal:0>, [
-  <ore:chunkTinyCoal>, <ore:chunkTinyCoal>, <ore:chunkTinyCoal>,
-  <ore:chunkTinyCoal>, <ore:chunkTinyCoal>, <ore:chunkTinyCoal>,
-  <ore:chunkTinyCoal>, <ore:chunkTinyCoal>, <ore:chunkTinyCoal>]);
+  <ore:shardTinyCoal>, <ore:shardTinyCoal>, <ore:shardTinyCoal>,
+  <ore:shardTinyCoal>, <ore:shardTinyCoal>, <ore:shardTinyCoal>,
+  <ore:shardTinyCoal>, <ore:shardTinyCoal>, <ore:shardTinyCoal>]);
 
 // Diamond
-<ore:chunkDiamond>.add(<beyondreality:chunkdiamond>);
+<ore:shardDiamond>.add(<beyondreality:sharddiamond>);
 recipes.addShapeless(<minecraft:diamond:0>, [
-  <ore:chunkDiamond>, <ore:chunkDiamond>,
-  <ore:chunkDiamond>, <ore:chunkDiamond>]);
-<ore:chunkTinyDiamond>.add(<beyondreality:tinydiamond>);
+  <ore:shardDiamond>, <ore:shardDiamond>,
+  <ore:shardDiamond>, <ore:shardDiamond>]);
+<ore:shardTinyDiamond>.add(<beyondreality:tiny_sharddiamond>);
 recipes.addShapeless(<minecraft:diamond:0>, [
-  <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>,
-  <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>,
-  <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>, <ore:chunkTinyDiamond>]);
+  <ore:shardTinyDiamond>, <ore:shardTinyDiamond>, <ore:shardTinyDiamond>,
+  <ore:shardTinyDiamond>, <ore:shardTinyDiamond>, <ore:shardTinyDiamond>,
+  <ore:shardTinyDiamond>, <ore:shardTinyDiamond>, <ore:shardTinyDiamond>]);
 
 // Emerald
-<ore:chunkEmerald>.add(<beyondreality:chunkemerald>);
+<ore:shardEmerald>.add(<beyondreality:shardemerald>);
 recipes.addShapeless(<minecraft:emerald:0>, [
-  <ore:chunkEmerald>, <ore:chunkEmerald>,
-  <ore:chunkEmerald>, <ore:chunkEmerald>]);
-<ore:chunkTinyEmerald>.add(<beyondreality:tinyemerald>);
+  <ore:shardEmerald>, <ore:shardEmerald>,
+  <ore:shardEmerald>, <ore:shardEmerald>]);
+<ore:shardTinyEmerald>.add(<beyondreality:tiny_shardemerald>);
 recipes.addShapeless(<minecraft:emerald:0>, [
-  <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>,
-  <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>,
-  <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>, <ore:chunkTinyEmerald>]);
+  <ore:shardTinyEmerald>, <ore:shardTinyEmerald>, <ore:shardTinyEmerald>,
+  <ore:shardTinyEmerald>, <ore:shardTinyEmerald>, <ore:shardTinyEmerald>,
+  <ore:shardTinyEmerald>, <ore:shardTinyEmerald>, <ore:shardTinyEmerald>]);
 
 // Gold
 <ore:chunkGold>.add(<beyondreality:chunkgold>);
@@ -161,15 +173,15 @@ recipes.addShapeless(<minecraft:iron_ore>, [
   <ore:chunkTinyIron>, <ore:chunkTinyIron>, <ore:chunkTinyIron>]);
 
 // Lapis
-<ore:chunkLapis>.add(<beyondreality:chunklapis>);
+<ore:shardLapis>.add(<beyondreality:shardlapis>);
 recipes.addShapeless(<minecraft:dye:4>, [
-  <ore:chunkLapis>, <ore:chunkLapis>,
-  <ore:chunkLapis>, <ore:chunkLapis>]);
-<ore:chunkTinyLapis>.add(<beyondreality:tinylapis>);
+  <ore:shardLapis>, <ore:shardLapis>,
+  <ore:shardLapis>, <ore:shardLapis>]);
+<ore:shardTinyLapis>.add(<beyondreality:tiny_shardlapis>);
 recipes.addShapeless(<minecraft:dye:4>, [
-  <ore:chunkTinyLapis>, <ore:chunkTinyLapis>, <ore:chunkTinyLapis>,
-  <ore:chunkTinyLapis>, <ore:chunkTinyLapis>, <ore:chunkTinyLapis>,
-  <ore:chunkTinyLapis>, <ore:chunkTinyLapis>, <ore:chunkTinyLapis>]);
+  <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
+  <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
+  <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>]);
 
 // Redstone
 <ore:chunkRedstone>.add(<beyondreality:chunkredstone>);
