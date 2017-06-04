@@ -1541,52 +1541,52 @@
                 <Setting name="Height" avg="85" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain Iron 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparseiron"/>
+                <OreBlock block="beyondreality:sporadiciron"/>
                 <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="85" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain Tin 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparsetin"/>
+                <OreBlock block="beyondreality:sporadictin"/>
                 <Setting name="Frequency" avg="26" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain nickel 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparsenickel"/>
+                <OreBlock block="beyondreality:sporadicnickel"/>
                 <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain coal 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparsecoal"/>
+                <OreBlock block="beyondreality:sporadiccoal"/>
                 <Setting name="Frequency" avg="34" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain bauxite 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparsebauxite"/>
+                <OreBlock block="beyondreality:sporadicbauxite"/>
                 <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain ruby 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparseruby"/>
+                <OreBlock block="beyondreality:sporadicruby"/>
                 <Setting name="Frequency" avg="16" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain emerald 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparseemerald"/>
+                <OreBlock block="beyondreality:sporadicemerald"/>
                 <Setting name="Frequency" avg="15" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain sapphire 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparsesapphire"/>
+                <OreBlock block="beyondreality:sporadicsapphire"/>
                 <Setting name="Frequency" avg="15" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain redstone 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparseredstone"/>
+                <OreBlock block="beyondreality:sporadicredstone"/>
                 <Setting name="Frequency" avg="30" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
               <StandardGen name="Sparse mountain lapis 2" inherits="SparseStone">
-                <OreBlock block="beyondreality:sparselapis"/>
+                <OreBlock block="beyondreality:sporadiclapis"/>
                 <Setting name="Frequency" avg="27" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
