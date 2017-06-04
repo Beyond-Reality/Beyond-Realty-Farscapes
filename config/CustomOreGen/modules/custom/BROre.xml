@@ -1388,9 +1388,9 @@
                 <OreBlock block="beyondreality:sparseiron" weight="0.50"/>
                 <OreBlock block="beyondreality:sporadiciron" weight="0.30"/>
                 <!-- How Often it generates -->
-                <Setting name='DistributionFrequency' avg="0.001"/>
+                <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="90" range="26" type="normal" scaleTo="world"/>
               </Cloud>
               <!-- Tin Hills/Mountains -->
               <Cloud name="TinCloud" inherits="StrategicCloud">
@@ -1400,7 +1400,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.003"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="85" range="20" type="normal" scaleTo="biome"/>
+                <Setting name="CloudHeight" avg="105" range="40" type="normal" scaleTo="biome"/>
               </Cloud>
               <!-- Nickel Hills/Mountains -->
               <Cloud name="NickelCloud" inherits="StrategicCloud">
@@ -1410,7 +1410,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="85" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="105" range="40" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Coal Hills/Mountains -->
@@ -1420,7 +1420,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.003"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="105" range="40" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Bauxite Hills/Mountains -->
@@ -1429,9 +1429,9 @@
                 <OreBlock block="beyondreality:sparsebauxite" weight="0.50"/>
                 <OreBlock block="beyondreality:sporadicbauxite" weight="0.30"/>
                 <!-- How Often it generates -->
-                <Setting name='DistributionFrequency' avg="0.001"/>
+                <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="75" range="11" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="85" range="21" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Ruby Hills/Mountains -->
@@ -1442,7 +1442,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="100" range="36" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Emerald Hills/Mountains -->
@@ -1453,7 +1453,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.001"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="90" range="25" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="100" range="35" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Sapphire Hills/Mountains -->
@@ -1464,7 +1464,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="100" range="36" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- RedStone Hills/Mountains -->
@@ -1475,7 +1475,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.003"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="90" range="16" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- Lapis Hills/Mountains -->
@@ -1486,7 +1486,7 @@
                 <!-- How Often it generates -->
                 <Setting name='DistributionFrequency' avg="0.002"/>
                 <!--Y Level spawn -->
-                <Setting name="CloudHeight" avg="80" range="16" type="normal" scaleTo="world"/>
+                <Setting name="CloudHeight" avg="90" range="26" type="normal" scaleTo="world"/>
                 <Setting name='HeightOffset' avg='3' range='1'/>
               </Cloud>
               <!-- ************** Mountain Sparse ores ********************** -->
@@ -1539,6 +1539,56 @@
                 <OreBlock block="beyondreality:sparselapis"/>
                 <Setting name="Frequency" avg="24" range="6" scaleTo="world"/>
                 <Setting name="Height" avg="85" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain Iron 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparseiron"/>
+                <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="85" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain Tin 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparsetin"/>
+                <Setting name="Frequency" avg="26" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain nickel 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparsenickel"/>
+                <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain coal 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparsecoal"/>
+                <Setting name="Frequency" avg="34" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain bauxite 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparsebauxite"/>
+                <Setting name="Frequency" avg="20" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain ruby 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparseruby"/>
+                <Setting name="Frequency" avg="16" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain emerald 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparseemerald"/>
+                <Setting name="Frequency" avg="15" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain sapphire 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparsesapphire"/>
+                <Setting name="Frequency" avg="15" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain redstone 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparseredstone"/>
+                <Setting name="Frequency" avg="30" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
+              </StandardGen>
+              <StandardGen name="Sparse mountain lapis 2" inherits="SparseStone">
+                <OreBlock block="beyondreality:sparselapis"/>
+                <Setting name="Frequency" avg="27" range="6" scaleTo="world"/>
+                <Setting name="Height" avg="100" range="20" scaleTo="world"/>
               </StandardGen>
             </IfModInstalled>
           </IfCondition>
