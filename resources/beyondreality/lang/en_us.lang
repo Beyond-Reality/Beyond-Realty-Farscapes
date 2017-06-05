@@ -83,7 +83,7 @@ tile.beyondreality:sporadicgold.name=Sparse gold
 tile.beyondreality:oreiron.name=Iron ore
 tile.beyondreality:sparseiron.name=Sparse iron
 item.beyondreality:tinyiron.name=Tiny iron chunk
-item.beyondreality:chuniron.name=Iron chunk
+item.beyondreality:chunkiron.name=Iron chunk
 tile.beyondreality:sporadiciron.name=Sparse iron
 
 tile.beyondreality:sparselapis.name=Sparse lapis
