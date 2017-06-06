@@ -14,7 +14,7 @@
   {
     "name": "tin",
     "type": "METAL",
-    "color": "a6a6a6",
+    "color": "d6cdcd",
     "mining": 1,
     "ore": true,
     "sporadic": true,
@@ -53,7 +53,7 @@
   {
     "name": "platinum",
     "type": "METAL",
-    "color": "3a4b99",
+    "color": "44518c",
     "mining": 3,
     "ore": true,
     "sporadic": true,
@@ -183,7 +183,7 @@
   {
     "name": "iron",
     "type": "METAL",
-    "color": "aa825c",
+    "color": "ffcea0",
     "mining": 1,
     "ore": false,
     "sporadic": true,
