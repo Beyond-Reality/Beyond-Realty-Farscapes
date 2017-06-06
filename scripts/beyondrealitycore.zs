@@ -270,3 +270,6 @@ recipes.addShapeless(<beyondreality:oretungsten>, [
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>,
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>,
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>]);
+  
+// All Chests to vanilla chest
+recipes.addShapeless(<minecraft:chest>, [<ore:chestWood>]);
