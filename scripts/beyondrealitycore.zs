@@ -270,6 +270,13 @@ recipes.addShapeless(<beyondreality:oretungsten>, [
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>,
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>,
   <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>, <ore:chunkTinyTungsten>]);
-  
+
 // All Chests to vanilla chest
 recipes.addShapeless(<minecraft:chest>, [<ore:chestWood>]);
+
+// Oak boat from any planks
+recipes.addShaped(<minecraft:boat>, [
+  [null, null, null],
+  [<ore:plankWood>, null, <ore:plankWood>],
+  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+]);
