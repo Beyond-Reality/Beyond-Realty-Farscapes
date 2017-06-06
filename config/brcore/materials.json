@@ -289,6 +289,7 @@
     "type": "METAL",
     "color": "9b5645",
     "mining": 1,
+    "oredict": ["oreAluminum", "oreAluminium"],
     "ore": true,
     "sporadic": true,
     "sparse": true,
