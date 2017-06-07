@@ -1,5 +1,7 @@
 # FarScapes Documentation
 
+#### Visit [BeyondRealityGaming.Com](https://beyondrealitygaming.com) for the latest news!
+
 #### Issue reporting
 
 Please **do not contact mod authors** for issues when using **Farscapes**
