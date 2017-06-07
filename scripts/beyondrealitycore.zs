@@ -285,4 +285,6 @@ recipes.addShaped(<minecraft:boat>, [
 val plastic = <ore:itemRubber>;
 plastic.add(<industrialforegoing:plastic>);
 
+//All Bookshelfs to vanilla
+recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
 
