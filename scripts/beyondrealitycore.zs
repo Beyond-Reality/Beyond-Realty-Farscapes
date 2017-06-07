@@ -280,3 +280,9 @@ recipes.addShaped(<minecraft:boat>, [
   [<ore:plankWood>, null, <ore:plankWood>],
   [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
 ]);
+
+//Oredict Industrial Foregoing Plastic to ic2
+val plastic = <ore:itemRubber>;
+plastic.add(<industrialforegoing:plastic>);
+
+
