@@ -7,7 +7,6 @@
 - [animania-1.11.2-1.1.3](https://minecraft.curseforge.com/projects/animania/files/2430393)
 
 ```
-
 Release Notes 1.1.3 (for 1.10.2 and 1.11.2)
 “Release Your Inner Hamster ”
 ##### Major Feature:
@@ -33,7 +32,6 @@ Compats:
 - [1.11.2 only] Bucket no longer duped when exchanging special milk for vanilla milk (credit: TheCoolGuy937, sfPlayer1)
 - [1.11.2 only] Fixed issue for some players who were logged out after placing trough (credit: ionutsoran)
 - [1.11.2 only] Fixed bug where water not being scooped out of trough with Empty Bucket (credit: 19nrussell)
-
 ```
 - [BiomesOPlenty-1.11.2-6.1.0.2243](https://minecraft.curseforge.com/projects/biomes-o-plenty/files/2430444)
 
