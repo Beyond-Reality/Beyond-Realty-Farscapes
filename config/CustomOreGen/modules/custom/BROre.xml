@@ -637,9 +637,8 @@
           <BiomeSet inherits="RedstoneRubyBiomes"/>
         </Veins>
         <StandardGen name="RedStoneStandard" inherits="StandardGen">
-          <OreBlock block="minecraft:redstone_ore" weight="0.55"/>
           <OreBlock block="beyondreality:sparseredstone" weight="0.25"/>
-          <OreBlock block="beyondreality:sporadicredstone" weight="0.20"/>
+          <OreBlock block="beyondreality:sporadicredstone" weight="0.75"/>
           <Setting name="Size" avg="5" range="2"/>
           <!--How offten it generates-->
           <Setting name="Frequency" avg="16"/>
