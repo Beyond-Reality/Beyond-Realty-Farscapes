@@ -106,6 +106,7 @@ Update dependencies * mezz
 * Added in game documentation to our Farscapes book for ores and change logs.
 * Switched NotEnoughWands to use RF instead of XP
 * Fixed [#5 Pams Harvestcraft Market Spawn eggs](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/5)
+* Added "BR-Team Farscapes" to default server entries
 
 ## Changelog for 1.0.2-r1
 
