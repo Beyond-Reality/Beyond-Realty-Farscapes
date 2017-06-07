@@ -6,5 +6,5 @@ rtfm.manual.warning.missing.item=Item unavailable.
 rtfm.manual.warning.missing.ore_dict=Ore dictionary entry unavailable.
 
 tooltip.rtfm.manual.tab=General
-tooltip.rtfm.manual.tab1=OreGenerations Info
+tooltip.rtfm.manual.tab1=Ore Generation Info
 tooltip.rtfm.manual.tab2=Change Logs
