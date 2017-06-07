@@ -105,6 +105,7 @@ Update dependencies * mezz
 * Updated Waystone config to default.
 * Added in game documentation to our Farscapes book for ores and change logs.
 * Switched NotEnoughWands to use RF instead of XP
+* Fixed [#5 Pams Harvestcraft Market Spawn eggs](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/5)
 
 ## Changelog for 1.0.2-r1
 
