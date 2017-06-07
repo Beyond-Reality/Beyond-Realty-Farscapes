@@ -68,3 +68,106 @@ River, Extreme Hills and Frozen River Biomes
 - Generates as thick pipe veins, Which can generate between **Y** level 10 up to 90.
 - Generates as large clouds in mountainous regions above Y level 70.
 - Can generate anywhere in the **overworld** but has increased chances in Mountain type Biomes.
+
+## Tin Ore
+![Tansy ](block:oreflowers:oreflowers1@4)
+
+##### Generation information
+- Can be found around Tansy plants which generate on grassy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 280 blocks
+- The motherlode generates between 32-72 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in the mountain type biomes.
+- Also Generates in large clouds in mountainous regions above Y level 65
+
+## Copper Ore
+![Hauman ](block:oreflowers:oreflowers1@5)
+![Copper Flower ](block:oreflowers:oreflowersdesert1@5)
+
+##### Generation information
+- Can be found around **Hauman** plants which generate on grassy surfaces.
+- Can be found around **Copper Flower** plants which generate on sandy surfaces.
+- Generates in big sized veins with a huge motherlode in the center, can have up to 5 branches(veins) extending outwards as far as 670 blocks
+- The motherlode and branches generate between 30-60 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in the **forest** type biomes.
+
+## Nickel Ore
+![Shrub Violet ](block:oreflowers:oreflowers2@1)
+![MilkWort ](block:oreflowers:oreflowersdesert2@1)
+
+##### Generation information
+- Can be found around **Shrub Violet** plants which generate on grassy surfaces.
+- Can be found around **MilkWort** plants which generate on sandy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 220 blocks
+- The motherlode and branches generate between 32-43 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in the **plains** type biomes.
+- Also Generates in large clouds in mountainous regions above Y level 65
+
+## Lead Ore
+![LeadPlant ](block:oreflowers:oreflowers1@6)
+![Sheeps Fescue ](block:oreflowers:oreflowersdesert1@6)
+
+##### Generation information
+- Can be found around **LeadPlant** plants which generate on grassy surfaces.
+- Can be found around **Sheeps Fescue** plants which generate on sandy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 230 blocks
+- The motherlode and branches generate between 23-33 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in **Cold/Snowy** type biomes.
+
+## Silver Ore
+![Mustard ](block:oreflowers:oreflowers2@0)
+![Rapeseed ](block:oreflowers:oreflowersdesert2@0)
+
+##### Generation information
+- Can be found around **Mustard** plants which generate on grassy surfaces.
+- Can be found around **Rapeseed** plants which generate on sandy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 210 blocks
+- The motherlode and branches generate between 31-41 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in **Sandy** type biomes.
+
+## Bauxite Ore
+![Affine ](block:oreflowers:oreflowers2@2)
+
+##### Generation information
+- Can be found around **Affine** plants which generate on grassy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 250 blocks
+- The motherlode and branches generate between 31-41 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in **Mesa** biomes.
+- Also Generates in large clouds in mountainous regions above Y level 65
+
+## Platinum Ore
+![Desert Madwort](block:oreflowers:oreflowers2@3)
+
+##### Generation information
+- Can be found around **Desert Madwort** plants which generate on sandy surfaces.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 3 branches(veins) extending outwards as far as 190 blocks
+- The motherlode and branches generate between 13-23 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in **Ocean and beach** type biomes.
+
+## Uranium & Magnesium Ore
+![Red Amaranth](block:oreflowers:oreflowers1@7)
+![Prime Rose ](block:oreflowers:oreflowersdesert1@7)
+
+##### Generation information
+- Can be found around **Red Amaranth** plants which generate on grassy surfaces.
+- Can be found around **Prime Rose** plants which generate on sandy surfaces.
+- Has a mix of both Uranium and Magnesium ores in the veins of around 60% Uranium and 40% Magnesium. They can still generate individually from each other in small sparse clusters.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 240 blocks
+- The motherlode and branches generate between 16-40 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in **Jungle** type biomes.
+
+## Thorium & Boron Ore
+![Melastoma ](block:oreflowers:oreflowers2@7)
+
+##### Generation information
+- Can be found around **Melastoma** plants which generate on grassy surfaces.
+- Has a mix of both Thorium and Boron ores in the veins of around 60% Thorium and 40% Boron. They can still generate individually from each other in small sparse clusters.
+- Generates in normal sized veins with a big motherlode in the center, can have up to 4 branches(veins) extending outwards as far as 240 blocks
+- The motherlode and branches generate between 17-27 **Y** level.
+- Can generate anywhere in the **overworld** but has increased chances in the **Swamp** biome.
+
+## Lithium Ore
+![Lithium ore ](block:beyondreality:orelithium@0)
+
+##### Generation information
+- Does not have a indicator plant to help locate it in the world.
+- Generates in clusters similar to vanilla type generation but slightly bigger.
