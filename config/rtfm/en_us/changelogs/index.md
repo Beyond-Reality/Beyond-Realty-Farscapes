@@ -4,9 +4,8 @@
 
 ### Mod updates
 
-* [animania-1.11.2-1.1.3](https://minecraft.curseforge.com/projects/animania/files/2430393)
+[animania-1.11.2-1.1.3](https://minecraft.curseforge.com/projects/animania/files/2430393)
 
-```
 Release Notes 1.1.3 (for 1.10.2 and 1.11.2)
 “Release Your Inner Hamster ”
 ##### Major Feature:
@@ -32,40 +31,33 @@ Compats:
 * [1.11.2 only] Bucket no longer duped when exchanging special milk for vanilla milk (credit: TheCoolGuy937, sfPlayer1)
 * [1.11.2 only] Fixed issue for some players who were logged out after placing trough (credit: ionutsoran)
 * [1.11.2 only] Fixed bug where water not being scooped out of trough with Empty Bucket (credit: 19nrussell)
-```
-* [BiomesOPlenty-1.11.2-6.1.0.2243](https://minecraft.curseforge.com/projects/biomes-o-plenty/files/2430444)
 
-```
+[BiomesOPlenty-1.11.2-6.1.0.2243](https://minecraft.curseforge.com/projects/biomes-o-plenty/files/2430444)
+
 Build 1.11.2-6.1.0.2243:
 Matt Caughey: Updated logo/icon
-```
 
 * [just-enough-items-1.11.2-4.5.0.287](https://minecraft.curseforge.com/projects/just-enough-items-jei/files/2430470)
 
-```
 Minor cleanup
 Fix ingredientFilter#setFilterText
-```
-* [forestry_1.11.2-5.3.4.101](https://minecraft.curseforge.com/projects/forestry/files/2430469)
 
-```
+[forestry_1.11.2-5.3.4.101](https://minecraft.curseforge.com/projects/forestry/files/2430469)
+
 Update JEI integration * mezz
 Fix leaves spawning near 0,0,0 * mezz
 Fix backpack pickup handler * mezz
 Update dependencies * mezz
-```
 
-* [industrialforegoing-1.11.2-0.2.0-BETA-8](https://minecraft.curseforge.com/projects/industrial-foregoing/files/2430572)
+[industrialforegoing-1.11.2-0.2.0-BETA-8](https://minecraft.curseforge.com/projects/industrial-foregoing/files/2430572)
 
-```
 * A fix for the Bioreactor for sure
 * Made Machines that accept Radius Upgrade work faster depending of their Radius and Speed Upgrades
 * Added Oredictionary entry for the Plastic
 * Reduced Tree Blocks Choped by default (Needs already created config a manual change)
-```
-* [OpenComputers-MC1.11.2-1.7.0.28](http://ci.cil.li/job/OpenComputers-dev-MC1.11/28/artifact/build/libs/OpenComputers-MC1.11.2-1.7.0.28.jar)
 
-```
+[OpenComputers-MC1.11.2-1.7.0.28](http://ci.cil.li/job/OpenComputers-dev-MC1.11/28/artifact/build/libs/OpenComputers-MC1.11.2-1.7.0.28.jar)
+
 * Fix robot being unable to place buckets. Probably also fixes a lot of
 * Updated class transformer
 * Allright, I give up, can't reproduce. Best guess I have is that it's a
@@ -87,18 +79,13 @@ Update dependencies * mezz
 * hostname to PS1 fix
 * bad timer bug fix: event timers should default to once
 * tab complete fix for nil hints
-```
 
-* [malisisdoors 1.11.2-6.1.1](https://minecraft.curseforge.com/projects/malisisdoors?gameCategorySlug=mc-mods&projectID=223891)
-
-```
+[malisisdoors 1.11.2-6.1.1](https://minecraft.curseforge.com/projects/malisisdoors?gameCategorySlug=mc-mods&projectID=223891)
 * Added textureStiched callback
-```
-* [malisisCore 1.11.2-5.2.1-SNAPSHOT](https://minecraft.curseforge.com/projects/malisiscore?gameCategorySlug=mc-mods&projectID=223896)
 
-```
+[malisisCore 1.11.2-5.2.1-SNAPSHOT](https://minecraft.curseforge.com/projects/malisiscore?gameCategorySlug=mc-mods&projectID=223896)
+
 * Fixed animated renderables not being removed when changing dimension
-```
 
 ### Added
 * Added Simply Conveyors * [Link](https://zundrel.com)
