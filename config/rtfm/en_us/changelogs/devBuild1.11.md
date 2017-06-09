@@ -21,6 +21,10 @@
 - Camera not returning quite the correct distance.
 - Particle Card and Turtle having no range limit.
 
+#### [industrialforegoing-1.11.2-0.2.2-BETA-9](https://github.com/Buuz135/Industrial-Foregoing/commit/b657105c33828927034fdfdc6e2a8ec42eaf9f80)
+
+- Improved Tree Chopping in the Plant Recolector
+
 #### [Inventory Tweaks 1.62](https://minecraft.curseforge.com/projects/inventory-tweaks/files/2431301)
 - Fixed the meaning of `enableConfigLoadedMesssage`.
 - Fixes issues arising from tree files with large numbers of entries.
