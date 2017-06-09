@@ -20,13 +20,7 @@
       <BiomeType name="sandy"/>
     </BiomeSet>
     <BiomeSet name="LapisBiomes">
-      <Biome name="Cold Taiga"/>
-      <Biome name="Cold Taiga M "/>
-      <Biome name="Cold Taiga Hills"/>
-      <Biome name="Ice Plains"/>
-      <Biome name="Ice Mountains"/>
-      <Biome name="FrozenRiver"/>
-      <Biome name="Cold Beach"/>
+      <BiomeType name="cold"/>
     </BiomeSet>
     <BiomeSet name="EmeraldBiomes">
       <BiomeType name="mountain"/>
@@ -673,42 +667,42 @@
           <BiomeSet inherits="RedstoneRubyBiomes"/>
         </StandardGen>
         <!-- ***************************************************** Lapis ********************************************************** -->
-        <Veins name="LapisPrefVeins" inherits="VerticalVeins">
+        <Veins name="LapisPrefVeins" inherits="PipeVeins">
           <DrawWireframe>:=drawWireframes</DrawWireframe>
           <WireframeColor>0x40336699</WireframeColor>
-          <OreBlock block="minecraft:lapis_ore" weight="0.55"/>
-          <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
-          <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
+          <OreBlock block="minecraft:lapis_ore" weight="0.45"/>
+          <OreBlock block="beyondreality:sparselapis" weight="0.15"/>
+          <OreBlock block="beyondreality:sporadiclapis" weight="0.40"/>
           <!--How offten it generates-->
-          <Setting name="MotherlodeFrequency" avg="0.0045"/>
-          <Setting name="MotherlodeSize" avg="0.1" range="0"/>
-          <Setting name="SegmentRadius" avg="0.40" range="0.1"/>
-          <Setting name="OreDensity" avg="1" range="0"/>
-          <Setting name="OreRadiusMult" avg="1.0" range="0.1"/>
+          <Setting name="MotherlodeFrequency" avg="0.0056"/>
+          <!--Y Level spawn -->
+          <Setting name="MotherlodeHeight" avg="18" range="5"/>
+          <Setting name="MotherlodeSize" avg="6" range="1"/>
+          <Setting name="SegmentRadius" avg="1.5" range="0.5"/>
+          <Setting name="OreDensity" avg="0.85"/>
         </Veins>
         <!-- Increased Chances -->
-        <Veins name="LapisPrefVeins" inherits="VerticalVeins">
+        <Veins name="LapisPrefVeins" inherits="PipeVeins">
           <DrawWireframe>:=drawWireframes</DrawWireframe>
           <WireframeColor>0x40336699</WireframeColor>
           <OreBlock block="minecraft:lapis_ore" weight="0.55"/>
           <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
           <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
           <!--How offten it generates-->
-          <Setting name="MotherlodeFrequency" avg="0.0086"/>
-          <Setting name="MotherlodeSize" avg="0.3" range="0"/>
-          <Setting name="SegmentRadius" avg="0.50" range="0.1"/>
-          <Setting name="OreDensity" avg="1" range="0"/>
-          <Setting name="OreRadiusMult" avg="1.0" range="0.1"/>
+          <Setting name="MotherlodeFrequency" avg="0.0096"/>
+          <!--Y Level spawn -->
+          <Setting name="MotherlodeHeight" avg="18" range="5"/>
+          <Setting name="MotherlodeSize" avg="7" range="1"/>
+          <Setting name="SegmentRadius" avg="1.8" range="0.5"/>
+          <Setting name="OreDensity" avg="1.0"/>
           <!-- Increased chances to spawn in -->
           <BiomeSet inherits="LapisBiomes"/>
         </Veins>
         <StandardGen name="LapisStandard1" inherits="StandardGen">
-          <OreBlock block="minecraft:lapis_ore" weight="0.55"/>
-          <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
-          <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
+          <OreBlock block="minecraft:lapis_ore" weight="1.0"/>
           <Setting name="Size" avg="5" range="2"/>
           <!--How offten it generates-->
-          <Setting name="Frequency" avg="16"/>
+          <Setting name="Frequency" avg="4"/>
           <!--Y Level spawn -->
           <Setting name="Height" avg="12" range="5" scaleTo="world"/>
           <ReplacesOre block="stone"/>
@@ -716,28 +710,27 @@
           <ReplacesOre block="stoneMarble"/>
           <ReplacesOre block='stoneLimestone'/>
           <!-- Increased chances to spawn in -->
-          <BiomeSet inherits="LapisBiomes"/>
         </StandardGen>
         <!-- Sparse ores -->
         <StandardGen name="Sparse lapis 1" inherits="SparseStone">
           <OreBlock block="beyondreality:sparselapis"/>
-          <Setting name="Frequency" avg="18" range="3"/>
+          <Setting name="Frequency" avg="15" range="3"/>
           <Setting name="Height" avg="27" range="20" scaleTo="world"/>
         </StandardGen>
         <StandardGen name="Sparse lapis 2" inherits="SparseStone">
           <OreBlock block="beyondreality:sparselapis"/>
-          <Setting name="Frequency" avg="15" range="3"/>
+          <Setting name="Frequency" avg="13" range="3"/>
           <Setting name="Height" avg="33" range="15" scaleTo="world"/>
         </StandardGen>
         <StandardGen name="Sparse lapis 3" inherits="SparseStone">
           <OreBlock block="beyondreality:sporadiclapis"/>
-          <Setting name="Frequency" avg="20" range="3"/>
+          <Setting name="Frequency" avg="17" range="3"/>
           <Setting name="Height" avg="30" range="10" scaleTo="world"/>
           <BiomeSet inherits="LapisBiomes"/>
         </StandardGen>
-        <StandardGen name="Standard lapis 1" inherits="StandardGen">
+        <StandardGen name="Spraese lapis 4" inherits="StandardGen">
           <OreBlock block="beyondreality:sporadiclapis"/>
-          <Setting name="Frequency" avg="10" range="3"/>
+          <Setting name="Frequency" avg="7" range="3"/>
           <Setting name="Height" avg="30" range="15" scaleTo="world"/>
         </StandardGen>
         <!-- ***************************************************** Sapphire ********************************************************** -->
@@ -1503,7 +1496,7 @@
               <OreBlock block="beyondreality:sparselapis" weight="0.10"/>
               <OreBlock block="beyondreality:sporadiclapis" weight="0.35"/>
               <!-- How Often it generates -->
-              <Setting name='DistributionFrequency' avg="0.002"/>
+              <Setting name='DistributionFrequency' avg="0.001"/>
               <!--Y Level spawn -->
               <Setting name="CloudHeight" avg="90" range="26" type="normal" scaleTo="world"/>
               <Setting name='HeightOffset' avg='3' range='1'/>
