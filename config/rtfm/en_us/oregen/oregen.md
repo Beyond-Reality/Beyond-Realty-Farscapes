@@ -45,9 +45,9 @@ River, Extreme Hills and Frozen River Biomes
 ![Lapis ](item:minecraft:dye@4)
 
 ##### Generation information
-- There is no plant indicators for lapis and such it has a higher frequency than other types. 
+- There is no plant indicators for lapis and such it has a higher frequency than other types.
 - Lapis generates a few ways, A standard vanilla type distribution which is rare but can be found everywhere around 7 to 17 ** Y ** level
-- A Pipe Vein type similar to diamonds that generates as thick pipe veins, Which the motherlode can generate starting at 13 and going up to 22 Y level. Its contents can extend upwards of the 30 Y level in rare occasions if the center spawns at its highest point.  
+- A Pipe Vein type similar to diamonds that generates as thick pipe veins, Which the motherlode can generate starting at 13 and going up to 22 Y level. Its contents can extend upwards of the 30 Y level in rare occasions if the center spawns at its highest point. These pipe veins can be found anywhere but have a higher chance to generate in **Cold** type biomes.
 - Also generates in mountainous regions that have terrain higher than sea level 64 Y.
 
 ## Redstone & Ruby
