@@ -29,3 +29,4 @@
 ### Changes
  - Fix lapis ore generation
  - Update Ore Generation Documentation.
+ - **HOTFIX** correct version of SophisticatedWolves from 1.10.2 to 1.11.2 for all current and previous versions of Farscapes
