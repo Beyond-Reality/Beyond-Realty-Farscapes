@@ -30,6 +30,10 @@ Release Notes 1.1.4 (for 1.10.2 and 1.11.2) “Hot Scramble ”
 - Yorkshire piglets now get credit for eating from troughs (credit: 19nrussell)
 - Only forge buckets filled with Milk will be able to converted to vanilla milk (credit: Jomik)
 
+#### [BetterAchievements-1.11.2-0.4.4.17](https://minecraft.curseforge.com/projects/betterachievements/files/2432179)
+
+- add gradle caching to travis
+
 #### [BiblioCraft v2.3.2](https://minecraft.curseforge.com/projects/bibliocraft/files/2430777)
 - Fixed a rendering crash that seems to be happening quite frequently to some folks
 - Tweaked Reading Enchantment level / rarity
