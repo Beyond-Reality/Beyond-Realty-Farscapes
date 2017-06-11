@@ -115,6 +115,10 @@ MCMP2 2.0.0 Support
 - Fixed error logs when watching a Controller when a network changes
 - Implemented block update throttling when network turns on and off
 
+#### [RTFM-MC1.11.2-1.0.0.3](https://minecraft.curseforge.com/projects/rtfm/files/2431906)
+
+- Added more metadata to mcmod.info.
+
 #### [TombManyGraves2-1.11.2-3.0.9](https://minecraft.curseforge.com/projects/tomb-many-graves-2/files/2431402)
 
 ##### Fixed:
