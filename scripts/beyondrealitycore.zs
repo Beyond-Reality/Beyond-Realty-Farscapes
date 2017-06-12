@@ -174,11 +174,11 @@ recipes.addShapeless(<minecraft:iron_ore>, [
 
 // Lapis
 <ore:shardLapis>.add(<beyondreality:shardlapis>);
-recipes.addShapeless(<minecraft:dye:4>, [
+recipes.addShapeless(<minecraft:dye:4> * 3, [
   <ore:shardLapis>, <ore:shardLapis>,
   <ore:shardLapis>, <ore:shardLapis>]);
 <ore:shardTinyLapis>.add(<beyondreality:tiny_shardlapis>);
-recipes.addShapeless(<minecraft:dye:4>, [
+recipes.addShapeless(<minecraft:dye:4> * 3, [
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>]);
@@ -287,4 +287,3 @@ plastic.add(<industrialforegoing:plastic>);
 
 //All Bookshelfs to vanilla
 recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
-
