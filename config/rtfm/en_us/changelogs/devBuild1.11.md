@@ -11,9 +11,8 @@
 
 ### Mod updates
 
-#### [Animania-1.11.2-1.1.4](https://minecraft.curseforge.com/projects/animania/files/2431490)
+#### [Animania-1.11.2-1.1.5](https://minecraft.curseforge.com/projects/animania/files/2432692)
 
-Release Notes 1.1.4 (for 1.10.2 and 1.11.2) “Hot Scramble ”
 
 ##### Enhancements:
 
@@ -21,6 +20,14 @@ Release Notes 1.1.4 (for 1.10.2 and 1.11.2) “Hot Scramble ”
 - Custom Mob Drops can now accept items with metadata (credit: Titus-Armillius)
 - Increased the spawn limit for Draft Horses (credit: TiffanyDoctorWho)
 - If you really want vanilla item eggs to spawn from chickens for some reason you can now turn this on in the config
+- Dispensers can now dispense seeds to automate chicken feeding (credit: Tschipp)
+ - Auto-senses when seeds need to be replaced
+ - Does not interfere with Quark seed handling
+- Added en_UK language, aka, the Queen’s English, (credit: cy4n)
+- Animania Bulls have been nerfed (credit: calloatti, Darkosto)
+ - Run Slower
+ - Do Less Damage
+ - Have Smaller Range
 
 ##### Bug Fixes:
 
@@ -29,10 +36,8 @@ Release Notes 1.1.4 (for 1.10.2 and 1.11.2) “Hot Scramble ”
 - Draft Horses keep their color after re-logging the first time
 - Yorkshire piglets now get credit for eating from troughs (credit: 19nrussell)
 - Only forge buckets filled with Milk will be able to converted to vanilla milk (credit: Jomik)
-
-#### [BetterAchievements-1.11.2-0.4.4.17](https://minecraft.curseforge.com/projects/betterachievements/files/2432179)
-
-- add gradle caching to travis
+- Custom Mob Drops now work properly in 1.11.2, using the Animania config. Format is as follows:
+ - For non meta data items, use: animania:riding_crop
 
 #### [BiblioCraft v2.3.2](https://minecraft.curseforge.com/projects/bibliocraft/files/2430777)
 - Fixed a rendering crash that seems to be happening quite frequently to some folks
@@ -94,6 +99,12 @@ MCMP2 2.0.0 Support
 - Various auto-refill fixes.
 - Made the mod slightly better at not slowing down Minecraft loading as much.
 
+#### [ironchest-1.11.2-7.0.21.806](https://minecraft.curseforge.com/projects/iron-chests/files/2432401)
+
+- Iron Shulker Boxes are here! They function just like regular shulker boxes!
+- Resources have bene cleaned up, this will break resource packs that modify the textures from iron chests.
+- The code package has got a massive clean up, it's still `cpw.mods.ironchest` but now the tileentities have been moved around, and so have the blocks!
+
 #### [JustEnoughResources-1.11.2-0.6.5.9](https://minecraft.curseforge.com/projects/just-enough-resources-jer/files/2432130)
 
 - [update jei dep](https://github.com/way2muchnoise/JustEnoughResources/commit/6a6eeb3a0b2f4f50fa0662d6e6c861739dd05450)
@@ -119,9 +130,27 @@ MCMP2 2.0.0 Support
 - Fixed error logs when watching a Controller when a network changes
 - Implemented block update throttling when network turns on and off
 
-#### [RTFM-MC1.11.2-1.0.0.3](https://minecraft.curseforge.com/projects/rtfm/files/2431906)
+#### [ropebridge-1.11.2-2.0.6](https://minecraft.curseforge.com/projects/rope-bridge/files/2432516)
 
-- Added more metadata to mcmod.info.
+- Refactored a decent amount of code
+- Removed a lot of unneeded Code
+
+#### [RTFM-MC1.11.2-1.0.0.5](https://minecraft.curseforge.com/projects/rtfm/files/2432246)
+
+-
+Fix fallback in case a page doesn't exist in the currently selected language not working correctly.
+
+#### [SophisticatedWolves-3.7.0](https://minecraft.curseforge.com/projects/sophisticated-wolves/files/2432264)
+
+- Add pet carriers
+- Fix wolves shaking in water
+- Fix game crash at wolves feeding by fish
+- Fix dog action toggles sitting/standing at feeding
+- Move all items to own tab
+
+#### [StorageDrawers-1.11.2-4.2.9](https://minecraft.curseforge.com/projects/storage-drawers/files/2432437)
+
+- Added extra debug logging around controller
 
 #### [TombManyGraves2-1.11.2-3.0.9](https://minecraft.curseforge.com/projects/tomb-many-graves-2/files/2431402)
 
@@ -134,6 +163,11 @@ MCMP2 2.0.0 Support
 
 -
     Partial compatibility with Cyberware. If a player has the defibrillator installed (and has the necessary power stored up), a grave will not form when revived. Note: the grave does not (and will not) store Cyberware components within it upon death - the components don't drop from a normal death and I don't want to overstep Flaxbeard's vision for the mod.
+
+#### [torchmaster_1.11.2-1.4.0.45](https://minecraft.curseforge.com/projects/torchmaster/files/2432380)
+
+- Replaced interface based check with registry for spawn prevention
+- MegaTorch will now block all spawns from Mo'Creatures and Lycanites Mobs (need to improve compat to avoid blocking passive spawns - but for now this works)
 
 #### [Translocators 1.11.2-2.2.0.59](https://minecraft.curseforge.com/projects/translocators-1-8/files/2405963)
 
