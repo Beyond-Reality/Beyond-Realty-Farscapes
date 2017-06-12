@@ -214,5 +214,5 @@ Fix fallback in case a page doesn't exist in the currently selected language not
 - Fix lapis ore generation
 - Update Ore Generation Documentation.
 - **HOTFIX** correct version of SophisticatedWolves from 1.10.2 to 1.11.2 for all current and previous versions of Farscapes
-- Fix [Modular Routers - mod filter causes client crash #7](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/7) with update to [modular-routers-1.11.2-2.2.0](#modular-routers-1.11.2-2.2.0)
+- Fix [Modular Routers - mod filter causes client crash #7](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/7) with update to [modular-routers-1.11.2-2.2.0](#modular-routers-1112-220)
 - [Change Quark config to limit/prevent changes/tweaks to Minecraft core entity classes and behaiors](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/commit/3dfdfeef156ac90b726b33b85bbe2d71de0a417d).
