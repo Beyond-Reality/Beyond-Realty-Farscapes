@@ -1366,8 +1366,8 @@
           <StandardGen name="LithiumStandard" block="beyondreality:orelithium" inherits="StandardGen">
             <DrawWireframe>:=drawWireframes</DrawWireframe>
             <WireframeColor>0x40221100</WireframeColor>
-            <Setting name="Size" avg="7" range="3"/>
-            <Setting name="Frequency" avg="13"/>
+            <Setting name="Size" avg="5" range="3"/>
+            <Setting name="Frequency" avg="7"/>
             <Setting name="Height" avg="40" range="10" scaleTo="sealevel"/>
             <ReplacesOre block="stone"/>
             <ReplacesOre block="stoneBasalt"/>
@@ -1376,17 +1376,17 @@
           </StandardGen>
           <StandardGen name="Sparse lithium 1" inherits="SparseStone">
             <OreBlock block="beyondreality:sparselithium"/>
-            <Setting name="Frequency" avg="14" range="3"/>
+            <Setting name="Frequency" avg="8" range="3"/>
             <Setting name="Height" avg="40" range="10" scaleTo="world"/>
           </StandardGen>
           <StandardGen name="Sparse lithium 2" inherits="SparseStone">
             <OreBlock block="beyondreality:sparselithium"/>
-            <Setting name="Frequency" avg="16" range="3"/>
+            <Setting name="Frequency" avg="10" range="3"/>
             <Setting name="Height" avg="30" range="10" scaleTo="world"/>
           </StandardGen>
           <StandardGen name="Sparse lithium 3" inherits="SparseStone">
             <OreBlock block="beyondreality:sporadiclithium"/>
-            <Setting name="Frequency" avg="15" range="3"/>
+            <Setting name="Frequency" avg="9" range="3"/>
             <Setting name="Height" avg="30" range="10" scaleTo="world"/>
             <BiomeSet inherits="ThoriumBiomes"/>
           </StandardGen>
