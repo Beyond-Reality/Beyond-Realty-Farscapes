@@ -89,6 +89,17 @@ MCMP2 2.0.0 Support
 - Camera not returning quite the correct distance.
 - Particle Card and Turtle having no range limit.
 
+#### [Extra Utilities 2 - 1.11.2 - 1.4.4](https://minecraft.curseforge.com/projects/extra-utilities/files/2432813)
+
+- Right click a 'cursed' mob with a bucket of milk will cure the curse and prevent the mob from disappearing after a minute
+- A transfer node with a mining upgrade will 'mine' snowballs from the small layer of snow a snowman is standing on (provided the biome temperature is low enough for the snowman to create snow)
+- 'Press T to search nearby inventories for highlighted item' feature now has configurable keybinding and is not dependent on JEI
+- Altered fire axe texture slightly
+- Machines now recalculate current recipe on inventory changes
+- Fix crash in the creative tab when the angel block is disabled
+- Fix issue with internal set class incorrectly hashing entries (fixes numerous obscure bugs)
+- Fix missing localization on creative tabs
+
 #### [industrialforegoing-1.11.2-0.2.2-BETA-9](https://github.com/Buuz135/Industrial-Foregoing/commit/b657105c33828927034fdfdc6e2a8ec42eaf9f80)
 
 - Improved Tree Chopping in the Plant Recolector
@@ -109,6 +120,17 @@ MCMP2 2.0.0 Support
 
 - [update jei dep](https://github.com/way2muchnoise/JustEnoughResources/commit/6a6eeb3a0b2f4f50fa0662d6e6c861739dd05450)
 
+#### [modular-routers-1.11.2-2.2.0](https://minecraft.curseforge.com/projects/modular-routers/files/2432844)
+
+- Added XP enhancement to Vacuum Module. With XP enhancement added, the Vacuum Module will absorb XP orbs instead of items. Orbs are converted to EnderIO XP juice if EnderIO is installed and the router holds a fluid container item (e.g. EnderIO tank); otherwise orbs are converted to Bottles o' Enchanting (1 bottle per 7 xp absorbed).
+- Made several recipes oredict-aware
+- Routers in item form now show a list of the installed modules (if any) in the item tooltip, not just the number of modules.
+- Stack Upgrade item tooltip now shows the right items-per-tick value
+- Block placement tweaks: router will try to place rotatable blocks (including other item routers...) oriented according to the facing of the Placer Module. Placed blocks will face toward the router where possible (as if being placed by a player).
+- Fixed server crash if Dropper/Flinger modules encountered a buggy 0-sized itemstack (shouldn't happen, but bugs in other mods can cause it).
+- Fixed bug where a brand new Bulk Item Filter placed in a module in a router would not remember its filter contents after the GUI was closed.
+- Fixed NPE when placing items in Mod Filter GUI.
+
 #### [morebees-1.11.2-1.4.1](https://minecraft.curseforge.com/projects/more-bees/files/2430816)
 ##### Added:
 - Config to disable iridium bees
@@ -119,6 +141,10 @@ MCMP2 2.0.0 Support
 
 #### [MTLib-2.0.3](https://minecraft.curseforge.com/projects/mtlib/files/2431147)
 - Updated to the new JEI api
+
+#### [ReAuth-3.5.0 1.11](https://minecraft.curseforge.com/projects/reauth/files/2432858)
+
+- Changed VersionChecker
 
 #### [Refined Storage 1.4.12](https://minecraft.curseforge.com/projects/refined-storage/files/2431879)
 
@@ -139,6 +165,11 @@ MCMP2 2.0.0 Support
 
 -
 Fix fallback in case a page doesn't exist in the currently selected language not working correctly.
+
+#### [Skillable-beta-6](https://minecraft.curseforge.com/projects/skillable/files/2433078)
+
+- Empty locks such as "none" now function properly as a means of blacklisting a more general lock.
+- Improved the config comments.
 
 #### [SophisticatedWolves-3.7.0](https://minecraft.curseforge.com/projects/sophisticated-wolves/files/2432264)
 
@@ -183,3 +214,5 @@ Fix fallback in case a page doesn't exist in the currently selected language not
 - Fix lapis ore generation
 - Update Ore Generation Documentation.
 - **HOTFIX** correct version of SophisticatedWolves from 1.10.2 to 1.11.2 for all current and previous versions of Farscapes
+- Fix [Modular Routers - mod filter causes client crash #7](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/7) with update to [modular-routers-1.11.2-2.2.0](#modular-routers-1.11.2-2.2.0)
+- [Change Quark config to limit/prevent changes/tweaks to Minecraft core entity classes and behaiors](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/commit/3dfdfeef156ac90b726b33b85bbe2d71de0a417d).
