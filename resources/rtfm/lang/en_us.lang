@@ -1,0 +1,10 @@
+item.rtfm.book_manual.name=FarScapes Manual
+
+rtfm.manual.warning.missing.block=Block unavailable.
+rtfm.manual.warning.missing.image=Image not found.
+rtfm.manual.warning.missing.item=Item unavailable.
+rtfm.manual.warning.missing.ore_dict=Ore dictionary entry unavailable.
+
+tooltip.rtfm.manual.tab=General
+tooltip.rtfm.manual.tab1=Ore Generation Info
+tooltip.rtfm.manual.tab2=Change Logs
