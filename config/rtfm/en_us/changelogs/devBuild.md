@@ -27,9 +27,43 @@
 - Fix NPE when filtering lists of items, Closes [#185](https://github.com/CyclopsMC/IntegratedDynamics/issues/185)
 - Fix variable card localized tooltip
 
-#### [Refined Storage 1.4.15](https://minecraft.curseforge.com/projects/refined-storage/files/2433945)
+#### [malisiscore-1.11.2-5.2.1](https://minecraft.curseforge.com/projects/malisiscore/files/2434103)
+
+- Fixed trying to autoload the class on servers
+- Bumped to 1.11.2-5.2.2-SNAPSHOT
+
+#### [RandomThings-MC1.11.2-4.0](https://minecraft.curseforge.com/projects/random-things/files/2433971)
+
+##### Changed
+
+- Light Redirector Material so you don't need a pickaxe to break them.
+- Made Entity Detector GUI a bit smaller / compact.
+- MCP Mappings are now read from the gradle cache if possible so rt doesn't require a mcp folder in dev environments anymore.
+- Sakanade Spores now generate on brown mushrooms in ALL biomes.
+- Removed the Collapse Imbue & Moved the Collapse Effect into a Potion Effect.
+- Fluid Displays can now be rotated by shift right clicking them.
+- The Spectre Dimension now uses its own unique biome instead of the vanilla hell biome.
+
+##### Fixed
+
+- Gave Tilled Fertilized Dirt an Item Model for Display Purposes.
+- Tilled Fertilized Dirt now drops normal Fertilized Dirt when silktouched.
+- Beetroots getting immediately destroyed after an update on Fertilized Dirt.
+- The Fluid Display works with modded fluids again and is also correctly. colored.
+- Removed Item Block from Rune Block to prevent crashes if somehow created.
+- Item Collectors now only increase their tickrate if they actual collect. something.
+- Cascading Worldgen
+- Crash when using a Entity Filter on a player and putting it into an Entity Detector.
+
+##### Removed
+
+- Fertilized Dirt Bonemeal Effect
+
+#### [Refined Storage 1.4.16](https://minecraft.curseforge.com/projects/refined-storage/files/2434056)
 
 - Updated Storage Drawers API, fixes crashes
+- The Portable Grid now doesn't despawn anymore when dropped in the world.
+- Fixed bug where oredict autocrafting didn't work in some cases.
 
 ### Modpack
 
@@ -50,8 +84,8 @@
 
 - Unused
 
-#### added
+#### Added
 
-##### [Mod Tweaker]()
+##### [Mod Tweaker](https://minecraft.curseforge.com/projects/modtweaker)
 
 -  ModTweaker is an addon for MineTweaker 3. Minetweaker lets you adjust recipes, remove them entirely, or add new recipes. While it has decent mod support, there are many mods that use custom crafting handlers that are not supported natively. ModTweaker plans to provide additional support for as many of these mods over time as possible.
