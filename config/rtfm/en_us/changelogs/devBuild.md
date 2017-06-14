@@ -73,6 +73,7 @@
 - Implement secondary drops with BR Ore chunks and shards (Combining ruby shards gives back 1 ruby and 1 red garnet gems)
 - Add recipe to smelt Rubber into Industrial Foregoing Plastic.
 - Disable RefinedStorage oreDictionary tweaks as issue fixed by mod update.
+- Unnnerf Plant Recolector for trees
 
 #### Fixes
 
