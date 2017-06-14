@@ -9,11 +9,11 @@ import minetweaker.item.IItemStack;
 // Ruby
 <ore:shardRuby>.add(<beyondreality:shardruby>);
 recipes.addShapeless(<techreborn:gem:0>, [
-  <ore:shardRuby>, <ore:shardRuby>,
+  <ore:shardRuby>.giveBack(<techreborn:gem:3>), <ore:shardRuby>,
   <ore:shardRuby>, <ore:shardRuby>]);
 <ore:shardTinyRuby>.add(<beyondreality:tiny_shardruby>);
 recipes.addShapeless(<techreborn:gem:0>, [
-  <ore:shardTinyRuby>, <ore:shardTinyRuby>, <ore:shardTinyRuby>,
+  <ore:shardTinyRuby>.giveBack(<techreborn:gem:3>), <ore:shardTinyRuby>, <ore:shardTinyRuby>,
   <ore:shardTinyRuby>, <ore:shardTinyRuby>, <ore:shardTinyRuby>,
   <ore:shardTinyRuby>, <ore:shardTinyRuby>, <ore:shardTinyRuby>]);
 
@@ -75,11 +75,11 @@ recipes.addShapeless(<beyondreality:orelead>, [
 // Sapphire
 <ore:shardSapphire>.add(<beyondreality:shardsapphire>);
 recipes.addShapeless(<techreborn:gem:1>, [
-  <ore:shardSapphire>, <ore:shardSapphire>,
+  <ore:shardSapphire>.giveBack(<techreborn:gem:2>), <ore:shardSapphire>,
   <ore:shardSapphire>, <ore:shardSapphire>]);
 <ore:shardTinySapphire>.add(<beyondreality:tiny_shardsapphire>);
 recipes.addShapeless(<techreborn:gem:1>, [
-  <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>,
+  <ore:shardTinySapphire>.giveBack(<techreborn:gem:2>), <ore:shardTinySapphire>, <ore:shardTinySapphire>,
   <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>,
   <ore:shardTinySapphire>, <ore:shardTinySapphire>, <ore:shardTinySapphire>]);
 
@@ -174,22 +174,22 @@ recipes.addShapeless(<minecraft:iron_ore>, [
 
 // Lapis
 <ore:shardLapis>.add(<beyondreality:shardlapis>);
-recipes.addShapeless(<minecraft:dye:4> * 3, [
+recipes.addShapeless(<minecraft:dye:4> * 6, [
   <ore:shardLapis>, <ore:shardLapis>,
   <ore:shardLapis>, <ore:shardLapis>]);
 <ore:shardTinyLapis>.add(<beyondreality:tiny_shardlapis>);
-recipes.addShapeless(<minecraft:dye:4> * 3, [
+recipes.addShapeless(<minecraft:dye:4> * 6, [
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>,
   <ore:shardTinyLapis>, <ore:shardTinyLapis>, <ore:shardTinyLapis>]);
 
 // Redstone
 <ore:chunkRedstone>.add(<beyondreality:chunkredstone>);
-recipes.addShapeless(<minecraft:redstone>, [
+recipes.addShapeless(<minecraft:redstone> * 6, [
   <ore:chunkRedstone>, <ore:chunkRedstone>,
   <ore:chunkRedstone>, <ore:chunkRedstone>]);
 <ore:chunkTinyRedstone>.add(<beyondreality:tinyredstone>);
-recipes.addShapeless(<minecraft:redstone>, [
+recipes.addShapeless(<minecraft:redstone> * 6, [
   <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>,
   <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>,
   <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>, <ore:chunkTinyRedstone>]);
@@ -281,9 +281,15 @@ recipes.addShaped(<minecraft:boat>, [
   [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
 ]);
 
-//Oredict Industrial Foregoing Plastic to ic2
-val plastic = <ore:itemRubber>;
+// Smelt rubber into plastic
+furnace.addRecipe(<industrialforegoing:plastic>, <ore:itemRubber>);
+
+// Oredict Industrial Foregoing Plastic
+val plastic = <ore:itemPlastic>;
 plastic.add(<industrialforegoing:plastic>);
+
+// Oredict Industrial Foregoing Dry Rubber
+<ore:itemRubber>.add(industrialforegoing:dryrubber>);
 
 //All Bookshelfs to vanilla
 recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
