@@ -289,7 +289,7 @@ val plastic = <ore:itemPlastic>;
 plastic.add(<industrialforegoing:plastic>);
 
 // Oredict Industrial Foregoing Dry Rubber
-<ore:itemRubber>.add(industrialforegoing:dryrubber>);
+<ore:itemRubber>.add(<industrialforegoing:dryrubber>);
 
 //All Bookshelfs to vanilla
 recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
