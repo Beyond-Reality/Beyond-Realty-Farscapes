@@ -293,3 +293,9 @@ plastic.add(<industrialforegoing:plastic>);
 
 //All Bookshelfs to vanilla
 recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
+
+// Dragon Egg from Elytra
+recipes.addShapeless(<minecraft:dragon_egg>, [<minecraft:elytra>]);
+
+// Craft NameTag
+recipes.addShapeless(<minecraft:name_tag>, [<minecraft:paper>, <minecraft:string>]);
