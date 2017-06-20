@@ -1,0 +1,64 @@
+## Changelog for 1.0.7-r1
+
+### Mod updates
+
+#### [BiomeTweaker-1.11.2 3.0.281](https://minecraft.curseforge.com/projects/biometweaker/files/2436688)
+
+- Added dimensions and entities to output files
+- Output files are now named as `<Object Name> (<Object Resource Location>).cfg`.
+- You can now specify biome resource names as well as ids in scripts.
+- More stages added to block replacement \(e.g. after ores, decorations, etc.\)
+- Block replacement can now be done on a per world basis.
+- Added `forBiomesWithPropertyRange` to specify biomes in scripts.
+- Added `inheritProperties` command. Biomes can now inherit settings from other biomes
+- Fixed broken `waterColor` in `set` command.
+- Reworked creating new biomes. Now requires a resource location.
+- You can now create new biomes from existing biomes, copying all properties and the class if possible.
+- All decorations can now be tweaked and disabled.
+- Added custom decoration framework. You can now add your own completely customizable ores, trees, and clusters (e.g. melon, pumpkin, flowers, etc.)
+- All ASM has been removed from BiomeTweaker.
+  It is now contained in an optional dependency `BiomeTweakerCore`.
+  A few features in **BiomeTweaker** will be disabled unless **BiomeTweakerCore** is also present and the tweak is enabled.
+- A plethora of other internal changes and enhancements.
+
+#### [CustomOreGen-1.11-1.6.1-2-g201af12](https://github.com/lawremi/CustomOreGen/pull/197)
+
+- Fix IDs for ThermalFoundation, MCA and AM2.
+- Adds additional functionality to `PlacesBeside` configuration option for ore distributions.
+
+#### [Refined Storage 1.4.17](https://minecraft.curseforge.com/projects/refined-storage/files/2437759)
+
+- Fixed Filters not persisting correctly in Wireless Grid, Wireless Crafting Monitor and Portable Grid.
+- Fixed Disk Drive recipe not using ore dictionary for chest.
+- Fixed a bug where loading nodes would abort when a single node has an error while reading.
+
+#### [SophisticatedWolves-3.8.0](https://minecraft.curseforge.com/projects/sophisticated-wolves/files/2436670)
+
+- Add **Dog Whistle**. It summons all dogs in range of 35 blocks to the player, and discard all dogs's tasks.
+- Add **Dog Bowls**, which can be used by dogs to feed themselves.
+- Dogs can eat food from the ground.
+
+#### [TickDynamic-1.11.2-0.5.9](https://minecraft.curseforge.com/projects/tick-dynamic/files/2437726)
+
+- Added Jar Signing.
+- Fixed some bugs and crashes.
+- The mod can now run server-side only.
+- Added the ablity to disable all logs.
+
+### Mod-Pack
+
+#### Removed
+
+- [EXCore](https://minecraft.curseforge.com/projects/excore)
+  Unused dependency core mod
+
+#### Added
+
+- [BiomeTweakerCore-1.11.2-1.0.12](https://minecraft.curseforge.com/projects/biometweakercore)
+  Core mod that enables some features in BiomeTweaker.
+- Furnace Processing recipes for BR Sparse Ores.
+  Closes [#28 feature request (?) some means to process silk touched sparse ores](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/28).
+
+#### Fixed
+
+- [#23 Quantum Suit is uncraftable](https://github.com/Beyond-Reality/Beyond-Realty-Farscapes/issues/23)
