@@ -4,6 +4,7 @@
 
 <ore:plateAlloyAdvanced>.add(<ic2:crafting:3>);
 <ore:energyCrystal>.add(<ic2:energy_crystal>);
+<ore:lapotronCrystal>.add(<ic2:lapotron_crystal:*>);
 
 # Quantum suit
 
