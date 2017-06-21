@@ -4,18 +4,18 @@
 
 #### [BiomeTweaker-1.11.2 3.0.281](https://minecraft.curseforge.com/projects/biometweaker/files/2436688)
 
-- Added dimensions and entities to output files
+- Added dimensions and entities to output files.
 - Output files are now named as `<Object Name> (<Object Resource Location>).cfg`.
 - You can now specify biome resource names as well as ids in scripts.
-- More stages added to block replacement \(e.g. after ores, decorations, etc.\)
+- More stages added to block replacement \(e.g. after ores, decorations, etc.\).
 - Block replacement can now be done on a per world basis.
 - Added `forBiomesWithPropertyRange` to specify biomes in scripts.
-- Added `inheritProperties` command. Biomes can now inherit settings from other biomes
+- Added `inheritProperties` command. Biomes can now inherit settings from other biomes.
 - Fixed broken `waterColor` in `set` command.
 - Reworked creating new biomes. Now requires a resource location.
 - You can now create new biomes from existing biomes, copying all properties and the class if possible.
 - All decorations can now be tweaked and disabled.
-- Added custom decoration framework. You can now add your own completely customizable ores, trees, and clusters (e.g. melon, pumpkin, flowers, etc.)
+- Added custom decoration framework. You can now add your own completely customizable ores, trees, and clusters (e.g. melon, pumpkin, flowers, etc.).
 - All ASM has been removed from BiomeTweaker.
   It is now contained in an optional dependency `BiomeTweakerCore`.
   A few features in **BiomeTweaker** will be disabled unless **BiomeTweakerCore** is also present and the tweak is enabled.
@@ -44,6 +44,16 @@
 - Fixed some bugs and crashes.
 - The mod can now run server-side only.
 - Added the ablity to disable all logs.
+
+#### [VillageNames-1.11.2-1.1](https://minecraft.curseforge.com/projects/village-names/files/2438928)
+
+- When writing a Village Book, villagers can add a second page that hints at the location of an interesting structure to explore.
+- Added a new item: the Codex. Right-click this while also owning a blank book to discover and record the name of a structure you're in (Village, Temple, Mansion, End City, etc).
+- Names for all structures draw from different syllable pools and are configurable.
+- To obtain a Codex, right-click a named Librarian/Cartographer while holding an emerald or iron/gold ingots.
+- There is now a config option to add/remove a villager's career to their name when you talk to them (off by default).
+- There is now a config option to handle and include villagers from other mods so that they can generate structure hints and display careers with their name tags.
+- Bugfix: non-cobblestone wells should now generate signs and rim slabs.
 
 ### Mod-Pack
 
