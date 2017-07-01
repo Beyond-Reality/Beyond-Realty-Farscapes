@@ -65,7 +65,6 @@
     <!-- Huge presets -->
     <VeinsPreset name='HugeVeins' inherits='PresetHugeVeins'>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -75,7 +74,6 @@
     <!-- Layered preset -->
     <VeinsPreset name='LayeredVeins' inherits='PresetLayeredVeins'>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -85,7 +83,6 @@
     <!-- PipeVeins -->
     <VeinsPreset name='PipeVeins' inherits='PresetPipeVeins'>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -100,7 +97,6 @@
     <!-- Verticle Veins -->
     <VeinsPreset name='VerticalVeins' inherits='PresetVerticalVeins'>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -113,7 +109,6 @@
     <!-- Sparse Veins -->
     <VeinsPreset name='SparseVeins' inherits='PresetSparseVeins'>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -130,7 +125,6 @@
       <Setting name='OreDensity' avg='0.3'/>
       <Setting name='OreVolumeNoiseCutoff' avg='0.3'/>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -144,7 +138,6 @@
       <Setting name="Size" avg="2" range="5"/>
       <Setting name="ParentRangeLimit" avg="32" range="32" type="normal"/>
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -161,7 +154,6 @@
     </StandardGenPreset>
     <StandardGenPreset name="StandardGen" inherits="PresetStandardGen">
       <ReplacesOre block="stone"/>
-      <ReplacesOre block="stoneBasalt"/>
       <ReplacesOre block="stoneMarble"/>
       <ReplacesOre block='stoneLimestone'/>
       <ReplacesOre block='hardenedClay'/>
@@ -522,7 +514,6 @@
           <Setting name="SegmentRadius" avg="1.2" range="0.5"/>
           <Setting name="OreDensity" avg="0.8"/>
           <ReplacesOre block="stone"/>
-          <ReplacesOre block="stoneBasalt"/>
           <ReplacesOre block="stoneMarble"/>
           <ReplacesOre block='stoneLimestone'/>
         </Veins>
@@ -639,7 +630,6 @@
           <!--Y Level spawn -->
           <Setting name="Height" avg="17" range="5" scaleTo="world"/>
           <ReplacesOre block="stone"/>
-          <ReplacesOre block="stoneBasalt"/>
           <ReplacesOre block="stoneMarble"/>
           <ReplacesOre block='stoneLimestone'/>
         </StandardGen>
@@ -706,7 +696,6 @@
           <!--Y Level spawn -->
           <Setting name="Height" avg="12" range="5" scaleTo="world"/>
           <ReplacesOre block="stone"/>
-          <ReplacesOre block="stoneBasalt"/>
           <ReplacesOre block="stoneMarble"/>
           <ReplacesOre block='stoneLimestone'/>
           <!-- Increased chances to spawn in -->
@@ -744,7 +733,6 @@
           <Setting name="Frequency" avg="6"/>
           <Setting name="Height" avg="20" range="10" scaleTo="sealevel"/>
           <ReplacesOre block="stone"/>
-          <ReplacesOre block="stoneBasalt"/>
           <ReplacesOre block="stoneMarble"/>
           <ReplacesOre block='stoneLimestone'/>
         </StandardGen>
@@ -1370,7 +1358,6 @@
             <Setting name="Frequency" avg="7"/>
             <Setting name="Height" avg="40" range="10" scaleTo="sealevel"/>
             <ReplacesOre block="stone"/>
-            <ReplacesOre block="stoneBasalt"/>
             <ReplacesOre block="stoneMarble"/>
             <ReplacesOre block='stoneLimestone'/>
           </StandardGen>
