@@ -1,6 +1,6 @@
 ### versions
 
-[1.0.8-r1](https://raw.githubusercontent.com/Beyond-Reality/Beyond-Realty-Farscapes/master/config/rtfm/en_us/changelogs/1.0.8-r1.md)
+[1.0.8-r2](https://raw.githubusercontent.com/Beyond-Reality/Beyond-Realty-Farscapes/master/config/rtfm/en_us/changelogs/1.0.8-r2.md)
 [1.0.7-r3](https://raw.githubusercontent.com/Beyond-Reality/Beyond-Realty-Farscapes/master/config/rtfm/en_us/changelogs/1.0.7-r3.md)
 [1.0.6-r1](https://raw.githubusercontent.com/Beyond-Reality/Beyond-Realty-Farscapes/master/config/rtfm/en_us/changelogs/1.0.6-r1.md)
 [1.0.5-r1](https://raw.githubusercontent.com/Beyond-Reality/Beyond-Realty-Farscapes/master/config/rtfm/en_us/changelogs/1.0.5-r1.md)
