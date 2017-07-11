@@ -1,6 +1,17 @@
 # industrialforegoing.zs Tweaks
 
-// May be no longer required since update
-// Disable crafting of the Plant Recolector due to lag issue waiting for fix
-//recipes.remove(<industrialforegoing:crop_recolector>);
-//<industrialforegoing:crop_recolector>.addTooltip(format.bold(format.red("CURRENTLY DISABLED BECAUSE OF LAG")));
+// Items
+val Plastic = <industrialforegoing:plastic>;
+val DryRubber = <industrialforegoing:dryrubber>;
+
+// Ingredients
+val itemRubber = <ore:itemRubber>;
+val itemPlastic = <ore:itemPlastic>;
+
+// Oredict Fixes
+itemRubber.add(DryRubber); // Oredict Dry Rubber
+itemRubber.remove(Plastic); // Removes Oredict drep, plastic is not Rubber
+itemPlastic.add(Plastic); // Oredict Plastic
+
+// Smelt rubber into plastic
+furnace.addRecipe(Plastic, itemRubber);

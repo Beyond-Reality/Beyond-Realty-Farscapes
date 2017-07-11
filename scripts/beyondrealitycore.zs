@@ -3,8 +3,25 @@ import minetweaker.data.IData;
 import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 
+// Items
+val Bed = <minecraft:bed>;
+val Boat = <minecraft:boat>;
+val Bookshelf = <minecraft:bookshelf>;
+val Chest = <minecraft:chest>;
+val EggDragon = <minecraft:dragon_egg>;
+val Elytra = <minecraft:elytra>;
+val NameTag = <minecraft:name_tag>;
 
-# Ore Items combine
+// ingredients
+val bed = <ore:bed>;
+val blockWool = <ore:blockWool>;
+val bookshelf = <ore:bookshelf>;
+val chestWood = <ore:chestWood>;
+val paper = <ore:paper>;
+val plankWood = <ore:plankWood>;
+val str = <ore:string>;
+
+// Ore Items combine
 
 // Ruby
 <ore:shardRuby>.add(<beyondreality:shardruby>);
@@ -320,40 +337,30 @@ recipes.addShapeless(<beyondreality:oretungsten>, [
 furnace.addRecipe(<beyondreality:tinytungsten> * 2, <ore:sparseTungsten>);
 
 // All Chests to vanilla chest
-recipes.addShapeless(<minecraft:chest>, [<ore:chestWood>]);
+recipes.addShapeless(Chest, [chestWood]);
 
 // Oak boat from any planks
-recipes.addShaped(<minecraft:boat>, [
+recipes.addShaped(Boat, [
   [null, null, null],
-  [<ore:plankWood>, null, <ore:plankWood>],
-  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+  [plankWood, null, plankWood],
+  [plankWood, plankWood, plankWood]
 ]);
 
-// Smelt rubber into plastic
-furnace.addRecipe(<industrialforegoing:plastic>, <ore:itemRubber>);
-
-// Oredict Industrial Foregoing Plastic
-val plastic = <ore:itemPlastic>;
-plastic.add(<industrialforegoing:plastic>);
-
-// Oredict Industrial Foregoing Dry Rubber
-<ore:itemRubber>.add(<industrialforegoing:dryrubber>);
-
 // All Bookshelfs to vanilla
-recipes.addShapeless(<minecraft:bookshelf>, [<ore:bookshelf>]);
+recipes.addShapeless(Bookshelf, [bookshelf]);
 
 // All Beds to vanilla
-recipes.addShapeless(<minecraft:bed>, [<ore:bed>]);
+recipes.addShapeless(Bed, [bed]);
 
 // Any wool/wood to vanilla Bed
-recipes.addShaped(<minecraft:bed>, [
+recipes.addShaped(Bed, [
   [null,null,null],
-  [<minecraft:wool:*>, <minecraft:wool:*>, <minecraft:wool:*>],
-  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+  [blockWool, blockWool, blockWool],
+  [plankWood, plankWood, plankWood]
 ]);
 
 // Dragon Egg from Elytra
-recipes.addShapeless(<minecraft:dragon_egg>, [<minecraft:elytra>]);
+recipes.addShapeless(EggDragon, [Elytra]);
 
 // Craft NameTag
-recipes.addShapeless(<minecraft:name_tag>, [<minecraft:paper>, <minecraft:string>]);
+recipes.addShapeless(NameTag, [paper, str]);
