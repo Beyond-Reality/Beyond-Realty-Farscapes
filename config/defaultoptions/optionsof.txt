@@ -50,7 +50,7 @@ ofSwampColors:true
 ofRandomMobs:true
 ofSmoothBiomes:true
 ofCustomFonts:true
-ofCustomColors:true
+ofCustomColors:false
 ofCustomItems:true
 ofCustomSky:true
 ofShowCapes:true
@@ -62,7 +62,7 @@ ofDynamicLights:3
 ofScreenshotSize:1
 ofCustomEntityModels:true
 ofFullscreenMode:Default
-ofFastMath:false
+ofFastMath:true
 ofFastRender:false
 ofTranslucentBlocks:0
 key_of.key.zoom:46
